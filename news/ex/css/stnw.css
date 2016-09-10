@@ -1,0 +1,199 @@
+/* Website template by freewebsitetemplates.com */
+
+
+body {
+	background: #ffb744 url(../images/1.jpg) repeat left bottom;
+	font-family: "Times New Roman", Times, serif;
+	margin: 0;
+}/*
+body{
+    
+    background-image: url(../iimages/1.jpg);
+	background-size: 1364px 738px;
+	background-repeat: no-repeat;
+    background-position: center;
+	background-attachment: fixed;
+
+}*/
+
+#background {
+	background: url(../images/1.jpg) repeat-x center top;
+	min-height: 1318px;
+}
+#page {
+	width: 960px;
+	margin: 0 auto;
+}
+img {
+	border: 0;
+}
+/*------------------------------ Sprites ------------------------------*/
+#navigation li, #navigation li a:hover, #navigation li.selected a {
+	background-image: url(../images/bg-menu.png);
+	background-repeat: repeat-x;
+}
+#contents div.box, #contents div.box > div, #contents div.body {
+	background-image: url(../images/content-box.png);
+	background-repeat: no-repeat;
+}
+#main div.box, #main div.box > div, #main div.box > div > div {
+	background-image: url(../images/bg-box.png);
+	background-repeat: no-repeat;
+}
+/*------------------------------ HEADER ------------------------------*/
+#header {
+	margin-bottom: 20px;
+	padding-top: 20px;
+}
+/** Logo **/
+
+/** Navigation **/
+
+/*------------------------------ CONTENTS ------------------------------*/
+#contents {
+	display: inline-block;
+	width: 865px;
+	padding: 0 47px;
+}
+#contents h1 {
+	color: #316e66;
+	font: 26px/30px "Times New Roman", Times, serif;
+	margin: 18px 0 20px;
+	padding-left: 2px;
+	text-transform: uppercase;
+}
+#contents div.body h1, #contents h2 {
+	color: #316e66;
+	font: 30px/30px "Times New Roman", Times, serif;
+	margin: 0 0 18px;
+	text-transform: uppercase;
+}
+#contents h2 {
+	font-size: 22px;
+	margin: 0 0 30px;
+}
+#contents h2 a {
+	color: #2c9688;
+	text-decoration: none;
+}
+#contents p {
+	color: #5a4535;
+	font-size: 15px;
+	line-height: 30px;
+	margin: 0;
+	padding: 0 0 24px 2px;
+}
+#contents p a {
+	color: #5a4535;
+}
+#contents p a:hover, #news div.sidebar ul li a:hover {
+	color: #917157;
+}
+/** box-shadow **/
+#contents div.box {
+	background-position: left bottom;
+	margin-bottom: 20px;
+	margin-left: 1px;
+	padding: 0 0 6px;
+}
+#contents div.box > div {
+	background-position: -1745px top;
+	padding: 6px 0 0;
+}
+#contents div.body {
+	background-position: -871px top;
+	background-repeat: repeat-y;
+	min-height: 980px;
+	padding: 30px 40px 0;
+}
+/** Adbox **/
+/** MAIN **/
+
+/** SIDEBAR **/
+#sidebar {
+	float: right;
+	height: auto;
+	width: 285px;
+}
+#sidebar div.section {
+	height: 144px;
+	margin-bottom: 12px;
+}
+#sidebar div.section:first-child {
+	padding: 3px 0 0;
+}
+#sidebar div.section > a:hover {
+	filter:alpha(opacity=60);
+	opacity: 0.6;
+}
+/** testimonials **/
+
+/** Rooms, Foods Dive Sites **/
+
+/** News **/
+#news {
+	display: inline-block;
+	width: 784px;
+}
+#news > div {
+	width: 560px;
+	border-right: 1px solid #bbbbbb;
+	padding-right: 35px;
+}
+#news > div img {
+	border: 1px solid #2c9688;
+	margin-bottom: 20px;
+}
+#news > div h2 {
+	margin-bottom: 12px;
+}
+#news > div span {
+	color: #5a4535;
+	display: block;
+	font: 15px/24px "Times New Roman", Times, serif;
+	margin-bottom: 30px;
+}
+#news > div span.author {
+	color: #2c9688;
+	display: block;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+#news div.sidebar {
+	float: right;
+	width: 160px;
+	border: 0;
+	padding: 0;
+}
+#news div.sidebar h3 {
+	color: #2c9688;
+	font-size: 20px;
+	font-weight: normal;
+	border-top: 1px solid #b7b7b7;
+	margin: 0 0 12px;
+	padding-top: 18px;
+	text-transform: uppercase;
+}
+#news div.sidebar h3:first-child {
+	border: 0;
+	padding-top: 0px;
+}
+#news div.sidebar ul {
+	list-style: none;
+	margin: 0 0 8px;
+	padding: 0;
+}
+#news div.sidebar ul li a {
+	color: #5a4535;
+	display: inline-block;
+	font-size: 15px;
+	margin-bottom: 6px;
+	text-decoration: none;
+}
+#news ul li {
+	margin-bottom: 12px;
+}
+/** Contact **/
+
+}
+/** Connect **/
