@@ -81,12 +81,12 @@
 
 
                 } else {
-                    alert("You have entered an invalid phone numbers!");
+                    alert("You have entered an invalid mobile numbers!");
                     return false;
 
                 }
             }else {
-                alert("You have entered an invalid phone numbers!");
+                alert("You have entered an invalid mobile numbers!");
                 return false;
             }
 
