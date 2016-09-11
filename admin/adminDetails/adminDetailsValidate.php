@@ -93,15 +93,15 @@
         }
 
         /*function validateMobile(usermobile) {
-            var mob = /^[1-9]{1}[0-9]{9}$/;
-            //var txtMobile = document.getElementById(usermobile);
-            if (mob.test(usermobile.value) == false) {
-                alert("Please enter valid mobile number.");
-                //txtMobile.focus();
-                return false;
-            }
-            return true;
-        }*/
+         var mob = /^[1-9]{1}[0-9]{9}$/;
+         //var txtMobile = document.getElementById(usermobile);
+         if (mob.test(usermobile.value) == false) {
+         alert("Please enter valid mobile number.");
+         //txtMobile.focus();
+         return false;
+         }
+         return true;
+         }*/
 
 
 
