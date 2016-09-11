@@ -103,10 +103,10 @@ require_once('auth.php');
                 <a href="#"><i class="fa fa-desktop "></i>User Details <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="adminDetails/adminDetails.php"><i class="fa fa-toggle-on"></i>Admin Details</a>
+                        <a href="adminDetails/adminDetailsValidate.php"><i class="fa fa-toggle-on"></i>Admin Details</a>
                     </li>
                     <li>
-                        <a href="researcherDetails/researchersDetails.php"><i class="fa fa-bell "></i>Researchers Details</a>
+                        <a href="researcherDetails/researcherDetailsValidate.php"><i class="fa fa-bell "></i>Researchers Details</a>
                     </li>
                     <li>
                         <a href="publicDetails.php"><i class="fa fa-circle-o "></i>Public Viewers Details</a>
