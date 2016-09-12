@@ -28,7 +28,7 @@
       
       			<form class="navbar-form  navbar-right">
         			<div class="form-group">
-          				<input type="text" class="form-control" placeholder="Enter name here">
+          				<input type="text" class="form-control input-area" placeholder="Enter name here">
         			</div>
         			<button type="submit" class="btn btn-default">Search</button>
       			</form>
@@ -41,8 +41,9 @@
  	</nav>
 	<!-- End of the heading navigation bar -->
  
-<!-- start of the side navigation bar -->
- 	<div>
+
+ 	<div class="col-xs-12">
+    <!-- start of the side navigation bar -->
  		<div class="col-xs-2 list-container row">
  			<div class="profile-picture">
  				<!-- <img src="../img/proPic.png"> -->
@@ -55,8 +56,9 @@
 				<li><a href="#">Forum</a></li>
 				<li><a href="#">News</a></li>
 				<li><a href="#">About Us</a></li>
-	  		</ul>
-    	</div>
- 	</div>
+	  	</ul>
+    </div>
+    <!-- start of the side navigation bar -->
+  </div>
 </body>
 </html>
