@@ -1,10 +1,12 @@
+@import 'https://fonts.googleapis.com/css?family=Chewy';
+@import 'https://fonts.googleapis.com/css?family=Source+Code+Pro';
 
 
 /*navbar1*/
 
 
 .navbar1{
-	background-color: #000000;
+	background-color: #4c4743;
 	margin-top: -0.75%;
 	margin-left: -0.75%;
 	margin-right: -0.75%;
@@ -12,6 +14,13 @@
 }
 .navbar-li > li > a{
 	color: #ffffff !important; 
+}
+.header1 {
+	font-family: 'Chewy', cursive;
+	font-size: 50px;
+}
+.header2 {
+	font-family: 'Source Code Pro', monospace;
 }
 
 /*overrides*/
@@ -25,8 +34,8 @@
 	color: #a79e9e;
 }
 .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse{
-	margin-top: 8px;
-	margin-bottom: 4px;
+	margin-top: 20px;
+	margin-bottom: 7px;
 }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus{
@@ -71,6 +80,7 @@
     left: 100px;
 }
 
+
 /*Overrides*/
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
 	background-color: #ffffff;
@@ -78,3 +88,34 @@
 
 
 /* /Overrides*/
+
+
+
+/*side nav*/
+
+.list-of-content {
+	margin-top: 40px;
+}
+.list-container{
+	background-color: #4c4743;
+	margin-top: -26px;
+	height: 3000px;
+}
+.a {
+	color: #000000;
+}
+.list-of-content >li > a {
+	color: #ffffff;
+}
+.list-of-content >li > a:focus, .list-of-content >li > a:hover {
+	background-color: #c16d28
+}
+
+.profile-picture {
+	border-style: solid;
+	border-radius: 50%;
+	width: 130px;
+	height: 130px;
+	margin: auto;
+	margin-top: 15px;
+}
