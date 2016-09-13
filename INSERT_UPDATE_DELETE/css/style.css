@@ -1,0 +1,110 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif); /* to import google font style */ 
+
+	
+fieldset{
+	display:none;
+}
+
+#first{
+    display:block;
+	
+}
+
+body{
+                font-family: sans-serif;
+                font: 'Arimo';
+            }
+            .head-form{
+                text-align: center;
+
+            }
+            .my-text{
+                border-radius: 7px !important;
+                color: #1b0202;
+                background-color: #d7d7d7;
+
+
+
+            }
+
+         
+            .form-control:focus {
+
+            }
+            .form-control:focus {
+                border-color: #778ea0;
+            }
+
+
+
+            .form-control:focus{
+
+                box-shadow: inset 0 1px 1px rgba(0, 0, 0, -6.925), 0 0 8px rgba(21, 19, 19, 0.6);
+            }
+            textarea:active, textarea:focus {
+                outline:0px !important;
+            }
+            .my-n-container{
+
+                background: rgba(204, 204, 179,0.2);
+
+                color:#4c4743;
+
+                border-top-left-radius: 12px !important;
+                border-top-right-radius: 12px !important;
+
+            }
+           
+            .my-button{
+
+                width: 96px;
+                height: 36px;
+                background-color: white; 
+                border: none;
+                color:504cec;
+
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-weight: bold;
+                font-size: 16px;
+
+                -webkit-transition-duration: 0.4s; /* Safari */
+                transition-duration: 0.4s;
+                cursor: pointer;
+
+            }
+            .my-button{
+                background: rgba(0, 0, 0, 0.5);
+                color: white;
+                border: 2px solid white;
+
+            }
+            .my-button:hover{
+                background-color: white;
+                color: black ;
+                border: 2px solid black;
+            }
+
+            .next-btn-1{
+                margin-left: 655px auto;
+
+
+            }
+
+            .submit_btn{
+                margin-left: 7px auto;
+
+            }
+
+            .next-btn-2{
+                margin-left: 554px auto;
+            }
+
+
+            .prev-btn-3{
+                margin-left: -15px;
+
+            }
+
+	
