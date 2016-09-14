@@ -142,13 +142,23 @@ div.profile-picture {
 
 
 .insert-form{
-	/*margin-left: 300px;*/
-	margin-top: 200px;
+	margin-top: 150px;
 	z-index: 1000;
 	border-style: solid;
 	border-color: black;
 }
 
+@media(max-width:768px){
+	.mini-bar{
+		display:none;
+	}
+}
+
+@media(min-width:768px){
+	.min-link{
+		display: none !important;
+	}
+}
 
 
 

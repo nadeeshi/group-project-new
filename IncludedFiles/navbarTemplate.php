@@ -37,6 +37,13 @@
       			<ul class="nav navbar-nav  navbar-right navbar-li">
         			<li class="btn1"><a href="#">Hi Name</a></li>
         			<li><a href="Help/index.php">Help</a></li> 
+              <li class="min-link"><a href="#">Home</a></li>
+              <li class="min-link"><a href="#">Add Information</a></li>
+              <li class="min-link"><a href="#">Update Information</a></li>
+              <li class="min-link"><a href="#">Delete Information</a></li>
+              <li class="min-link"><a href="#">Forum</a></li>
+              <li class="min-link"><a href="#">News</a></li>
+              <li class="min-link"><a href="#">About Us</a></li>
      			</ul> 
     		</div> <!-- /.navbar-collapse -->
       </div>
@@ -46,7 +53,7 @@
  
   <div class="row"> 
     <!-- start of the side navigation bar -->
- 		<div class="col-xs-2 list-container">
+ 		<div class="col-xs-2 list-container mini-bar">
  			<div class="profile-picture">
  				<!-- <img src="../img/proPic.png"> -->
  			</div>
@@ -62,7 +69,7 @@
 		</div>
     <!-- end of the side navigation bar -->
     
-		<div class="col-xs-8 col-xs-push-3 insert-form">
+		<div class="col-sm-8 col-sm-push-3 col-xs-12 insert-form">
 
 			<div>
                 <div class="head-love">
