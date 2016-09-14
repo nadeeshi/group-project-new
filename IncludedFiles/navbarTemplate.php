@@ -39,15 +39,14 @@
         			<li><a href="Help/index.php">Help</a></li> 
      			</ul> 
     		</div> <!-- /.navbar-collapse -->
-        </div>
+      </div>
    	<!-- /.container-fluid -->
  	</nav>
 	<!-- End of the heading navigation bar -->
  
-
- 	<div class="col-xs-12">
+  <div class="row"> 
     <!-- start of the side navigation bar -->
- 		<div class="col-xs-2 list-container row">
+ 		<div class="col-xs-2 list-container">
  			<div class="profile-picture">
  				<!-- <img src="../img/proPic.png"> -->
  			</div>
@@ -59,12 +58,13 @@
 				<li><a href="#">Forum</a></li>
 				<li><a href="#">News</a></li>
 				<li><a href="#">About Us</a></li>
-	  	</ul>
-    </div>
+			</ul>
+		</div>
     <!-- end of the side navigation bar -->
     
-    <div class="col-xs-8 container insert-form " style="border-style: solid; border-color: black">
-            <div class="container-form">
+		<div class="col-xs-8 col-xs-push-3 insert-form">
+
+			<div>
                 <div class="head-love">
                     <h2>INSERT A NEW BAT</h2>
                 </div>
@@ -138,11 +138,8 @@
                   <p>hfkjsdgfkwgfkhwgfhwgvhjwvwejvewvwjcw</p>
                   <p>hfkjsdgfkwgfkhwgfhwgvhjwvwejvewvwjcw</p>
                 </div>
-                </div>
-                </div>
-
-
-
-  </div>  
+			</div>
+		</div>
+	</div>
 </body>
 </html>

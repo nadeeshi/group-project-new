@@ -8,11 +8,14 @@
 .navbar1{
 	background-color: #4c4743;
 	margin-top: -0.75%;
-	margin-left: -0.75%;
+	margin-left: -0.1%;
 	margin-right: -0.75%;
 	font-size: 15px;
 	position: fixed;
 	width: 100%;
+	z-index:2000; 
+	border-bottom:none; 
+	border-radius:0;
 
 }
 .navbar-li > li > a{
@@ -110,7 +113,7 @@
 }
 .list-container{
 	background-color: #4c4743;
-	margin-top: 75px;
+	margin-top: 72px;
 	height: 800px;
 	position: fixed;
 
@@ -139,7 +142,13 @@ div.profile-picture {
 
 
 .insert-form{
-	margin-left: 300px;
+	/*margin-left: 300px;*/
 	margin-top: 200px;
-	z-index: -1;
+	z-index: 1000;
+	border-style: solid;
+	border-color: black;
 }
+
+
+
+
