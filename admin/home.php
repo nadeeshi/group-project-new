@@ -54,7 +54,7 @@ require_once('auth.php');
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="home.php">Admin Panel</a>
+        <a class="navbar-brand" href="home.php" >Admin Panel</a>
     </div>
 
 
@@ -154,13 +154,13 @@ require_once('auth.php');
 
 
             <li>
-                <a href="#"><i class="fa fa-bicycle "></i>Bats Details <span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level">
+                <a href="#"><i class="fa fa-h-square "></i>Bats Details <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
 
-                    <li>
-                        <a href="batsDetails/listOfBats.php"><i class="fa fa-desktop "></i>List of Bats</a>
-                    </li>
-                    <li>
+                            <li>
+                                <a href="batsDetails/listOfBats.php"><i class="fa fa-desktop "></i>List of Bats</a>
+                            </li>
+                            <li>
                         <a href="batsDetails/newBat.php"><i class="fa fa-code "></i>Add New Bats</a>
                     </li>
 
@@ -218,31 +218,33 @@ require_once('auth.php');
 
 
 
-<div class="row">
-    <div class="col-md-4">
-        <div class="main-box mb-red">
+<div class="row" >
+    <div class="col-md-10">
+    <div class="col-xs-4">
+        <div class="main-box mb-red" style="width: 200px;">
             <a href="#">
 
                 <h3> 230  bats</h3>
             </a>
         </div>
     </div>
-    <div class="col-md-4">
-        <div class="main-box mb-dull">
+    <div class="col-xs-4">
+        <div class="main-box mb-dull" style="width: 200px;">
             <a href="#">
 
                 <h3>3 Admin</h3>
             </a>
         </div>
     </div>
-    <div class="col-md-4">
-        <div class="main-box mb-pink">
+    <div class="col-xs-4">
+        <div class="main-box mb-pink" style="width: 230px; height: 100px;">
             <a href="#">
 
                 <h3>20 Researchers</h3>
             </a>
         </div>
     </div>
+        </div>
 
 </div>
 <!-- /. ROW  -->

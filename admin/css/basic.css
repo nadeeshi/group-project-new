@@ -58,11 +58,11 @@ body {
     background: #202020;
     width: 260px;
     text-align: center;
-    height: 75px;
+    height: 55px;
     font-size: 20px;
     letter-spacing: 1px;
     font-weight: 900;
-    padding-top: 25px;
+    padding-top: 15px;
     text-transform:uppercase;
 }
 
@@ -85,7 +85,7 @@ body {
 }
 
     .user-img-div img {
-        max-height: 60px;
+        max-height: 50px;
     }
 
     .user-img-div .inner-text {
@@ -175,6 +175,7 @@ body {
 .navbar-cls-top {
     background: #999999;
     border-bottom: none;
+    height: 50px;
 }
 
 
@@ -184,10 +185,12 @@ body {
 
 .navbar-header {
     background: #000000;
+
 }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     background-color: #999999;
+
 }
 
 .navbar-default .navbar-toggle {
@@ -209,6 +212,7 @@ body {
     padding:20px 50px;
     color:#fff;
     font-size:12px;
+    height: 50px;
 }
 
     #footer-sec a {
@@ -239,4 +243,28 @@ body {
     .navbar {
         border-radius: 0px;
     }
+}
+
+.btn {
+    display: inline-block;
+    padding: 1px 3px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+
+
+.btn-info {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
 }

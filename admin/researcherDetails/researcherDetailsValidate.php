@@ -287,20 +287,21 @@ function validateMobileNo($umobile) {
                             ?>
 
                             <div class="display">
-                                <p> RESEARCHER NAME : <span><?php echo $username; ?></span>
+                                <p> RESEARCHER NAME : <span style="color: #125acd"><?php echo $username; ?></span>
+                                    <a href="editResearchers.php?id=<?php echo $id; ?>"><span class="edit" title="Edit" style="color: #ff0084"> Edit </span></a>
                                     <a href="deleteResearchers.php?id=<?php echo $id; ?>"
                                        onclick="return confirm('Are you sure you wish to delete this Record?');">
-                                        <span class="delete" title="Delete"> X </span></a>
+                                        <span class="delete" title="Delete" style="color: #ff0084"> Delete </span></a>
                                 </p>
                                 <br />
-                                <p> EMAIL ID : <span><?php echo $usermail; ?></span>
-                                    <a href="editResearchers.php?id=<?php echo $id; ?>"><span class="edit" title="Edit"> E </span></a>
+                                <p> EMAIL ID : <span style="color: #125acd"><?php echo $usermail; ?></span>
+
                                 </p>
                                 <br />
-                                <p> MOBILE NO : <span><?php echo $usermobile; ?></span>
+                                <p> MOBILE NO : <span style="color: #125acd"><?php echo $usermobile; ?></span>
                                 </p>
                                 <br />
-                                <p> CREATED ON : <span><?php echo $created; ?></span>
+                                <p> CREATED ON : <span style="color: #125acd"><?php echo $created; ?></span>
                                 </p>
                                 <br />
                             </div>

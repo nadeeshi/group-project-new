@@ -92,7 +92,7 @@ unset($_SESSION['SESS_LAST_NAME']);
 
                         <tr>
                          <div align="center">
-                            <input name="" type="submit" class="btn btn-primary" value="login" />
+                            <input name="" type="submit" class="btn btn-primary" style="width: 100px" value="login" />
                          </div>
                          </tr>
                     </table>
