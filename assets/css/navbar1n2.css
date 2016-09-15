@@ -143,6 +143,7 @@ div.profile-picture {
 
 .insert-form{
 	margin-top: 150px;
+	margin-left: 100px;
 	z-index: 1000;
 	border-style: solid;
 	border-color: black;

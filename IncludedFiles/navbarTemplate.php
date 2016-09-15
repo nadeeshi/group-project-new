@@ -35,8 +35,7 @@
         			<button type="submit" class="btn btn-default">Search</button>
       			</form>
       			<ul class="nav navbar-nav  navbar-right navbar-li">
-        			<li class="btn1"><a href="#">Hi Name</a></li>
-        			<li><a href="Help/index.php">Help</a></li> 
+        			<li class="btn1"><a href="#">Hi Name</a></li> 
               <li class="min-link"><a href="#">Home</a></li>
               <li class="min-link"><a href="#">Add Information</a></li>
               <li class="min-link"><a href="#">Update Information</a></li>
@@ -64,12 +63,13 @@
 				<li><a href="#">Delete Information</a></li>
 				<li><a href="#">Forum</a></li>
 				<li><a href="#">News</a></li>
+        <li><a href="Help/index.php">Help</a></li>
 				<li><a href="#">About Us</a></li>
 			</ul>
 		</div>
     <!-- end of the side navigation bar -->
     
-		<div class="col-sm-8 col-sm-push-3 col-xs-12 insert-form">
+		<div class="col-sm-8 col-sm-push-2 col-xs-12 insert-form">
 
 			<div>
                 <div class="head-love">
