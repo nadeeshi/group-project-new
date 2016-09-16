@@ -58,111 +58,114 @@
     <!-- <link href="css/bootstrap.css" rel="stylesheet"> -->
     <link href="../assets/bootstrap/bootstrap.css" rel="stylesheet">
     <link href="../assets/css/navbar1n2.css" rel="stylesheet">
-    <script src="js/jquary.js"></script>
-    <script src="../assets/css/bootstrapjs.js"></script>
+    <link href="../assets/css/footer.css" rel="stylesheet">
+    <script src="../assets/bootstrap/jquary.js"></script> 
+    <script src="../assets/bootstrap/bootstrapjs.js"></script> 
 
 </head>
 <body>
 
 <!-- including the navigation bar 1 -->
-<?php include '../IncludedFiles/navbar1.html'; ?>
-
-
-<section class="main_image org">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <h1 class="text-center">Hi, We Are Here To Help You!</h1>
-
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search for...">
-                    <span class="input-group-btn">
-                        <button class="btn btn-warning" type="button"><i class="fa fa-search"></i></button>
-                    </span>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-<hr />
-<div class="container">
+    <?php include '../IncludedFiles/navbarTemplate.php'; ?>
     <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <ol class="breadcrumb">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Go Back</a></li>
-                <li class="active">You are here</li>
-            </ol>
+        <div class="col-sm-10 col-sm-push-2 col-xs-12 insert-form">
+            <section class="main_image org">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h1 class="text-center">Hi, We Are Here To Help You!</h1>
 
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <h1 class="text-center"><font size="8px" color="#00bfff"> General Categories </font></h1>
+                        </div>
+                    </div>
 
-        </div>
-    </div>
-</div>
-<br>
-<hr>
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="row">
-
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <a href="p2-account.html" class="btn btn-warning pdd" role="button">
-                        <i class="fa fa-briefcase fa-4x" style="margin-top: 40px"></i>
-                        <br>
-                    </a>
-                    <br>
-                    <span class="ddf">
-                    Account Settings
-                    </span>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search for...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-warning" type="button"><i class="fa fa-search"></i></button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
 
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <a href="p2-man%20accounts.html" class="btn btn-success pdd" role="button">
-                        <i class="fa fa-cog fa-4x" style="margin-top: 40px"></i>
-                        <br>
-                    </a>
+            </section>
+            <hr />
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <ol class="breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Go Back</a></li>
+                            <li class="active">You are here</li>
+                        </ol>
 
-                    <br>
-                    <span class="ddf">
-                    Managing Accounts
-                    </span>
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <a href="p2-%20privacy%20saf.html" class="btn btn-danger pdd" role="button">
-                        <i class="fa fa-user-secret fa-4x" style="margin-top: 40px"></i>
-                        <br>
-
-                    </a>
-                    <br>
-                    <span class="ddf">
-                    Privacy and Security
-                    </span>
+                    </div>
                 </div>
             </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h1 class="text-center"><font size="8px" color="#00bfff"> General Categories </font></h1>
+
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="row">
+
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                <a href="p2-account.html" class="btn btn-warning pdd" role="button">
+                                    <i class="fa fa-briefcase fa-4x" style="margin-top: 40px"></i>
+                                    <br>
+                                </a>
+                                <br>
+                                <span class="ddf">
+                                Account Settings
+                                </span>
+
+                            </div>
+
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                <a href="p2-man%20accounts.html" class="btn btn-success pdd" role="button">
+                                    <i class="fa fa-cog fa-4x" style="margin-top: 40px"></i>
+                                    <br>
+                                </a>
+
+                                <br>
+                                <span class="ddf">
+                                Managing Accounts
+                                </span>
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                <a href="p2-%20privacy%20saf.html" class="btn btn-danger pdd" role="button">
+                                    <i class="fa fa-user-secret fa-4x" style="margin-top: 40px"></i>
+                                    <br>
+
+                                </a>
+                                <br>
+                                <span class="ddf">
+                                Privacy and Security
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 </html>

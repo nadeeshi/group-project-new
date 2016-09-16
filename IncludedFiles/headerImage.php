@@ -14,8 +14,8 @@
     
     <!-- This demo works with jquery library -->
 
-    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+   <!--  <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.mini.js"></script> -->
     <!-- use jssor.slider.debug.js instead for debug -->
     <script>
         jQuery(document).ready(function ($) {
@@ -74,7 +74,7 @@
             width: 55px;
             height: 55px;
             cursor: pointer;
-            background: url('img/a02.png') no-repeat;
+            background: url('../assets/img/a02.png') no-repeat;
             overflow: hidden;
         }
         .jssora02l { background-position: -3px -33px; }
@@ -165,44 +165,44 @@
         </div>
         <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden;">
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="img/002.jpg" />
-                <img data-u="thumb" src="img/thumb-002.jpg" />
+                <img data-u="image" src="../assets/img/002.jpg" />
+                <img data-u="thumb" src="../assets/img/thumb-002.jpg" />
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="img/003.jpg" />
-                <img data-u="thumb" src="img/thumb-003.jpg" />
+                <img data-u="image" src="../assets/img/003.jpg" />
+                <img data-u="thumb" src="../assets/img/thumb-003.jpg" />
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="img/004.jpg" />
-                <img data-u="thumb" src="img/thumb-004.jpg" />
+                <img data-u="image" src="../assets/img/004.jpg" />
+                <img data-u="thumb" src="../assets/img/thumb-004.jpg" />
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="img/005.jpg" />
-                <img data-u="thumb" src="img/thumb-005.jpg" />
+                <img data-u="image" src="../assets/img/005.jpg" />
+                <img data-u="thumb" src="../assets/img/thumb-005.jpg" />
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="img/006.jpg" />
-                <img data-u="thumb" src="img/thumb-006.jpg" />
+                <img data-u="image" src="../assets/img/006.jpg" />
+                <img data-u="thumb" src="../assets/img/thumb-006.jpg" />
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="img/007.jpg" />
-                <img data-u="thumb" src="img/thumb-007.jpg" />
+                <img data-u="image" src="../assets/img/007.jpg" />
+                <img data-u="thumb" src="../assets/img/thumb-007.jpg" />
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="img/008.jpg" />
-                <img data-u="thumb" src="img/008.jpg" />
+                <img data-u="image" src="../assets/img/008.jpg" />
+                <img data-u="thumb" src="../assets/img/008.jpg" />
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="img/009.jpg" />
-                <img data-u="thumb" src="img/009.jpg" />
+                <img data-u="image" src="../assets/img/009.jpg" />
+                <img data-u="thumb" src="../assets/img/009.jpg" />
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="img/010.jpg" />
-                <img data-u="thumb" src="img/010.jpg" />
+                <img data-u="image" src="../assets/img/010.jpg" />
+                <img data-u="thumb" src="../assets/img/010.jpg" />
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="img/011.jpg" />
-                <img data-u="thumb" src="img/thumb-011.jpg" />
+                <img data-u="image" src="../assets/img/011.jpg" />
+                <img data-u="thumb" src="../assets/img/thumb-011.jpg" />
             </div>
             <a data-u="add" href="http://www.jssor.com" style="display:none">Jssor Slider</a>
         

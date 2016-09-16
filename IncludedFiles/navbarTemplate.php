@@ -36,12 +36,13 @@
       			</form>
       			<ul class="nav navbar-nav  navbar-right navbar-li">
         			<li class="btn1"><a href="#">Hi Name</a></li> 
-              <li class="min-link"><a href="#">Home</a></li>
+              <li class="min-link"><a href="../phpPages/researcherHomePage.php">Home</a></li>
               <li class="min-link"><a href="#">Add Information</a></li>
               <li class="min-link"><a href="#">Update Information</a></li>
               <li class="min-link"><a href="#">Delete Information</a></li>
-              <li class="min-link"><a href="forum/forum.php">Forum</a></li>
+              <li class="min-link"><a href="../forum/forum.php">Forum</a></li>
               <li class="min-link"><a href="#">News</a></li>
+              <li class="min-link"><a href="../Help/index.php">Help</a></li>
               <li class="min-link"><a href="#">About Us</a></li>
      			</ul> 
     		</div> <!-- /.navbar-collapse -->
@@ -57,13 +58,13 @@
  				<!-- <img src="../img/proPic.png"> -->
  			</div>
 			<ul class="nav nav-pills nav-stacked list-of-content">
-				<li><a href="#">Home</a></li>
+				<li><a href="../phpPages/researcherHomePage.php">Home</a></li>
 				<li><a href="#">Add Information</a></li>
 				<li><a href="#">Update Information</a></li>
 				<li><a href="#">Delete Information</a></li>
-				<li><a href="forum/forum.php">Forum</a></li>
+				<li><a href="../forum/forum.php">Forum</a></li>
 				<li><a href="#">News</a></li>
-        <li><a href="Help/index.php">Help</a></li>
+        <li><a href="../Help/index.php">Help</a></li>
 				<li><a href="#">About Us</a></li>
 			</ul>
 		</div>
