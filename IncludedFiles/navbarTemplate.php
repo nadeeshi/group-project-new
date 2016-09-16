@@ -40,7 +40,7 @@
               <li class="min-link"><a href="#">Add Information</a></li>
               <li class="min-link"><a href="#">Update Information</a></li>
               <li class="min-link"><a href="#">Delete Information</a></li>
-              <li class="min-link"><a href="#">Forum</a></li>
+              <li class="min-link"><a href="forum/forum.php">Forum</a></li>
               <li class="min-link"><a href="#">News</a></li>
               <li class="min-link"><a href="#">About Us</a></li>
      			</ul> 
@@ -61,7 +61,7 @@
 				<li><a href="#">Add Information</a></li>
 				<li><a href="#">Update Information</a></li>
 				<li><a href="#">Delete Information</a></li>
-				<li><a href="#">Forum</a></li>
+				<li><a href="forum/forum.php">Forum</a></li>
 				<li><a href="#">News</a></li>
         <li><a href="Help/index.php">Help</a></li>
 				<li><a href="#">About Us</a></li>
@@ -78,7 +78,7 @@
 		<!-- <div class="col-sm-8 col-sm-push-2 col-xs-12 insert-form">	
 		</div> -->
 
-    
+
 	</div>
 </body>
 </html>

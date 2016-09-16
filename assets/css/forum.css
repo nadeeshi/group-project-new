@@ -52,14 +52,21 @@
     font-size: 14px;
 }
 .button-custom{
-    background-color: #efeeee;
-    border-color: #cccaca;
+    background-color: #c1c1c1!important;
+    border-color: #807d7d!important;
 }
 .content{
     border-style: ridge;
-    left: 17%;
     margin-top: 3%; 
+    border-radius: 20px;
 }
 .form-group-customer{
     margin-bottom: 3%;
+}
+
+.form-group-custom {
+    margin-right: -115px;
+}
+.btn-class {
+    margin-bottom: 20px;
 }
