@@ -47,7 +47,7 @@
     		</div> <!-- /.navbar-collapse -->
       </div>
    	<!-- /.container-fluid -->
- 	</nav>
+ 	  </nav>
 	<!-- End of the heading navigation bar -->
  
   <div class="row"> 
@@ -69,84 +69,16 @@
 		</div>
     <!-- end of the side navigation bar -->
     
-		<div class="col-sm-8 col-sm-push-2 col-xs-12 insert-form">
-
-			<div>
-                <div class="head-love">
-                    <h2>INSERT A NEW BAT</h2>
-                </div>
-
-                <form  id="form" method ="post">
-
-                    <div class="form-group ">
-                        <input type="text" class="form-control" placeholder="Scientific Name" name ="scientific_name"  aria-describedby="sname" >
-
-                    </div>
 
 
-                    <div class="form-group ">
-                        <input type="text" class="form-control" placeholder="Bat Order"name="bat_order" id="order" aria-describedby="order">
-                    </div>
 
-                    <div class="form-group ">
+      <!-- me div eka danna dana hema ekakatama -->
 
-                        <input type="text" class="form-control" placeholder="Kingdom" name="kingdom" id="kingdom" aria-describedby="kingdom">
 
-                    </div>
+		<!-- <div class="col-sm-8 col-sm-push-2 col-xs-12 insert-form">	
+		</div> -->
 
-                    <div class="form-group ">
-
-                        <input type="text" class="form-control" placeholder="Genus" name= "genus" id="genus" aria-describedby="genus" >
-                    </div>
-                    <div class="form-group ">
-
-                        <input type="text" class="form-control" placeholder="Phylum" name="phylum" id="phylum" aria-describedby="phylum" >
-
-                    </div>
-
-                    <div class="form-group ">
-
-                        <input type="text" class="form-control" placeholder="Family" name="family" id="family" aria-describedby="family" >
-                    </div>
-                    <div class="form-group ">
-
-                        <input type="text" class="form-control" placeholder="Sub Family" name= "sub_family" id="sbfamily" aria-describedby="sbfamily">
-
-                    </div>
-
-                    <div class="form-group ">
-
-                        <input type="text" class="form-control" placeholder="Class" name="bat_class"  id="class" aria-describedby="class" >
-                    </div>
-                    <div class="form-group ">
-
-                        <textarea class="form-control" placeholder="Common Name" name="common_names" id="cnames" rows="4" cols="50" ></textarea>
-
-                    </div>
-                </form>
-                <div>
-                  <p>hfkjsdgfkwgfkhwgfhwgvhjwvwejvewvwjcw</p>
-                  <p>hfkjsdgfkwgfkhwgfhwgvhjwvwejvewvwjcw</p>
-                  <p>hfkjsdgfkwgfkhwgfhwgvhjwvwejvewvwjcw</p>
-                  <p>hfkjsdgfkwgfkhwgfhwgvhjwvwejvewvwjcw</p>
-                  <p>hfkjsdgfkwgfkhwgfhwgvhjwvwejvewvwjcw</p>
-                  <p>hfkjsdgfkwgfkhwgfhwgvhjwvwejvewvwjcw</p>
-                  <p>hfkjsdgfkwgfkhwgfhwgvhjwvwejvewvwjcw</p>
-                  <p>hfkjsdgfkwgfkhwgfhwgvhjwvwejvewvwjcw</p>
-                  <p>hfkjsdgfkwgfkhwgfhwgvhjwvwejvewvwjcw</p>
-                  <p>hfkjsdgfkwgfkhwgfhwgvhjwvwejvewvwjcw</p>
-                  <p>hfkjsdgfkwgfkhwgfhwgvhjwvwejvewvwjcw</p>
-                  <p>hfkjsdgfkwgfkhwgfhwgvhjwvwejvewvwjcw</p>
-                  <p>hfkjsdgfkwgfkhwgfhwgvhjwvwejvewvwjcw</p>
-                  <p>hfkjsdgfkwgfkhwgfhwgvhjwvwejvewvwjcw</p>
-                  <p>hfkjsdgfkwgfkhwgfhwgvhjwvwejvewvwjcw</p>
-                  <p>hfkjsdgfkwgfkhwgfhwgvhjwvwejvewvwjcw</p>
-                  <p>hfkjsdgfkwgfkhwgfhwgvhjwvwejvewvwjcw</p>
-                  <p>hfkjsdgfkwgfkhwgfhwgvhjwvwejvewvwjcw</p>
-                  <p>hfkjsdgfkwgfkhwgfhwgvhjwvwejvewvwjcw</p>
-                </div>
-			</div>
-		</div>
+    
 	</div>
 </body>
 </html>

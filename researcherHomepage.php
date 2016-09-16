@@ -15,31 +15,14 @@
   <!--header-frame first -->
  
 <!--close first bar-->
-<div>
-<?php include 'IncludedFiles/navbar1.html'; ?>
-</div>
-<?php include 'IncludedFiles/navbar2.html'; ?>
-
-<div class="col-xs-12">
-<?php include 'IncludedFiles/headerImage.php'; ?>
-</div>
-<p>....</p>
-<p>....</p>
-<p>....</p>
-<p>....</p>
-<div class="col-xs-12">
-	<?php include "IncludedFiles/footer.php" ?>
-</div>
+	<div>
+		<?php include 'IncludedFiles/navbarTemplate.php'; ?>
+	</div>
 
 
-
-
-
-
-
-
-
-
+	<div class="col-sm-8 col-sm-push-2 col-xs-12 insert-form">
+		<?php include 'IncludedFiles/headerImage.php'; ?>
+	</div>
 
 
 

@@ -8,7 +8,7 @@
 .navbar1{
 	background-color: #4c4743;
 	margin-top: -0.75%;
-	margin-left: -0.1%;
+	margin-left: -0.8%;
 	margin-right: -0.75%;
 	font-size: 15px;
 	position: fixed;
@@ -142,11 +142,9 @@ div.profile-picture {
 
 
 .insert-form{
-	margin-top: 150px;
-	margin-left: 100px;
+	margin-top: 140px;
+	margin-left: 85px;
 	z-index: 1000;
-	border-style: solid;
-	border-color: black;
 }
 
 @media(max-width:768px){
