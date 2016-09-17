@@ -21,7 +21,8 @@
         			<span class="icon-bar"></span>
         			<span class="icon-bar"></span>
       			</button>
-      			<a class="navbar-brand" href="#"><span class="header1">Bats</span><span class="header2">Info</span></a>
+      			<a class="navbar-brand" href="#" style="font-family:'Chewy', cursive  !important;
+  font-size: 50px;"><span class="header1" >Bats</span><span class="header2">Info</span></a>
     		</div>
 
     		<!-- Collect the nav links, forms, and other content for toggling -->
