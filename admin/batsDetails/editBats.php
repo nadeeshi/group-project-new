@@ -117,6 +117,7 @@ ob_end_flush();
                                                 <input type="text"   name="scientificName" required placeholder="Enter  name"
                                                        value="<?php echo $scientificName; ?>" id="inputid" class="col-xs-7"/>
                                             </div>
+
                                             <div class="col-xs-12">
                                                 <label  for="kingdom"  id="preinput" class="col-xs-5"> KINGDOM : </label>
                                                 <input type="text"   name="kingdom" required placeholder="Enter  kingdom"
@@ -159,13 +160,14 @@ ob_end_flush();
                                             </div>
                                             <div class="col-xs-12">
                                                 <label  for="commonNames"  id="preinput" class="col-xs-5"> COMMON NAMES : </label>
-                                                <textarea type="text"   style="height: 200px" name="commonNames"  placeholder="Enter commonNames"
-                                                       value="<?php echo $commonNames; ?>" id="inputid" class="col-xs-7"></textarea>
+                                                <textarea name="commonNames" id="inputid" style="height: 200px" class="col-xs-7"><?php echo $commonNames?></textarea>
                                             </div>
                                             <div class="col-xs-12">
                                                 <label  for="synonyms"  id="preinput" class="col-xs-5"> SYNONYMS : </label>
-                                                <textarea type="text"   style="height: 200px" name="synonyms"  placeholder="Enter synonyms"
-                                                       value="<?php echo $synonyms; ?>" id="inputid" class="col-xs-7"></textarea>
+                                                <!--<textarea    style="height: 200px" name="synonyms"  placeholder="Enter synonyms"
+                                                       value="" id="inputid" class="col-xs-7"></textarea>-->
+
+                                                <textarea name="synonyms" id="preinput" style="height: 200px" class="col-xs-7"><?php echo $synonyms?></textarea>
                                             </div>
                                             <div class="col-xs-12">
                                                 <label  for="redListCategory"  id="preinput" class="col-xs-5"> RED LIST CATEGORY : </label>
@@ -175,20 +177,17 @@ ob_end_flush();
 
                                             <div class="col-xs-12">
                                                 <label  for="distribution"  id="preinput" class="col-xs-5"> DISTRIBUTION : </label>
-                                                <textarea type="text"  style="height: 200px" name="distribution"  placeholder="Enter distribution"
-                                                       value="<?php echo $distribution; ?>" id="inputid" class="col-xs-7"></textarea>
+                                                <textarea name="distribution" id="inputid" style="height: 200px" class="col-xs-7"><?php echo $distribution?></textarea>
                                             </div>
 
                                             <div class="col-xs-12">
                                                 <label  for="oioCountries"  id="preinput" class="col-xs-5"> OIO COUNTRIES : </label>
-                                                <textarea type="text"  style="height: 200px" name="oioCountries"  placeholder="Enter oioCountries"
-                                                       value="<?php echo $oioCountries; ?>" id="inputid" class="col-xs-7"></textarea>
+                                                <textarea name="oioCountries" id="inputid" style="height: 200px" class="col-xs-7"><?php echo $oioCountries?></textarea>
                                             </div>
 
                                             <div class="col-xs-12">
                                                 <label  for="population"  id="preinput" class="col-xs-5"> POPULATION : </label>
-                                                <textarea type="text"  style="height: 200px" name="population"  placeholder="Enter population"
-                                                       value="<?php echo $population; ?>" id="inputid" class="col-xs-7"></textarea>
+                                                <textarea name="population" id="inputid" style="height: 200px" class="col-xs-7"><?php echo $population?></textarea>
                                             </div>
 
                                             <div class="col-xs-12">
@@ -199,19 +198,16 @@ ob_end_flush();
 
                                             <div class="col-xs-12">
                                                 <label  for="commonFood"  id="preinput" class="col-xs-5"> COMMON FOOD : </label>
-                                                <textarea type="text" style="height: 200px"  name="commonFood"  placeholder="Enter commonFood"
-                                                       value="<?php echo $commonFood; ?>" id="inputid" class="col-xs-7"></textarea>
+                                                <textarea name="commonFood" id="inputid" style="height: 200px" class="col-xs-7"><?php echo $commonFood?></textarea>
                                             </div>
 
                                             <div class="col-xs-12">
                                                 <label  for="bibliography"  id="preinput" class="col-xs-5"> BIBLIOGRAPHY : </label>
-                                                <textarea type="text"  style="height: 300px" name="bibliography"  placeholder="Enter bibliography"
-                                                       value="<?php echo $bibliography; ?>" id="inputid" class="col-xs-7"></textarea>
+                                                <textarea name="bibliography" id="inputid" style="height: 200px" class="col-xs-7"><?php echo $bibliography?></textarea>
                                             </div>
                                             <div class="col-xs-12">
                                                 <label  for="conservation"  id="preinput" class="col-xs-5"> CONSERVATION : </label>
-                                                <textarea type="text"   style="height: 250px" name="conservation"  placeholder="Enter conservation"
-                                                       value="<?php echo $conservation; ?>" id="inputid"  class="col-xs-7"></textarea>
+                                                <textarea name="conservation" id="inputid" style="height: 200px" class="col-xs-7"><?php echo $conservation?></textarea>
                                             </div>
 
 

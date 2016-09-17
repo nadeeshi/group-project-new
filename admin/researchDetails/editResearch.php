@@ -47,7 +47,7 @@ if(isset($_GET['id']))
         if($updated)
         {
             $msg="Successfully Updated!!";
-            header('Location:viewResearch.php');
+            header('Location:editResearch.php');
         }
     }
 }  //update ends here
@@ -122,6 +122,7 @@ ob_end_flush();
                                     $threats=$profile['threats'];
                                     $conservationActions=$profile['conservationActions'];
                                     $credits=$profile['credits'];
+                                    $bibliography=$profile['bibliography'];
                                     $citation=$profile['citation'];
                                     $disclaimer=$profile['disclaimer'];
                                     $eResources=$profile['eResources'];
@@ -142,9 +143,10 @@ ob_end_flush();
                                             </div>
                                             <div class="col-xs-12">
                                                 <label for="kingdom" id="preinput" class="col-xs-5"> KINGDOM : </label>
-                                                <input type="text"  name="kingdom"  placeholder="Enter  kingdom"
-                                                       value="<?php echo $kingdom; ?>" id="inputid" class="col-xs-7"/>
+                                                <input type="text"   name="kingdom" required placeholder="Enter  kingdom"
+                                                value="<?php echo $kingdom; ?>" id="inputid" class="col-xs-7"/>
                                             </div>
+
                                             <div class="col-xs-12">
                                                 <label  for="phylum"  id="preinput" class="col-xs-5"> PHYLUM : </label>
                                                 <input type="text"   name="phylum"  placeholder="Enter phylum"
@@ -172,18 +174,15 @@ ob_end_flush();
                                             </div>
                                             <div class="col-xs-12">
                                                 <label  for="synonyms"  id="preinput" class="col-xs-5"> SYNONYMS : </label>
-                                                <textarea   style="height: 100px" name="synonyms"  placeholder="Enter synonyms"
-                                                       contextmenu="<?php echo $synonyms; ?>"  class="col-xs-7"></textarea>
+                                                <textarea name="synonyms" id="inputid" style="height: 200px" class="col-xs-7"><?php echo $synonyms?></textarea>
                                             </div>
                                             <div class="col-xs-12">
                                                 <label  for="commonNames"  id="preinput" class="col-xs-5"> COMMON NAMES : </label>
-                                                <textarea type="text"  style="height: 100px" name="commonNames"  placeholder="Enter commonNames"
-                                                       value="<?php echo $commonNames; ?>" id="inputid" class="col-xs-7"></textarea>
+                                                <textarea name="commonNames" id="inputid" style="height: 200px" class="col-xs-7"><?php echo $commonNames?></textarea>
                                             </div>
                                             <div class="col-xs-12">
                                                 <label  for="taxonomicNotes"  id="preinput" class="col-xs-5"> TAXONOMIC NOTES : </label>
-                                                <textarea type="text"  style="height: 300px" name="taxonomicNotes"  placeholder="Enter taxonomicNotes"
-                                                       value="<?php echo $taxonomicNotes; ?>" id="inputid" class="col-xs-7"></textarea>
+                                                <textarea name="taxonomicNotes" id="inputid" style="height: 200px" class="col-xs-7"><?php echo $taxonomicNotes?></textarea>
                                             </div>
                                             <div class="col-xs-12">
                                                 <label  for="redListCategory"  id="preinput" class="col-xs-5"> RED LIST CATEGORY : </label>
@@ -199,77 +198,63 @@ ob_end_flush();
 
                                             <div class="col-xs-12">
                                                 <label  for="more1"  id="preinput" class="col-xs-5"> MORE : </label>
-                                                <textarea type="text"   style="height: 300px" name="more1"  placeholder="Enter more1"
-                                                       value="<?php echo $more1; ?>" id="inputid" class="col-xs-7"></textarea>
+                                                <textarea name="more1" id="inputid" style="height: 300px" class="col-xs-7"><?php echo $more1?></textarea>
                                             </div>
 
                                             <div class="col-xs-12">
                                                 <label  for="description"  id="preinput" class="col-xs-5"> DESCRIPTION : </label>
-                                                <textarea type="text" style="height: 300px"  name="description"  placeholder="Enter description"
-                                                       value="<?php echo $description; ?>" id="inputid" class="col-xs-7"></textarea>
+                                                <textarea name="description" id="inputid" style="height: 300px" class="col-xs-7"><?php echo $description?></textarea>
                                             </div>
 
                                             <div class="col-xs-12">
                                                 <label  for="countryOccurrences"  id="preinput" class="col-xs-5"> COUNTRY OCCURRENCES : </label>
-                                                <textarea type="text"  style="height: 300px" name="countryOccurrences"  placeholder="Enter  countryOccurrences"
-                                                       value="<?php echo $countryOccurrences; ?>" id="inputid" class="col-xs-7"></textarea>
+                                                <textarea name="countryOccurrences" id="inputid" style="height: 300px" class="col-xs-7"><?php echo $countryOccurrences?></textarea>
                                             </div>
 
                                             <div class="col-xs-12">
                                                 <label  for="more2"  id="preinput" class="col-xs-5"> MORE : </label>
-                                                <textarea type="text" style="height: 300px"  name="more2"  placeholder="Enter more2"
-                                                       value="<?php echo $more2; ?>" id="inputid" class="col-xs-7"></textarea>
+                                                <textarea name="more2" id="inputid" style="height: 300px" class="col-xs-7"><?php echo $more2?></textarea>
                                             </div>
 
                                             <div class="col-xs-12">
                                                 <label  for="population"  id="preinput" class="col-xs-5"> POPULATION : </label>
-                                                <textarea type="text" style="height: 250px"  name="population"  placeholder="Enter population"
-                                                       value="<?php echo $population; ?>" id="inputid" class="col-xs-7"></textarea>
+                                                <textarea name="population" id="inputid" style="height: 250px" class="col-xs-7"><?php echo $population?></textarea>
                                             </div>
                                             <div class="col-xs-12">
                                                 <label  for="h_E"  id="preinput" class="col-xs-5"> H & E : </label>
-                                                <textarea type="text" style="height: 250px"  name="h_E"  placeholder="Enter h_E"
-                                                       value="<?php echo $h_E; ?>" id="inputid" class="col-xs-7"></textarea>
+                                                <textarea name="h_E" id="inputid" style="height: 250px" class="col-xs-7"><?php echo $h_E?></textarea>
                                             </div>
                                             <div class="col-xs-12">
                                                 <label  for="threats"  id="preinput" class="col-xs-5"> THREATS : </label>
-                                                <textarea type="text"  style="height: 250px" name="threats"  placeholder="Enter threats"
-                                                       value="<?php echo $threats; ?>" id="inputid" class="col-xs-7"></textarea>
+                                                <textarea name="threats" id="inputid" style="height: 250px" class="col-xs-7"><?php echo $threats?></textarea>
                                             </div>
                                             <div class="col-xs-12">
                                                 <label  for="conservationActions"  id="preinput" class="col-xs-5"> CONSERVATION ACTION : </label>
-                                                <textarea type="text" style="height: 300px"  name="conservationActions"  placeholder="Enter conservationActions"
-                                                       value="<?php echo $conservationActions; ?>" id="inputid" class="col-xs-7"></textarea>
+                                                <textarea name="conservationActions" id="inputid" style="height: 300px" class="col-xs-7"><?php echo $conservationActions?></textarea>
                                             </div>
                                             <div class="col-xs-12">
                                                 <label  for="credits"  id="preinput" class="col-xs-5"> CREDITS : </label>
-                                                <textarea type="text"  style="height: 250px" name="credits"  placeholder="Enter credits"
-                                                       value="<?php echo $credits; ?>" id="inputid" class="col-xs-7"></textarea>
+                                                <textarea name="credits" id="inputid" style="height: 300px" class="col-xs-7"><?php echo $credits?></textarea>
                                             </div>
                                             <div class="col-xs-12">
                                                 <label  for="bibliography"  id="preinput" class="col-xs-5"> BIBLIOGRAPHY : </label>
-                                                <textarea type="text" style="height: 300px"  name="bibliography"  placeholder="Enter bibliography"
-                                                       value="<?php echo $bibliography; ?>" id="inputid" class="col-xs-7"></textarea>
+                                                <textarea name="bibliography" id="inputid" style="height: 300px" class="col-xs-7"><?php echo $bibliography?></textarea>
                                             </div>
                                             <div class="col-xs-12">
                                                 <label  for="citation"  id="preinput" class="col-xs-5"> CITATION  : </label>
-                                                <textarea type="text"  style="height: 250px" name="citation"  placeholder="Enter citation"
-                                                       value="<?php echo $citation; ?>" id="inputid" class="col-xs-7"></textarea>
+                                                <textarea name="citation" id="inputid" style="height: 250px" class="col-xs-7"><?php echo $citation?></textarea>
                                             </div>
                                             <div class="col-xs-12">
                                                 <label  for="disclaimer"  id="preinput" class="col-xs-5"> DISCLAIMER : </label>
-                                                <textarea type="text"  style="height: 250px" name="disclaimer"  placeholder="Enter disclaimer"
-                                                       value="<?php echo $disclaimer; ?>" id="inputid" class="col-xs-7"></textarea>
+                                                <textarea name="disclaimer" id="inputid" style="height: 250px" class="col-xs-7"><?php echo $disclaimer?></textarea>
                                             </div>
                                             <div class="col-xs-12">
                                                 <label  for="eResources"  id="preinput" class="col-xs-5"> EXTERNAL RESOURCES : </label>
-                                                <textarea type="text" style="height: 250px"  name="eResources"  placeholder="Enter eResources"
-                                                       value="<?php echo $eResources; ?>" id="inputid" class="col-xs-7"></textarea>
+                                                <textarea name="eResources" id="inputid" style="height: 250px" class="col-xs-7"><?php echo $eResources?></textarea>
                                             </div>
                                             <div class="col-xs-12">
                                                 <label  for="others"  id="preinput" class="col-xs-5"> OTHER : </label>
-                                                <textarea type="text"  style="height: 300px" name="others"  placeholder="Enter others"
-                                                       value="<?php echo $others; ?>" id="inputid" class="col-xs-7"></textarea>
+                                                <textarea name="others" id="inputid" style="height: 300px" class="col-xs-7"><?php echo $others?></textarea>
                                             </div>
 
 
