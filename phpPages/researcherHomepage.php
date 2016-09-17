@@ -8,7 +8,7 @@
   <script src="../assets/bootstrap/jquary.js"></script> 
   <script src="../assets/bootstrap/bootstrapjs.js"></script> 
   <script src="../js/jssor.slider.mini.js"></script>
-  
+
    
     
 </head>
@@ -21,11 +21,11 @@
 		<?php include '../IncludedFiles/navbarTemplate.php'; ?>
 	</div>
 
-  <div class="row">
+  
   	<div class="col-sm-8 col-sm-push-2 col-xs-12 insert-form">
   		<?php include '../IncludedFiles/headerImage.php'; ?>
   	</div>
-  </div>
+  
 
 
 

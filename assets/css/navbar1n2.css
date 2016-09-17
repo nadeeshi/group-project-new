@@ -131,12 +131,13 @@
 div.profile-picture {
 	border-style: solid;
 	border-color: #c16d28;
-	border-radius: 50%;
+	border-radius: 6px;
 	width: 100px;
 	height: 100px;
 	margin: auto;
 	margin-top: 15px;
-	background-image: url('../../img/propic.png');
+	background-image: url('../img/propic.png');
+	background-position: center;
 }
 
 
@@ -159,11 +160,14 @@ div.profile-picture {
 	}
 }
 
-@media(max-width: 768px){
+/*@media(max-width: 768px){
 	.min-link > li> a:focus, .min-link >li >a:hover{
 		background-color: #c16d28;
 	}
-}
+}*/
 
+.min-link >li> a:hover, .min-link >li> a:focus{
+	background-color: #c16d28;
+}
 
 
