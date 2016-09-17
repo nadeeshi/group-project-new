@@ -107,9 +107,7 @@
                     <li>
                         <a href="../researcherDetails/researcherDetailsValidate.php"><i class="fa fa-bell "></i>Researchers Details</a>
                     </li>
-                    <li>
-                        <a href="publicDetails.php"><i class="fa fa-circle-o "></i>Public Viewers Details</a>
-                    </li>
+
 
 
                 </ul>
@@ -125,12 +123,7 @@
                     <li>
                         <a href="listOfResearch.php"><i class="fa fa-coffee"></i>list of Research</a>
                     </li>
-                    <li>
-                        <a href="pricing.html"><i class="fa fa-flash "></i>More details of Research</a>
-                    </li>
-                    <li>
-                        <a href="component.html"><i class="fa fa-key "></i>Components</a>
-                    </li>
+
                     <li>
                         <a href="researchDetails.php"><i class="fa fa-send "></i>Add New Research Details</a>
                     </li>

@@ -7,7 +7,7 @@ if(isset($_GET['id'])!="")
     $delete=mysql_query("DELETE FROM admin_details WHERE id='$delete'");
     if($delete)
     {
-        header("Location:adminDetails.php");
+        header("Location:adminDetailsValidate.php");
     }
     else
     {

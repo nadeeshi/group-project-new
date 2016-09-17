@@ -15,7 +15,7 @@ include("connect.php");
     {
         $msg="Successfully Updated!!";
         echo "<script type='text/javascript'>alert('$msg');</script>";
-        header('Location:adminDetails.php');
+        header('Location:adminDetailsValidate.php');
     }
     else
     {

@@ -1,7 +1,7 @@
 <?php
 // define variables and set to empty values
-$usernameErr = $usermailErr = $usermobileErr   = "";
-$username = $usermail = $usermobile =   "";
+$usernameErr = $usermailErr = $usermobileErr   = $userpasswordErr ="";
+$username = $usermail = $usermobile = $userpassword=  "";
 $course = array();
 //var_dump($_POST['gender']);
 //exit;
@@ -31,6 +31,7 @@ function initialize(){
     $var['username'] = clean($_POST['username']);
     $var['usermail'] = clean($_POST['usermail']);
     $var['usermobile'] = clean($_POST['usermobile']);
+    $var['userpassword'] = clean($_POST['userpassword']);
 
 
 
@@ -43,6 +44,7 @@ function validate_errors($var) {    //is an array being passed into this functio
     $errors['username'] = validateUserName($var['username']);//should return error string or ''
     $errors['usermail'] = validateEmailId($var['usermail']);
     $errors['usermobile'] = validateMobileNo($var['usermobile']);
+    $errors['userpassword'] = validatePassword($var['userpassword']);
 
 
     return $errors;
@@ -84,15 +86,32 @@ function validateMobileNo($umobile) {
 
     if(empty($umobile)) {
         global $usermobileErr;
-        $usermobileErr = "Mobile NO is required";
+        $usermobileErr = "Username is required";
         return $usermobileErr;
-    } else if (!preg_match("/^\d{10}$/", $umobile)){ // checks if username contains only letters and digits
+    } else if (!preg_match("/^[1-9]{1}[0-9]{9}$/", $umobile)){ // checks if username contains only letters and digits
         global $usermobileErr;
         $usermobileErr = "you have entered Invalid Mobile Number";
         return $usermobileErr;
     } else {
         global $usermobile;
         $usermobile = $umobile;
+        return '';
+    }
+}
+
+function validatePassword($upassword) {
+
+    if(empty($upassword)) {
+        global $userpasswordErr;
+        $userpasswordErr = "Password is required";
+        return $userpasswordErr;
+    } else if (!preg_match("/^[1-9]{1}[0-9]{9}$/", $upassword)){ // checks if username contains only letters and digits
+        global $userpasswordErr;
+        $userpasswordErr = "you have entered Invalid Password Number";
+        return $userpasswordErr;
+    } else {
+        global $userpassword;
+        $userpassword = $upassword;
         return '';
     }
 }
@@ -188,6 +207,9 @@ function validateMobileNo($umobile) {
                                     <div class="col-xs-12">
                                         <label for="usermobile" class="col-xs-5">Mobile No:</label>
                                         <input type="text" name="usermobile" id="inputid" required  class="col-xs-6" value="<?php echo $usermobile; ?>" /><span class="error">* <?php echo $usermobileErr; ?></span><br/><br/></div>
+                                    <div class="col-xs-12">
+                                        <label for="userpassword" class="col-xs-5">Password No:</label>
+                                        <input type="text" name="userpassword" id="inputid" required  class="col-xs-6" value="<?php echo $userpassword; ?>" /><span class="error">* <?php echo $userpasswordErr; ?></span><br/><br/></div>
 
                                     <input type = "submit" value="Submit" name="submit">
                                 </form>
@@ -217,9 +239,9 @@ function validateMobileNo($umobile) {
                                 $password=($_POST['password']);*/
 
 
-                                if(($username != '' ) && ($usermail != '') && ($m=$usermobile != '')){
-                                    $update=mysql_query("INSERT INTO researcher_details(username,emailid,mobileno,created)VALUES
-                                      ('$username','$usermail','$usermobile',now())");
+                                if(($username != '' ) && ($usermail != '')){
+                                    $update=mysql_query("INSERT INTO admin_details(username,emailid,mobileno,password,created)VALUES
+                                      ('$username','$usermail','$usermobile','$userpassword',now())");
 
                                     if($update)
                                     {
@@ -275,7 +297,7 @@ function validateMobileNo($umobile) {
 
                         <?php
                         include('connect.php');
-                        $select=mysql_query("SELECT * FROM researcher_details order by id desc");
+                        $select=mysql_query("SELECT * FROM admin_details order by id desc");
                         $i=1;
                         while($userrow=mysql_fetch_array($select))
                         {
@@ -288,8 +310,8 @@ function validateMobileNo($umobile) {
 
                             <div class="display">
                                 <p> RESEARCHER NAME : <span style="color: #125acd"><?php echo $username; ?></span>
-                                    <a href="editResearchers.php?id=<?php echo $id; ?>"><span class="edit" title="Edit" style="color: #ff0084"> Edit </span></a>
-                                    <a href="deleteResearchers.php?id=<?php echo $id; ?>"
+                                    <a href="editAdmin.php?id=<?php echo $id; ?>"><span class="edit" title="Edit" style="color: #ff0084"> Edit </span></a>
+                                    <a href="deleteAdmin.php?id=<?php echo $id; ?>"
                                        onclick="return confirm('Are you sure you wish to delete this Record?');">
                                         <span class="delete" title="Delete" style="color: #ff0084"> Delete </span></a>
                                 </p>
