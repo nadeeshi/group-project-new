@@ -65,7 +65,7 @@ if (isset($_POST['signup'])) {
 <?php include ("mainnav.php") ?>
 
 
-<div class="container" style="padding-top:120px;">
+<div class="container" style="padding-top:120px; padding-bottom:120px;">
     <div class="row">
         <div class="col-xs-4 col-xs-offset-4 well">
             <form role="form" action="" "<?php echo $_SERVER['PHP_SELF']; ?>" method="post" name="signupform">

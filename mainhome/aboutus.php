@@ -22,7 +22,7 @@
 	<div class="container-fluid">
         <?php include("mainnav.php")?>
 
-    <div class="container-fluid" style="padding-top:30px;">
+    <div class="container-fluid" style="padding-top:120px;">
 	   <h1>About BatFacts.com</h1>
 	   <p>BatFacts.com is a web system specially designed for researchers and those who are interested on bats to share 
 	   information about bats. This system provides a platform for researchers to input, store and retrieve research

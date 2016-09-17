@@ -28,7 +28,7 @@
         <?php include ("headerimage.php") ?>
     </div>
 
-    <div class="container-fluid" style="padding-top:30px;">
+    <div class="container-fluid" style="padding-top:30px; padding-bottom:200px;">
       
         <h2><a name="articles" style="text-decoration:none;">Recent Articles</a></h2>
         <div class="row">
