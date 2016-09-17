@@ -1,6 +1,11 @@
 @import 'https://fonts.googleapis.com/css?family=Chewy';
 @import 'https://fonts.googleapis.com/css?family=Source+Code+Pro';
 @import 'https://fonts.googleapis.com/css?family=Shadows+Into+Light';
+@import 'https://fonts.googleapis.com/css?family=Oxygen';
+
+.body {
+	font-family:  'Oxygen', sans-serif;
+}
 
 /*navbar1*/
 
@@ -16,6 +21,7 @@
 	z-index:2000; 
 	border-bottom:none; 
 	border-radius:0;
+	font-family:  'Oxygen', sans-serif;
 
 }
 .navbar-li > li > a{
@@ -68,6 +74,7 @@
 	border-color: #ffffff;
 	font-size: 20px;
 	color: #000000; 
+	font-family:  'Oxygen', sans-serif;
 }
 .dropdwncustom{
 	background-color: #ffffff;
@@ -110,6 +117,7 @@
 
 .list-of-content {
 	margin-top: 40px;
+	font-family:  'Oxygen', sans-serif;
 }
 .list-container{
 	background-color: #4c4743;
