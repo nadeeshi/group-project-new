@@ -278,7 +278,7 @@ require_once('auth.php');
                                 <div style="margin-top: 20px;">
                                     <?php
                                     include('connect.php');
-                                    $select=mysql_query("SELECT * FROM research_details order by id desc");
+                                    $select=mysql_query( "SELECT * FROM research_details order by id desc");
                                     $i=1;
                                     while($userrow=mysql_fetch_array($select))
                                     {
