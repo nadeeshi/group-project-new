@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,7 +40,11 @@
         			<button type="submit" class="btn btn-default">Search</button>
       			</form>
       			<ul class="nav navbar-nav  navbar-right navbar-li">
-        			<li class="btn1"><a href="#">Hi Name</a></li> 
+              <?php if (isset($_SESSION['usr_id'])) { ?>
+                <li class="btn1" style="font-size: 18px !important; color:#ffffff; padding-top:13px;">Hi <?php echo $_SESSION['usr_name']; ?></li>
+                <li class="btn1"><a href="../mainhome/logout.php" style="font-size:18px; padding-top:18px !important;">Log Out</a></li>
+
+              <?php } ?>
               <li class="min-link"><a href="../phpPages/researcherHomePage.php">Home</a></li>
               <li class="min-link"><a href="#">Add Information</a></li>
               <li class="min-link"><a href="#">Update Information</a></li>

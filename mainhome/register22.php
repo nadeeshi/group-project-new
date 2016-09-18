@@ -24,7 +24,7 @@ if (isset($_POST['reg'])) {
 
   
     if (!$error) {
-        if(mysqli_query($con, "INSERT INTO users(d1,d1u,d1y,d2,d2u,d2y,d3,d3u,d3y,other) VALUES('" . $d1 . "','" . $d1u . "','" . $d1y . "','" . $d2 . "','" . $d2u . "','" . $d2y . "','" . $d3 . "','" . $d3u . "','" . $d3y . "','".$other."')"))
+        if(mysqli_query($con, "INSERT INTO users(d1,d1u,d1y,d2,d2u,d2y,d3,d3u,d3y,other) VALUES('" . $d1 . "','" . $d1u . "','" . $d1y . "','" . $d2 . "','" . $d2u . "','" . $d2y . "','" . $d3 . "','" . $d3u . "','" . $d3y . "','" .$other. "')"))
     
            {
             $successmsg = "You have successfully registered to the system. You will receive an email containing your password. Thank you ! ";
