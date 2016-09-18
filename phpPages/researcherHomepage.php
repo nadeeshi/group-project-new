@@ -21,9 +21,9 @@
 	</div>
 
   <div class="row">
-    <div class="col-xs-10 col-xs-push-2">
+    <div class="col-sm-8 col-sm-push-2 col-xs-12">
       <div class="welcome-massage">
-        <p>Welcome to Researchers' Home Page</p>
+        <p>Welcome to BatsInfo</p>
       </div>
     </div>
   </div>
@@ -36,9 +36,9 @@
   </div>
 
   <div class="row ">
-    <div class="col-xs-10 col-xs-push-2 article-container">
+    <div class="col-sm-10 col-sm-push-2 col-xs-12 article-container">
       <div class="row">
-        <div class="col-xs-4">
+        <div class=" col-xs-4">
           <h3>Article 1</h3>
           <p>
             Bats are mammals of the order Chiroptera (/kaɪˈrɒptərə/; from the Ancient Greek: χείρ - cheir, "hand"[1] 
@@ -49,7 +49,7 @@
             with a thin membrane or patagium.<a href="">Read more...</a>
           </p>
         </div>
-        <div class="col-xs-4">
+        <div class=" col-xs-4">
           <h3>Article 2</h3>
           <p>
             Bats are the second largest order of mammals (after the rodents), representing about 20% of all classified
@@ -60,7 +60,7 @@
             blood.<a href="">Read more...</a>
           </p>
         </div>
-        <div class="col-xs-4">
+        <div class=" col-xs-4">
           <h3>Article 3</h3>
           <p>
             Bats are present throughout most of the world, with the exception of extremely cold regions. They perform 
@@ -85,7 +85,7 @@
  <!--Footer -->
   
   <div class="row">
-    <div class="col-xs-10 col-xs-push-2">
+    <div class="col-sm-10 col-sm-push-2 col-xs-12">
       <?php include "../IncludedFiles/footer.php" ?>
     </div>  
   </div>

@@ -165,44 +165,44 @@
         </div>
         <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden;">
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="../assets/img/002.jpg" />
-                <img data-u="thumb" src="../assets/img/thumb-002.jpg" />
+                <img data-u="image" src="../assets/img/1.jpg" />
+                <img data-u="thumb" src="../assets/img/1.jpg" />
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="../assets/img/003.jpg" />
-                <img data-u="thumb" src="../assets/img/thumb-003.jpg" />
+                <img data-u="image" src="../assets/img/2.jpg" />
+                <img data-u="thumb" src="../assets/img/2.jpg" />
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="../assets/img/004.jpg" />
-                <img data-u="thumb" src="../assets/img/thumb-004.jpg" />
+                <img data-u="image" src="../assets/img/12.jpg" />
+                <img data-u="thumb" src="../assets/img/12.jpg" />
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="../assets/img/005.jpg" />
-                <img data-u="thumb" src="../assets/img/thumb-005.jpg" />
+                <img data-u="image" src="../assets/img/4.jpg" />
+                <img data-u="thumb" src="../assets/img/4.jpg" />
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="../assets/img/006.jpg" />
-                <img data-u="thumb" src="../assets/img/thumb-006.jpg" />
+                <img data-u="image" src="../assets/img/5.jpg" />
+                <img data-u="thumb" src="../assets/img/5.jpg" />
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="../assets/img/007.jpg" />
-                <img data-u="thumb" src="../assets/img/thumb-007.jpg" />
+                <img data-u="image" src="../assets/img/6.jpg" />
+                <img data-u="thumb" src="../assets/img/6.jpg" />
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="../assets/img/008.jpg" />
-                <img data-u="thumb" src="../assets/img/008.jpg" />
+                <img data-u="image" src="../assets/img/7.jpg" />
+                <img data-u="thumb" src="../assets/img/7.jpg" />
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="../assets/img/009.jpg" />
-                <img data-u="thumb" src="../assets/img/009.jpg" />
+                <img data-u="image" src="../assets/img/11.jpg" />
+                <img data-u="thumb" src="../assets/img/11.jpg" />
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="../assets/img/010.jpg" />
-                <img data-u="thumb" src="../assets/img/010.jpg" />
+                <img data-u="image" src="../assets/img/9.jpg" />
+                <img data-u="thumb" src="../assets/img/9.jpg" />
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="../assets/img/011.jpg" />
-                <img data-u="thumb" src="../assets/img/thumb-011.jpg" />
+                <img data-u="image" src="../assets/img/10.jpg" />
+                <img data-u="thumb" src="../assets/img/10.jpg" />
             </div>
             <a data-u="add" href="http://www.jssor.com" style="display:none">Jssor Slider</a>
         
