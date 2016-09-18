@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE php>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -51,7 +51,6 @@
 
 
     </style>
-
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/navbar1n2.css" rel="stylesheet">
     <script src="js/jquary.js"></script>
@@ -118,7 +117,7 @@
             <ol class="breadcrumb">
                 <li><a href="#">Home</a></li>
                 <li><a href="index.html">Go Help Center</a></li>
-                <li><a href="p2-account.html">Go Back</a></li>
+                <li><a href="p2-%20privacy%20saf.html">Go Back</a></li>
                 <li class="active">You are here</li>
             </ol>
 
@@ -128,8 +127,8 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <h1 class="text-center"><font size="8px" color="#00bfff"> Frequently Asked Questions on Account Settings </font></h1>
-            <h1 class="text-center"><font size="6px" color="#483d8b"> Creating an Account </font></h1>
+            <h1 class="text-center"><font size="8px" color="#00bfff"> Frequently Asked Questions on Privacy and Security </font></h1>
+            <h1 class="text-center"><font size="6px" color="#483d8b"> Hacked and Fake accounts </font></h1>
 
         </div>
     </div>
@@ -148,7 +147,7 @@
                             <div data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="panel-heading" role="tab" id="headingOne">
                                 <h4 class="panel-title">
                                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        How do I sign up for an account?
+                                        My account was hacked by someone
                                     </a>
                                     <span  class="pull-right">
                                         <i class="fa fa-caret-square-o-down"></i>
@@ -165,7 +164,7 @@
                             <div data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="panel-heading" role="tab" id="headingTwo">
                                 <h4 class="panel-title">
                                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                        How do I verify my account?
+                                        What should I do if someone hack my account?
                                     </a>
                                     <span  class="pull-right">
                                         <i class="fa fa-caret-square-o-down"></i>
@@ -182,7 +181,7 @@
                             <div data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="panel-heading" role="tab" id="headingThree">
                                 <h4 class="panel-title">
                                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                        Why my user name was rejected during sign up?
+                                        I can find some fake accounts in this system.
                                     </a>
                                     <span  class="pull-right">
                                         <i class="fa fa-caret-square-o-down"></i>
@@ -191,7 +190,7 @@
                             </div>
                             <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                 <div class="panel-body">
-                                     jgsvsdsjjsldsdns dmsndskdj sjdnjsal
+                                    jgsvsdsjjsldsdns dmsndskdj sjdnjsal
                                 </div>
                             </div>
                         </div>
@@ -199,7 +198,7 @@
                             <div data-toggle="collapse" data-parent="#accordion" href="#collapsefour" class="panel-heading" role="tab" id="headingfour">
                                 <h4 class="panel-title">
                                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefour" aria-expanded="true" aria-controls="collapsefour">
-                                        Why my password was rejected during sign up?
+                                        What can I do if there is any fake accounts?
                                     </a>
                                     <span  class="pull-right">
                                         <i class="fa fa-caret-square-o-down"></i>
@@ -216,7 +215,7 @@
                             <div data-toggle="collapse" data-parent="#accordion" href="#collapsefive" class="panel-heading" role="tab" id="headingfive">
                                 <h4 class="panel-title">
                                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefive" aria-expanded="true" aria-controls="collapsefive">
-                                        I didn't get my username and password via mail
+                                        Can I block someone?
                                     </a>
                                     <span  class="pull-right">
                                         <i class="fa fa-caret-square-o-down"></i>
@@ -229,61 +228,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="panel panel-default">
-                            <div data-toggle="collapse" data-parent="#accordion" href="#collapsesix" class="panel-heading" role="tab" id="headingsix">
-                                <h4 class="panel-title">
-                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsesix" aria-expanded="true" aria-controls="collapsesix">
-                                        What is researcher account and what makes it to be differ?
-                                    </a>
-                                    <span  class="pull-right">
-                                        <i class="fa fa-caret-square-o-down"></i>
-                                    </span>
-                                </h4>
-                            </div>
-                            <div id="collapsesix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingsix">
-                                <div class="panel-body">
-                                    jgsvsdsjjsldsdns dmsndskdj sjdnjsal
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div data-toggle="collapse" data-parent="#accordion" href="#collapseseven" class="panel-heading" role="tab" id="headingseven">
-                                <h4 class="panel-title">
-                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseseven" aria-expanded="true" aria-controls="collapseseven">
-                                        What is needed to create a researcher account?
-                                    </a>
-                                    <span  class="pull-right">
-                                        <i class="fa fa-caret-square-o-down"></i>
-                                    </span>
-                                </h4>
-                            </div>
-                            <div id="collapseseven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingseven">
-                                <div class="panel-body">
-                                    jgsvsdsjjsldsdns dmsndskdj sjdnjsal
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                                <div data-toggle="collapse" data-parent="#accordion" href="#collapseeight" class="panel-heading" role="tab" id="headingeight">
-                                    <h4 class="panel-title">
-                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseeight" aria-expanded="true" aria-controls="collapseeight">
-                                            What is public user account about?
-                                        </a>
-                                        <span  class="pull-right">
-                                        <i class="fa fa-caret-square-o-down"></i>
-                                    </span>
-                                    </h4>
-                                </div>
-                                <div id="collapseeight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingeight">
-                                    <div class="panel-body">
-                                        jgsvsdsjjsldsdns dmsndskdj sjdnjsal
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
+        </div>
 
         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
             <div class="panel panel-success">
@@ -291,9 +240,11 @@
                     Help through quick links !!
                     <hr />
                     <ul>
-                        <li><a href="#">Create an account</a></li>
-                        <li><a href="#">Delete an account</a></li>
-                        <li><a href="#">Login to my gmail to verify</a></li>
+                        <li><a href="#">Login to account</a></li>
+                        <li><a href="#">Go to Settings</a></li>
+                        <li><a href="#">Change Password</a></li>
+                        <li><a href="#">Delete my account</a></li>
+
                         <li><a href="#">Contact admin panel</a></li>
 
                     </ul>

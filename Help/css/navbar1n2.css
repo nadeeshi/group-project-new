@@ -4,8 +4,8 @@
 
 
 .navbar1{
-	background-color: #000000;
-	margin-top: -0.75%;
+	background-color: #4c4743;
+	margin-top: -0.1%;
 	margin-left: -0.75%;
 	margin-right: -0.75%;
 	font-size: 15px;
@@ -28,6 +28,10 @@
 	margin-top: 8px;
 	margin-bottom: 4px;
 }
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus{
+	color: #ffffff;
+}
 /*/overrides*/
 
 
@@ -39,7 +43,7 @@
 	background-color:#ffffff;
 	border-color: #ffffff;
 	font-size: 20px;
-	color: #000000; 
+	color: #000000;
 }
 .dropdwncustom{
 	background-color: #ffffff;
