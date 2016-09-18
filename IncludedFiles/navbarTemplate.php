@@ -46,9 +46,9 @@ include_once '../mainhome/dbconnect.php';
               <li class="min-link"><a href="#">Update Information</a></li>
               <li class="min-link"><a href="#">Delete Information</a></li>
               <li class="min-link"><a href="../forum/forum.php">Forum</a></li>
-              <li class="min-link"><a href="#">News</a></li>
+              <li class="min-link"><a href="../batnews/grid31.php">News</a></li>
               <li class="min-link"><a href="../Help/index.php">Help</a></li>
-              <li class="min-link"><a href="#">About Us</a></li>
+              <li class="min-link"><a href="../phpPages/aboutUs.php">About Us</a></li>
      			</ul> 
     		</div> <!-- /.navbar-collapse -->
       </div>
@@ -68,9 +68,9 @@ include_once '../mainhome/dbconnect.php';
 				<li><a href="#">Update Information</a></li>
 				<li><a href="#">Delete Information</a></li>
 				<li><a href="../forum/forum.php">Forum</a></li>
-				<li><a href="#">News</a></li>
+				<li><a href="../batnews/grid31.php">News</a></li>
         <li><a href="../Help/index.php">Help</a></li>
-				<li><a href="#">About Us</a></li>
+				<li><a href="../phpPages/aboutUs.php">About Us</a></li>
 			</ul>
 		</div>
     <!-- end of the side navigation bar -->
