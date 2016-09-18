@@ -1,3 +1,8 @@
+<?php
+session_start();
+include_once '../mainhome/dbconnect.php';
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,7 +40,7 @@
         			<button type="submit" class="btn btn-default">Search</button>
       			</form>
       			<ul class="nav navbar-nav  navbar-right navbar-li">
-        			<li class="btn1"><a href="#">Hi Name</a></li> 
+        			<li class="btn1"><a href="#">Hi <?php echo $_SESSION['usr_name']; ?></a></li> 
               <li class="min-link"><a href="../phpPages/researcherHomePage.php">Home</a></li>
               <li class="min-link"><a href="#">Add Information</a></li>
               <li class="min-link"><a href="#">Update Information</a></li>
