@@ -64,9 +64,9 @@ include_once '../mainhome/dbconnect.php';
  			</div>
 			<ul class="nav nav-pills nav-stacked list-of-content">
 				<li><a href="../phpPages/researcherHomePage.php">Home</a></li>
-				<li><a href="#">Add Information</a></li>
-				<li><a href="#">Update Information</a></li>
-				<li><a href="#">Delete Information</a></li>
+				<li><a href="../insert/insert.php">Add Information</a></li>
+        <li><a href="../insert/update_bat.php">Update Information</a></li>
+        <li><a href="../insert/delete_bat.php">Delete Information</a></li>
 				<li><a href="../forum/forum.php">Forum</a></li>
 				<li><a href="../batnews/grid31.php">News</a></li>
         <li><a href="../Help/index.php">Help</a></li>
