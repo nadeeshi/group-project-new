@@ -27,14 +27,23 @@
 }
 
 .thread-content {
-    margin-left: 16%;
+    border-style: solid;
+    border-color: #e0e0d2;
+    border-radius: 4px;
+    padding: 10px;
+}
+.thread-content > a {
+    color: black;
 }
 
 .table-head {
     margin-left: 10px;
     margin-right: 10px;
 }
-
+.list-content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 
 /*addThread*/

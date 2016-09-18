@@ -16,7 +16,7 @@
       <?php include '../IncludedFiles/navbarTemplate.php'; ?>
     </div>
     <div class="row">
-      <div class="col-sm-8 col-sm-push-2 col-xs-12 insert-form">
+      <div class="col-sm-10 col-sm-push-2 col-xs-12 insert-form">
         <div>
           <h3>About BatsInfo</h3>
           <p>BatsInfo is a web system specially designed for researchers and those who are interested on bats to share 
