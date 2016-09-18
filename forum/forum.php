@@ -5,6 +5,7 @@
 	<link href="../assets/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
 	<link href="../assets/css/forum.css" rel="stylesheet" type="text/css">	
 	<link href="../assets/css/navbar1n2.css" rel="stylesheet" type="text/css">
+	<link href="../assets/css/footer.css" rel="stylesheet">
 	<script src="../assets/bootstrap/jquary.js"></script> 
   	<script src="../assets/bootstrap/bootstrapjs.js"></script>
 </head>
@@ -53,5 +54,17 @@
 			</form>
 		</div>
 	</div>
+
+
+	<!-- start footer -->
+
+	<div class="row">
+	    <div class="col-xs-10 col-xs-push-2">
+	      <?php include "../IncludedFiles/footer.php" ?>
+	    </div>  
+  	</div>
+
+
+	<!-- end of footer -->
 </body>
 </html>

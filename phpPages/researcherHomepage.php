@@ -4,6 +4,7 @@
   <title>nav1</title>
   <link href="../assets/bootstrap/bootstrap.css" rel="stylesheet">
   <link href="../assets/css/navbar1n2.css" rel="stylesheet">
+  <link href="../assets/css/phpPages.css" rel="stylesheet">
   <link href="../assets/css/footer.css" rel="stylesheet">
   <script src="../assets/bootstrap/jquary.js"></script> 
   <script src="../assets/bootstrap/bootstrapjs.js"></script> 
@@ -14,21 +15,28 @@
 </head>
 
 <body>
-  <!--header-frame first -->
- 
-<!--close first bar-->
+
 	<div>
 		<?php include '../IncludedFiles/navbarTemplate.php'; ?>
 	</div>
 
   <div class="row">
-    <div class="col-sm-8 col-sm-push-2 col-xs-12 insert-form">
+    <div class="col-xs-10 col-xs-push-2">
+      <div class="welcome-massage">
+        <p>Welcome to Researchers' Home Page</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-sm-8 col-sm-push-2 col-xs-12 insert-form header-image">
     	<?php include '../IncludedFiles/headerImage.php'; ?>
     </div>
   </div>
 
   <div class="row ">
-    <div class="col-xs-10 col-xs-push-2">
+    <div class="col-xs-10 col-xs-push-2 article-container">
       <div class="row">
         <div class="col-xs-4">
           <h3>Article 1</h3>
@@ -75,9 +83,13 @@
 
 
  <!--Footer -->
-   
-
-
+  
+  <div class="row">
+    <div class="col-xs-10 col-xs-push-2">
+      <?php include "../IncludedFiles/footer.php" ?>
+    </div>  
+  </div>
+<!-- end of footer -->
 
 </body>
 </html>
