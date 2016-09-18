@@ -147,7 +147,7 @@ function validateMobileNo($umobile) {
 
 
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-7">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         Insert data to the Database
@@ -180,7 +180,7 @@ function validateMobileNo($umobile) {
                                 <p><span class="error">* required field.</span></p>
                                 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                                     <div class="col-xs-12">
-                                        <label for="firstname" class="col-xs-5">User Name:</label>
+                                        <label for="firstname" class="col-xs-5">Researcher Name:</label>
                                         <input type="text" name="username"  required id="inputid" class="col-xs-6" value="<?php echo $username; ?>" /><span class="error">* <?php echo $usernameErr; ?></span><br/><br/></div>
                                     <div class="col-xs-12">
                                         <label for="usermail" class="col-xs-5">Email:</label>
@@ -263,7 +263,7 @@ function validateMobileNo($umobile) {
             </div>
 
 
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         Details of Researchers

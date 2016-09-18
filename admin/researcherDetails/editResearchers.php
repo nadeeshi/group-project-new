@@ -49,7 +49,7 @@ ob_end_flush();
 
 
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-8">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         Insert data to the Database
@@ -71,24 +71,24 @@ ob_end_flush();
                                     ?>
                                     <div class="display">
                                         <form action="" method="post" name="insertform">
-                                            <p>
-                                                <label for="name"  id="preinput"> RESEARCHER NAME : </label>
-                                                <input type="text" name="eusername" required placeholder="Enter your name"
+                                            <div class="col-xs-12">
+                                                <label for="name"  id="preinput" class="col-xs-5"> *RESEARCHER NAME : </label>
+                                                <input type="text" name="eusername" required class="col-xs-7" placeholder="Enter your name"
                                                        value="<?php echo $username; ?>" id="inputid" />
-                                            </p>
-                                            <p>
-                                                <label  for="email"  id="preinput"> EMAIL ID : </label>
-                                                <input type="email" name="eusermail" required placeholder="Enter your Email"
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <label  for="email"  id="preinput" class="col-xs-5"> *EMAIL ID : </label>
+                                                <input type="email" name="eusermail" required class="col-xs-7" placeholder="Enter your Email"
                                                        value="<?php echo $usermail; ?>" id="inputid" />
-                                            </p>
-                                            <p>
-                                                <label for="mobile" id="preinput"> MOBILE NUMBER : </label>
-                                                <input type="text" name="eusermobile" required placeholder="Enter your mobile number"
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <label for="mobile" id="preinput" class="col-xs-5"> *MOBILE NUMBER : </label>
+                                                <input type="text" name="eusermobile" required class="col-xs-7" placeholder="Enter your mobile number"
                                                        value="<?php echo $usermobile; ?>" id="inputid" />
-                                            </p>
-                                            <p>
+                                            </div>
+                                            <div class="col-xs-12">
                                                 <input type="submit" name="update" value="Update" id="inputid1" />
-                                            </p>
+                                            </div>
                                         </form>
                                     </div>
                                 <?php } } ?>
