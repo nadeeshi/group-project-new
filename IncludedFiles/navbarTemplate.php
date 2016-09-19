@@ -53,7 +53,7 @@ include_once '../mainhome/dbconnect.php';
               <li class="min-link"><a href="#">Delete Information</a></li>
               <li class="min-link"><a href="../forum/forum.php">Forum</a></li>
               <li class="min-link"><a href="../batnews/grid31.php">News</a></li>
-              <li class="min-link"><a href="../Help/index.php">Help</a></li>
+              <li class="min-link"><a href="../help/index.php">Help</a></li>
               <li class="min-link"><a href="../phpPages/aboutUs.php">About Us</a></li>
      			</ul> 
     		</div> <!-- /.navbar-collapse -->
@@ -75,7 +75,7 @@ include_once '../mainhome/dbconnect.php';
         <li><a href="../insert/delete_bat.php">Delete Information</a></li>
 				<li><a href="../forum/forum.php">Forum</a></li>
 				<li><a href="../batnews/grid31.php">News</a></li>
-        <li><a href="../Help/index.php">Help</a></li>
+        <li><a href="../help/index.php">Help</a></li>
 				<li><a href="../phpPages/aboutUs.php">About Us</a></li>
 			</ul>
 		</div>
