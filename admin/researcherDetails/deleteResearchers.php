@@ -7,7 +7,7 @@ if(isset($_GET['id'])!="")
     $delete=mysql_query("DELETE FROM researcher_details WHERE id='$delete'");
     if($delete)
     {
-        header("Location:researchersDetails.php");
+        header("Location:researcherDetailsValidate.php");
     }
     else
     {

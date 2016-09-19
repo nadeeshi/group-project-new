@@ -1,5 +1,8 @@
 <?php
 session_start();
+
+include_once '../mainhome/dbconnect.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -25,8 +28,7 @@ session_start();
         			<span class="icon-bar"></span>
         			<span class="icon-bar"></span>
       			</button>
-      			<a class="navbar-brand" href="#" style="font-family:'Chewy', cursive  !important;
-  font-size: 50px;"><span class="header1" >Bats</span><span class="header2">Info</span></a>
+      			<a class="navbar-brand" href="#"><span class="header1" >Bats</span><span class="header2">Info</span></a>
     		</div>
 
     		<!-- Collect the nav links, forms, and other content for toggling -->
@@ -42,7 +44,7 @@ session_start();
       			<ul class="nav navbar-nav  navbar-right navbar-li">
               <?php if (isset($_SESSION['usr_id'])) { ?>
                 <li class="btn1" style="font-size: 18px !important; color:#ffffff; padding-top:13px;">Hi <?php echo $_SESSION['usr_name']; ?></li>
-                <li class="btn1"><a href="../mainhome/logout.php" style="font-size:18px; padding-top:18px !important;">Log Out</a></li>
+                <li class="btn1"><a href="../mainhome/logout.php" style="font-size:18px; padding-top:16px !important;">Log Out</a></li>
 
               <?php } ?>
               <li class="min-link"><a href="../phpPages/researcherHomePage.php">Home</a></li>
@@ -50,9 +52,9 @@ session_start();
               <li class="min-link"><a href="#">Update Information</a></li>
               <li class="min-link"><a href="#">Delete Information</a></li>
               <li class="min-link"><a href="../forum/forum.php">Forum</a></li>
-              <li class="min-link"><a href="#">News</a></li>
+              <li class="min-link"><a href="../batnews/grid31.php">News</a></li>
               <li class="min-link"><a href="../Help/index.php">Help</a></li>
-              <li class="min-link"><a href="#">About Us</a></li>
+              <li class="min-link"><a href="../phpPages/aboutUs.php">About Us</a></li>
      			</ul> 
     		</div> <!-- /.navbar-collapse -->
       </div>
@@ -68,13 +70,13 @@ session_start();
  			</div>
 			<ul class="nav nav-pills nav-stacked list-of-content">
 				<li><a href="../phpPages/researcherHomePage.php">Home</a></li>
-				<li><a href="#">Add Information</a></li>
-				<li><a href="#">Update Information</a></li>
-				<li><a href="#">Delete Information</a></li>
+				<li><a href="../insert/insert.php">Add Information</a></li>
+        <li><a href="../insert/update_bat.php">Update Information</a></li>
+        <li><a href="../insert/delete_bat.php">Delete Information</a></li>
 				<li><a href="../forum/forum.php">Forum</a></li>
-				<li><a href="#">News</a></li>
+				<li><a href="../batnews/grid31.php">News</a></li>
         <li><a href="../Help/index.php">Help</a></li>
-				<li><a href="#">About Us</a></li>
+				<li><a href="../phpPages/aboutUs.php">About Us</a></li>
 			</ul>
 		</div>
     <!-- end of the side navigation bar -->

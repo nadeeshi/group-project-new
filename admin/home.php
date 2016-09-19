@@ -108,9 +108,6 @@ require_once('auth.php');
                     <li>
                         <a href="researcherDetails/researcherDetailsValidate.php"><i class="fa fa-bell "></i>Researchers Details</a>
                     </li>
-                    <li>
-                        <a href="publicDetails.php"><i class="fa fa-circle-o "></i>Public Viewers Details</a>
-                    </li>
 
 
                 </ul>
@@ -126,12 +123,7 @@ require_once('auth.php');
                     <li>
                         <a href="researchDetails/listOfResearch.php"><i class="fa fa-coffee"></i>list of Research</a>
                     </li>
-                    <li>
-                        <a href="pricing.html"><i class="fa fa-flash "></i>More details of Research</a>
-                    </li>
-                    <li>
-                        <a href="component.html"><i class="fa fa-key "></i>Components</a>
-                    </li>
+
                     <li>
                         <a href="researchDetails/researchDetails.php"><i class="fa fa-send "></i>Add New Research Details</a>
                     </li>
@@ -224,7 +216,7 @@ require_once('auth.php');
         <div class="main-box mb-red" style="width: 200px;">
             <a href="#">
 
-                <h3> 230  bats</h3>
+                <h3> 30  bats</h3>
             </a>
         </div>
     </div>

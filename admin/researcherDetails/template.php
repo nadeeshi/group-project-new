@@ -102,14 +102,12 @@
                 <a href="#"><i class="fa fa-desktop "></i>User Details <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="../adminDetails/adminDetails.php"><i class="fa fa-toggle-on"></i>Admin Details</a>
+                        <a href="../adminDetails/adminDetailsValidate.php"><i class="fa fa-toggle-on"></i>Admin Details</a>
                     </li>
                     <li>
-                        <a href="researchersDetails.php"><i class="fa fa-bell "></i>Researchers Details</a>
+                        <a href="researcherDetailsValidate.php"><i class="fa fa-bell "></i>Researchers Details</a>
                     </li>
-                    <li>
-                        <a href="publicDetails.php"><i class="fa fa-circle-o "></i>Public Viewers Details</a>
-                    </li>
+
 
 
                 </ul>
@@ -125,12 +123,7 @@
                     <li>
                         <a href="../researchDetails/listOfResearch.php"><i class="fa fa-coffee"></i>list of Research</a>
                     </li>
-                    <li>
-                        <a href="pricing.html"><i class="fa fa-flash "></i>More details of Research</a>
-                    </li>
-                    <li>
-                        <a href="component.html"><i class="fa fa-key "></i>Components</a>
-                    </li>
+
                     <li>
                         <a href="../researchDetails/researchDetails.php"><i class="fa fa-send "></i>Add New Research Details</a>
                     </li>

@@ -1,7 +1,7 @@
 @import 'https://fonts.googleapis.com/css?family=Chewy';
 @import 'https://fonts.googleapis.com/css?family=Source+Code+Pro';
 @import 'https://fonts.googleapis.com/css?family=Shadows+Into+Light';
-@import 'https://fonts.googleapis.com/css?family=Oxygen';
+@import 'https://fonts.googleapis.com/css?family=Varela+Round';
 
 .body {
 	font-family:  'Oxygen', sans-serif;
@@ -21,11 +21,15 @@
 	z-index:2000; 
 	border-bottom:none; 
 	border-radius:0;
-	font-family:  'Oxygen', sans-serif;
+	font-family: 'Varela Round', sans-serif;
 
 }
+
+
+
 .navbar-li > li > a{
 	color: #ffffff !important; 
+	font-family: 'Varela Round', sans-serif;
 }
 .header1 {
 	font-family: 'Chewy', cursive;
@@ -74,7 +78,7 @@
 	border-color: #ffffff;
 	font-size: 20px;
 	color: #000000; 
-	font-family:  'Oxygen', sans-serif;
+	font-family: 'Varela Round', sans-serif;
 }
 .dropdwncustom{
 	background-color: #ffffff;
@@ -117,7 +121,7 @@
 
 .list-of-content {
 	margin-top: 40px;
-	font-family:  'Oxygen', sans-serif;
+	font-family: 'Varela Round', sans-serif;
 }
 .list-container{
 	background-color: #4c4743;

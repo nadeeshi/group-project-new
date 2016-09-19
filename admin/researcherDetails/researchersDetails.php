@@ -45,15 +45,15 @@
 
                                 <form action="insertResearchers.php" method="post" name="insertform">
                                     <div class="col-xs-12">
-                                        <label for="name" id="preinput" class="col-xs-5"> RESEARCHER NAME : </label>
+                                        <label for="name" id="preinput" class="col-xs-5"> *RESEARCHER NAME : </label>
                                         <input type="text" name="username" required placeholder="Enter your name" id="inputid" class="col-xs-7"/>
                                     </div>
                                     <div class="col-xs-12">
-                                        <label  for="email" id="preinput" class="col-xs-5"> EMAIL ID : </label>
+                                        <label  for="email" id="preinput" class="col-xs-5"> *EMAIL ID : </label>
                                         <input type="email" name="usermail" required placeholder="Enter your Email" id="inputid" class="col-xs-7"/>
                                     </div>
                                     <div class="col-xs-12">
-                                        <label for="mobile" id="preinput" class="col-xs-5"> MOBILE NUMBER : </label>
+                                        <label for="mobile" id="preinput" class="col-xs-5"> *MOBILE NU : </label>
                                         <input type="text" name="usermobile" required placeholder="Enter your mobile number" id="inputid" class="col-xs-7"/>
                                     </div>
                                     <div class="col-xs-12">

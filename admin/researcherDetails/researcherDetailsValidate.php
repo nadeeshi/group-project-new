@@ -84,9 +84,9 @@ function validateMobileNo($umobile) {
 
     if(empty($umobile)) {
         global $usermobileErr;
-        $usermobileErr = "Username is required";
+        $usermobileErr = "Mobile NO is required";
         return $usermobileErr;
-    } else if (!preg_match("/^[1-9]{1}[0-9]{9}$/", $umobile)){ // checks if username contains only letters and digits
+    } else if (!preg_match("/^\d{10}$/", $umobile)){ // checks if username contains only letters and digits
         global $usermobileErr;
         $usermobileErr = "you have entered Invalid Mobile Number";
         return $usermobileErr;
@@ -147,7 +147,7 @@ function validateMobileNo($umobile) {
 
 
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-7">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         Insert data to the Database
@@ -180,7 +180,7 @@ function validateMobileNo($umobile) {
                                 <p><span class="error">* required field.</span></p>
                                 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                                     <div class="col-xs-12">
-                                        <label for="firstname" class="col-xs-5">User Name:</label>
+                                        <label for="firstname" class="col-xs-5">Researcher Name:</label>
                                         <input type="text" name="username"  required id="inputid" class="col-xs-6" value="<?php echo $username; ?>" /><span class="error">* <?php echo $usernameErr; ?></span><br/><br/></div>
                                     <div class="col-xs-12">
                                         <label for="usermail" class="col-xs-5">Email:</label>
@@ -217,7 +217,7 @@ function validateMobileNo($umobile) {
                                 $password=($_POST['password']);*/
 
 
-                                if(($username != '' ) && ($usermail != '')){
+                                if(($username != '' ) && ($usermail != '') && ($m=$usermobile != '')){
                                     $update=mysql_query("INSERT INTO researcher_details(username,emailid,mobileno,created)VALUES
                                       ('$username','$usermail','$usermobile',now())");
 
@@ -263,7 +263,7 @@ function validateMobileNo($umobile) {
             </div>
 
 
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         Details of Researchers

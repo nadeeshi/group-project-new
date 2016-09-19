@@ -34,7 +34,14 @@ if (isset($_POST['signup'])) {
     }
     if(strlen($nic) < 10) {
         $error = true;
-        $nic_error = "NIC must be minimum of 10 characters";
+        $nic_error = "NIC must be of 10 characters";
+    }
+
+
+    if(strlen($nic) > 10) {
+        $error = true;
+        $nic_error = "NIC must be of 10 characters";
+
     }
     if(!filter_var($email,FILTER_VALIDATE_EMAIL)) {
         $error = true;
@@ -87,7 +94,7 @@ if (isset($_POST['signup'])) {
                     <div class="form-group">
                         <label for="nic">NIC</label>
                         <input type="text" name="nic" placeholder="NIC" required value="<?php if($error) echo $nic; ?>" class="form-control" />
-                        <span class="text-danger"><?php if (isset($nic_error)) echo $name_error; ?></span>
+                        <span class="text-danger"><?php if (isset($nic_error)) echo $nic_error; ?></span>
                     </div>
 
                     <div class="form-group">
@@ -98,8 +105,8 @@ if (isset($_POST['signup'])) {
 
                     <div class="form-group">
                         <label for="gender">Gender</label><br>
-                        <input type="radio" name="gender" value="male">Male </input><br><br>
-                        <input type="radio" name="gender" value="female">Female </input>
+                        <input type="radio" name="gender" value="male" required>Male </input><br><br>
+                        <input type="radio" name="gender" value="female" >Female </input>
                     </div>
 
                     <div class="form-group">
@@ -109,7 +116,7 @@ if (isset($_POST['signup'])) {
                     </div>
 
                     <div class="form-group">
-                        <label for="major">Mojor in</label>
+                        <label for="major">Major in</label>
                         <input type="text" name="major" placeholder="Major in" required value="<?php if($error) echo $major; ?>" class="form-control" />
                         <span class="text-danger"><?php if (isset($name_error)) echo $name_error; ?></span>
                     </div>

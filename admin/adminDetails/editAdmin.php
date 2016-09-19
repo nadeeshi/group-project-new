@@ -75,33 +75,33 @@ if(isset($_GET['id']))
         ?>
         <div class="display">
             <form action="" method="post" name="insertform">
-                <p>
-                    <label for="name"  id="preinput"> USER NAME : </label>
-                    <input type="text" name="eusername" required placeholder="Enter  name"
+                <div class="col-xs-12">
+                    <label for="name"  id="preinput" class="col-xs-5"> USER NAME : </label>
+                    <input type="text" name="eusername" class="col-xs-7" required placeholder="Enter  name"
                            value="<?php echo $username; ?>" id="inputid" />
-                </p>
-                <p>
-                    <label  for="email"  id="preinput"> EMAIL ID : </label>
-                    <input type="email" name="eusermail" required placeholder="Enter  Email"
+                </div>
+                <div class="col-xs-12">
+                    <label  for="email"  id="preinput" class="col-xs-5"> EMAIL ID : </label>
+                    <input type="email" name="eusermail" class="col-xs-7" required placeholder="Enter  Email"
                            value="<?php echo $usermail; ?>" id="inputid" />
-                </p>
-                <p>
-                    <label for="mobile" id="preinput"> MOBILE NUMBER : </label>
-                    <input type="text" name="eusermobile" required placeholder="Enter  mobile number"
+                </div>
+                <div class="col-xs-12">
+                    <label for="mobile" id="preinput" class="col-xs-5"> MOBILE NUMBER : </label>
+                    <input type="text" name="eusermobile" class="col-xs-7" required placeholder="Enter  mobile number"
                            value="<?php echo $usermobile; ?>" id="inputid" />
-                </p>
-                <p>
-                    <label  for="password"  id="preinput"> PASSWORD : </label>
-                    <input type="password" name="password" required placeholder="Enter password"
+                </div>
+                <div class="col-xs-12">
+                    <label  for="password"  id="preinput" class="col-xs-5"> PASSWORD : </label>
+                    <input type="password" name="password" class="col-xs-7" required placeholder="Enter password"
                            value="<?php echo $password; ?>" id="inputid" />
-                </p>
+                </div>
 
 
 
 
-                <p>
+                <div class="col-xs-12">
                     <input type="submit" name="update" value="Update" id="inputid1" />
-                </p>
+                </div>
             </form>
         </div>
     <?php } } ?>
