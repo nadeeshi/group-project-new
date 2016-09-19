@@ -7,7 +7,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   	<script src="js/bootstrap.min.js"></script>
-    <link href="C:\wamp\www\group-project-new/assets/css/navbar1n2.css" rel="stylesheet">
+    <link href="../assets/css/navbar1n2.css" rel="stylesheet">
 </head>
 <body>
 
@@ -25,25 +25,24 @@
 
     	<div class="collapse navbar-collapse" id="myNavbar">
         <a class="navbar-brand" href="#"><span style="font-family: 'Chewy', cursive;
-              font-size: 50px;" >Bats</span><span style="font-family: 'Shadows Into Light', cursive;
-              font-size: 50px;">Info</span></a>
-      			<ul class="nav navbar-nav" style="font-size: 18px; padding-top: 13px; padding-bottom: 13px;">
+              font-size: 50px; color:#ffffff;" >Bats</span><span style="font-family: 'Shadows Into Light', cursive;
+              font-size: 50px; color:#ffffff;">Info</span></a>
+      			<ul class="nav navbar-nav" style="font-size: 18px; padding-top: 1px; padding-bottom: 13px;">
 
-       				<li class="active"><a href="myhome.php">Home</a></li>
+       				<li><a href="myhome.php">Home</a></li>
         			<li><a href="#">News</a></li>
         			<li><a href="myhome.php#articles">Articles</a></li>
-        			<li><a href="#">Threads</a></li>
         			<li><a href="#">Gallery</a></li>
         			<li><a href="aboutus.php">About Us</a></li>
 					    <li><a href="#contact">Contact Us</a></li>
       			</ul>
             <form class="navbar-form  navbar-right">
-              <div class="form-group" style="padding-top:15px;">
+              <div class="form-group" style="padding-top:1px;">
                   <input type="text" class="form-control input-area" placeholder="Enter name here">
               <button type="submit" class="btn btn-default">Search</button>
               </div>
             </form>
-            <ul class="nav navbar-nav navbar-right" style="padding-top:13px;">
+            <ul class="nav navbar-nav navbar-right" style="padding-top:1px;">
         			<li><a href="register.php" id="myBtn" style="font-size: 18px;"><span class="glyphicon glyphicon-user"></span> Register</a></li> 
               <li><a href="login.php" style="font-size: 18px;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
               <!--<li><a href="signup/login.php"><span class="glyphicon glyphicon-user"></span>Members</a></li>-->

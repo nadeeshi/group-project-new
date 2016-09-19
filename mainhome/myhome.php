@@ -25,7 +25,7 @@
         <?php include("mainnav.php")?>
     </div>
     <div class="container" style="padding-top:100px;">
-        <?php include ("headerimage.php") ?>
+        <?php include ("headerImage.php") ?>
     </div>
 
     <div class="container-fluid" style="padding-top:30px; padding-bottom:200px;">
