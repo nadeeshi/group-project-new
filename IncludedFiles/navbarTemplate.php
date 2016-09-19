@@ -43,8 +43,8 @@ include_once '../mainhome/dbconnect.php';
       			</form>
       			<ul class="nav navbar-nav  navbar-right navbar-li">
               <?php if (isset($_SESSION['usr_id'])) { ?>
-                <li class="btn1" style="font-size: 18px !important; color:#ffffff; padding-top:13px;">Hi <?php echo $_SESSION['usr_name']; ?></li>
-                <li class="btn1"><a href="../mainhome/logout.php" style="font-size:18px; padding-top:16px !important;">Log Out</a></li>
+                <li class="btn1" style="font-size: 15px !important; color:#ffffff; padding-top:17px;">Hi <?php echo $_SESSION['usr_name']; ?></li>
+                <li class="btn1"><a href="../mainhome/logout.php" style="font-size:15px; padding-top:17px !important;">Log Out</a></li>
 
               <?php } ?>
               <li class="min-link"><a href="../phpPages/researcherHomePage.php">Home</a></li>
