@@ -25,7 +25,7 @@ if($_POST){
 					$count = 1;
 		
 		//echo '<p><img src="'.$row['location'].'"></p>';
-		$output = '<div> '.'name :'.$fname.'</br> </br> place :'. $lplace1.'</div></br>discription : '.$des;
+		$output = '<div> '.'name :  '.$fname.'</br> </br> place :  '. $lplace1.'</div></br>discription :  '.$des;
 		//echo $output;
 		
 		//echo '<p><img src="'.$row['description'].'"></p>';
