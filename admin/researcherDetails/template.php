@@ -102,10 +102,10 @@
                 <a href="#"><i class="fa fa-desktop "></i>User Details <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="../adminDetails/adminDetailsValidate.php"><i class="fa fa-toggle-on"></i>Admin Details</a>
+                        <a href="../adminDetails/adminDetailsValidate.php">Admin Details</a>
                     </li>
                     <li>
-                        <a href="researcherDetailsValidate.php"><i class="fa fa-bell "></i>Researchers Details</a>
+                        <a href="researcherDetailsValidate.php">Researchers Details</a>
                     </li>
 
 
@@ -121,11 +121,11 @@
                 <a href="#"><i class="fa fa-yelp "></i>Reaserch Details <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="../researchDetails/listOfResearch.php"><i class="fa fa-coffee"></i>list of Research</a>
+                        <a href="../researchDetails/listOfResearch.php">list of Research</a>
                     </li>
 
                     <li>
-                        <a href="../researchDetails/researchDetails.php"><i class="fa fa-send "></i>Add New Research Details</a>
+                        <a href="../researchDetails/researchDetails.php">Add New Research Details</a>
                     </li>
 
                 </ul>
@@ -135,7 +135,7 @@
 
 
             <li>
-                <a href="table.html"><i class="fa fa-flash "></i>Thread Details </a>
+                <a href="table.html"><i class="fa fa-yelp "></i>Thread Details </a>
 
             </li>
 
@@ -143,14 +143,14 @@
 
 
             <li>
-                <a href="#"><i class="fa fa-bicycle "></i>Bats Details <span class="fa arrow"></span></a>
+                <a href="#"><i class="fa fa-yelp "></i>Bats Details <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
 
                     <li>
-                        <a href="../batsDetails/listOfBats.php"><i class="fa fa-desktop "></i>List of Bats</a>
+                        <a href="../batsDetails/listOfBats.php"></i>List of Bats</a>
                     </li>
                     <li>
-                        <a href="../batsDetails/newBat.php"><i class="fa fa-code "></i>Add New Bats</a>
+                        <a href="../batsDetails/newBat.php">Add New Bats</a>
                     </li>
 
 
@@ -162,24 +162,24 @@
 
 
             <li>
-                <a href="gallery.html"><i class="fa fa-anchor "></i>Insert Info Forms</a>
+                <a href="gallery.html"><i class="fa fa-yelp "></i>Insert Info Forms</a>
             </li>
 
 
             <li>
-                <a href="error.html"><i class="fa fa-bug "></i>Map Details</a>
+                <a href="error.html"><i class="fa fa-yelp "></i>Map Details</a>
             </li>
 
 
             <li>
-                <a href="login.html"><i class="fa fa-sign-in "></i>Test 1</a>
+                <a href="login.html"><i class="fa fa-yelp "></i>Test 1</a>
             </li>
 
 
 
 
             <li>
-                <a href="blank.html"><i class="fa fa-square-o "></i>Test 2</a>
+                <a href="blank.html"><i class="fa fa-yelp "></i>Test 2</a>
             </li>
         </ul>
 
