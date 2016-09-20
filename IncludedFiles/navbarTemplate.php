@@ -43,8 +43,8 @@ include_once '../mainhome/dbconnect.php';
       			</form>
       			<ul class="nav navbar-nav  navbar-right navbar-li">
               <?php if (isset($_SESSION['usr_id'])) { ?>
-                <li class="btn1" style="font-size: 18px !important; color:#ffffff; padding-top:13px;">Hi <?php echo $_SESSION['usr_name']; ?></li>
-                <li class="btn1"><a href="../mainhome/logout.php" style="font-size:18px; padding-top:16px !important;">Log Out</a></li>
+                <li class="btn1" style="font-size: 15px !important; color:#ffffff; padding-top:17px;">Hi <?php echo $_SESSION['usr_name']; ?></li>
+                <li class="btn1"><a href="../mainhome/logout.php" style="font-size:15px; padding-top:17px !important;">Log Out</a></li>
 
               <?php } ?>
               <li class="min-link"><a href="../phpPages/researcherHomePage.php">Home</a></li>
@@ -52,8 +52,13 @@ include_once '../mainhome/dbconnect.php';
               <li class="min-link"><a href="../final_insert_update_del/update_bat.php">Update Information</a></li>
               <li class="min-link"><a href="../final_insert_update_del/delete_bat.php">Delete Information</a></li>
               <li class="min-link"><a href="../forum/forum.php">Forum</a></li>
+<<<<<<< HEAD
               <li class="min-link"><a href="../batnews/news_main.php">News</a></li>
               <li class="min-link"><a href="../Help/index.php">Help</a></li>
+=======
+              <li class="min-link"><a href="../batnews/grid31.php">News</a></li>
+              <li class="min-link"><a href="../help/index.php">Help</a></li>
+>>>>>>> origin/master
               <li class="min-link"><a href="../phpPages/aboutUs.php">About Us</a></li>
      			</ul> 
     		</div> <!-- /.navbar-collapse -->
@@ -74,8 +79,13 @@ include_once '../mainhome/dbconnect.php';
         			<li><a href="../final_insert_update_del/update_bat.php">Update Information</a></li>
         			<li><a href="../final_insert_update_del/delete_bat.php">Delete Information</a></li>
 				<li><a href="../forum/forum.php">Forum</a></li>
+<<<<<<< HEAD
 				<li><a href="../batnews/news_main.php">News</a></li>
         			<li><a href="../Help/index.php">Help</a></li>
+=======
+				<li><a href="../batnews/grid31.php">News</a></li>
+        <li><a href="../help/index.php">Help</a></li>
+>>>>>>> origin/master
 				<li><a href="../phpPages/aboutUs.php">About Us</a></li>
 			</ul>
 		</div>

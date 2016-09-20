@@ -1317,6 +1317,7 @@ mark,
 }
 .text-center {
   text-align: center;
+  padding-left: 20%;
 }
 .text-justify {
   text-align: justify;
@@ -5683,7 +5684,11 @@ button.list-group-item-danger.active:focus {
   border-bottom: 1px solid #ddd;
 }
 .panel-default {
-  border-color: #ddd;
+  margin-left: 20%;
+  border-color: rgba(221, 221, 221, 0);
+}
+
+  
 }
 .panel-default > .panel-heading {
   color: #333;

@@ -63,16 +63,16 @@ if (isset($_POST['reg'])) {
 
                     <div class="form-group">
                         <label for="fname">Qualifications 2</label>
-                        <input type="text" name="d2" placeholder="Title" required value="<?php if($error) echo $d1; ?>" class="form-control" /><br>
-                        <input type="text" name="d2u" placeholder="University" required value="<?php if($error) echo $fd1u; ?>" class="form-control" /><br>
-                        <input type="text" name="d2y" placeholder="Year" required value="<?php if($error) echo $d1y; ?>" class="form-control" /><br>
+                        <input type="text" name="d2" placeholder="Title" value="<?php if($error) echo $d1; ?>" class="form-control" /><br>
+                        <input type="text" name="d2u" placeholder="University"  value="<?php if($error) echo $fd1u; ?>" class="form-control" /><br>
+                        <input type="text" name="d2y" placeholder="Year" value="<?php if($error) echo $d1y; ?>" class="form-control" /><br>
                     </div>
 
                     <div class="form-group">
                         <label for="fname">Qualifications 3</label>
-                        <input type="text" name="d3" placeholder="Title" required value="<?php if($error) echo $d1; ?>" class="form-control" /><br>
-                        <input type="text" name="d3u" placeholder="University" required value="<?php if($error) echo $fd1u; ?>" class="form-control" /><br>
-                        <input type="text" name="d3y" placeholder="Year" required value="<?php if($error) echo $d1y; ?>" class="form-control" /><br>
+                        <input type="text" name="d3" placeholder="Title"  value="<?php if($error) echo $d1; ?>" class="form-control" /><br>
+                        <input type="text" name="d3u" placeholder="University"  value="<?php if($error) echo $fd1u; ?>" class="form-control" /><br>
+                        <input type="text" name="d3y" placeholder="Year"  value="<?php if($error) echo $d1y; ?>" class="form-control" /><br>
                     </div>
 
                     <div class="form-group">

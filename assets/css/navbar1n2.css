@@ -59,8 +59,8 @@
 	color: #a79e9e;
 }
 .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse{
-	margin-top: 20px;
-	margin-bottom: 7px;
+	margin-top: 12px;
+	margin-bottom: 4px;
 }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus{
@@ -125,7 +125,7 @@
 }
 .list-container{
 	background-color: #4c4743;
-	margin-top: 72px;
+	margin-top: 55px;
 	height: 800px;
 	position: fixed;
 

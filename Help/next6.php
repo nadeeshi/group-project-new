@@ -1,4 +1,4 @@
-<!DOCTYPE php>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -52,41 +52,17 @@
 
     </style>
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/navbar1n2.css" rel="stylesheet">
-    <script src="js/jquary.js"></script>
-    <script src="bootstrapjs.js"></script>
+  <link href="css/navnew.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
+  <script src="js/jquary.js"></script>
+  <script src="js/bootstrapjs.js"></script>
 
 </head>
+
 <body>
-<nav class="navbar navbar-default navbar1 navbar-li">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Join With Us</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-            <form class="navbar-form  navbar-right">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Enter name here">
-                </div>
-                <button type="submit" class="btn btn-default">Search</button>
-            </form>
-            <ul class="nav navbar-nav  navbar-right navbar-li">
-                <li class="btn1"><a href="#">Hi Name</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
-        </div> <!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-</nav>
+<div>
+<?php include '../IncludedFiles/navbarTemplate.php'; ?>
+</div>
 
 <section class="main_image org">
     <div class="container">
@@ -97,37 +73,13 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search for...">
-                    <span class="input-group-btn">
-                        <button class="btn btn-warning" type="button"><i class="fa fa-search"></i></button>
-                    </span>
-                </div>
-            </div>
-        </div>
-
     </div>
 </section>
-<hr />
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <ol class="breadcrumb">
-                <li><a href="#">Home</a></li>
-                <li><a href="index.html">Go Help Center</a></li>
-                <li><a href="p2-%20privacy%20saf.html">Go Back</a></li>
-                <li class="active">You are here</li>
-            </ol>
 
-        </div>
-    </div>
-</div>
 <div class="container">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <h1 class="text-center"><font size="8px" color="#00bfff"> Frequently Asked Questions on Privacy and Security </font></h1>
+            <h1 class="text-center"><font size="8px" color="#00bfff"> Frequently Asked Questions on <br> Privacy and Security </font></h1>
             <h1 class="text-center"><font size="6px" color="#483d8b"> Hacked and Fake accounts </font></h1>
 
         </div>
@@ -138,7 +90,7 @@
 <hr />
 <div class="container">
     <div class="row">
-        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
 
             <div class="panel panel-default">
                 <div class="panel-body">
@@ -156,7 +108,7 @@
                             </div>
                             <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                                 <div class="panel-body">
-                                    haha y u need fucking account. go and sleep
+                                    1st login to ur account and deactivate it. then contact admin panel suddently
                                 </div>
                             </div>
                         </div>
@@ -173,7 +125,7 @@
                             </div>
                             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                 <div class="panel-body">
-                                    comehbhbskfkdsknvmvkjdfkj
+                                    contact admin panel soon
                                 </div>
                             </div>
                         </div>
@@ -190,7 +142,7 @@
                             </div>
                             <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                 <div class="panel-body">
-                                    jgsvsdsjjsldsdns dmsndskdj sjdnjsal
+                                    report those accounts and block it. and also contact admin panel
                                 </div>
                             </div>
                         </div>
@@ -207,7 +159,7 @@
                             </div>
                             <div id="collapsefour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfour">
                                 <div class="panel-body">
-                                    jgsvsdsjjsldsdns dmsndskdj sjdnjsal
+                                    block it and report those accounts
                                 </div>
                             </div>
                         </div>
@@ -224,7 +176,7 @@
                             </div>
                             <div id="collapsefive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfive">
                                 <div class="panel-body">
-                                    jgsvsdsjjsldsdns dmsndskdj sjdnjsal
+                                    yes u can block if there is any suspected account by clicking the user account 
                                 </div>
                             </div>
                         </div>
@@ -234,23 +186,6 @@
             </div>
         </div>
 
-        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-            <div class="panel panel-success">
-                <div class="panel-body">
-                    Help through quick links !!
-                    <hr />
-                    <ul>
-                        <li><a href="#">Login to account</a></li>
-                        <li><a href="#">Go to Settings</a></li>
-                        <li><a href="#">Change Password</a></li>
-                        <li><a href="#">Delete my account</a></li>
-
-                        <li><a href="#">Contact admin panel</a></li>
-
-                    </ul>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
