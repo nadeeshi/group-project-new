@@ -9,7 +9,7 @@
 
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/bootstrap.css" rel="stylesheet">
-        <link href="css/navnew.css" rel="stylesheet">
+        <link href="css/navnew_n.css" rel="stylesheet">
 
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="stylesheet" href="css/insert_css.css">
@@ -46,12 +46,16 @@
 
 
             }
-			.red-star{
+	.red-star{
 				color: red;
 				margin-left: 8px;
 				font-size: 12px;
 				font-weight: bold;
 			}
+.profile-picture{
+background-image: url('propic.png');
+
+}
         </style>
 
 
@@ -106,7 +110,7 @@
                     <li><a href="update_bat.php">Update Information</a></li>
                     <li><a href="delete_bat.php">Delete Information</a></li>
                     <li><a href="../forum/forum.php">Forum</a></li>
-                    <li><a href="#">News</a></li>
+                    <li><a href="../batnews/news_main.php">News</a></li>
                     <li><a href="../Help/index.php">Help</a></li>
                     <li><a href="#">About Us</a></li>
                 </ul>

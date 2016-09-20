@@ -32,7 +32,7 @@
        				<li><a href="myhome.php">Home</a></li>
         			<li><a href="#">News</a></li>
         			<li><a href="myhome.php#articles">Articles</a></li>
-        			<li><a href="#">Gallery</a></li>
+        			<!-- <li><a href="#">Gallery</a></li> -->
         			<li><a href="aboutus.php">About Us</a></li>
 					    <li><a href="#contact">Contact Us</a></li>
       			</ul>

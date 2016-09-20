@@ -3,7 +3,7 @@
 <head>
   <title>Update a bat</title> 
   <link href="css/bootstrap.css" rel="stylesheet">
-  <link href="css/navnew.css" rel="stylesheet">
+  <link href="css/navnew_n.css" rel="stylesheet">
  
   <script src="js/jquary.js"></script>
 	<link rel="stylesheet" href="css/style.css"/>
@@ -30,6 +30,10 @@
 	.footcon-col-1 {
     margin-top: 10px;
     margin-left: 10px;
+}
+.profile-picture{
+background-image: url('propic.png');
+
 }
 </style>
 </head>
@@ -84,7 +88,7 @@
 				<li><a href="update_bat.php">Update Information</a></li>
 				<li><a href="delete_bat.php">Delete Information</a></li>
 				<li><a href="../forum/forum.php">Forum</a></li>
-				<li><a href="#">News</a></li>
+				 <li><a href="../batnews/news_main.php">News</a></li>
         <li><a href="../Help/index.php">Help</a></li>
 				<li><a href="#">About Us</a></li>
 			</ul>
