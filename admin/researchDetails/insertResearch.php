@@ -36,7 +36,7 @@ if(isset($_POST['send'])!="")
 
 
 
-    $update=mysql_query("INSERT INTO research_details(researchName,assessmentNames,kingdom,phylum,class,orderr,family,taxonName,synonyms,
+    $update=mysqli_query($db,"INSERT INTO research_details(researchName,assessmentNames,kingdom,phylum,class,orderr,family,taxonName,synonyms,
 commonNames,taxonomicNotes,redListCategory,criteria,more1,description,countryOccurrences,more2,population,h_E,threats,conservationActions,
 credits,bibliography,citation,disclaimer,eResources,others,created)VALUES
            ('$researchName','$assessmentNames','$kingdom','$phylum','$class','$orderr','$family','$taxonName','$synonyms','$commonNames',

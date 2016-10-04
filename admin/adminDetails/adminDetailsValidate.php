@@ -253,7 +253,7 @@ function validatePassword($pword){
 
 
                             if(($username != '' )&& ($password != '') && ($emailid != '') && ($mobileno != '')){
-                                $update=mysql_query("INSERT INTO admin_details(username,emailid,mobileno,created,password)VALUES
+                                $update=mysqli_query($bd,"INSERT INTO admin_details(username,emailid,mobileno,created,password)VALUES
                                       ('$username','$emailid','$mobileno',now(),'$password')");
 
                                 if($update)
@@ -307,9 +307,9 @@ function validatePassword($pword){
                     <!--start  viewAdmin---------------------------------------------------------------------->
                     <?php
                     include('connect.php');
-                    $select=mysql_query("SELECT * FROM admin_details order by id desc");
+                    $select=mysqli_query($bd,"SELECT * FROM admin_details order by id desc");
                     $i=1;
-                    while($userrow=mysql_fetch_array($select))
+                    while($userrow=mysqli_fetch_array($select))
                     {
                         $id=$userrow['id'];
                         $username=$userrow['username'];

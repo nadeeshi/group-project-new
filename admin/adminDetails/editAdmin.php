@@ -11,12 +11,12 @@ if(isset($_GET['id']))
         $emobile=$_POST['eusermobile'];
         $password=$_POST['password'];
 
-        $updated=mysql_query("UPDATE admin_details SET
+        $updated=mysqli_query($bd,"UPDATE admin_details SET
         username='$eusername', emailid='$eusermail', mobileno='$emobile'  ,password='$password' WHERE id='$id'")or die();
         if($updated)
         {
             $msg="Successfully Updated!!";
-            header('Location:adminDetails.php');
+            header('Location:adminDetailsValidate.php');
         }
     }
 }  //update ends here
@@ -64,8 +64,8 @@ ob_end_flush();
 if(isset($_GET['id']))
 {
     $id=$_GET['id'];
-    $getselect=mysql_query("SELECT * FROM admin_details WHERE id='$id'");
-    while($profile=mysql_fetch_array($getselect))
+    $getselect=mysqli_query($bd,"SELECT * FROM admin_details WHERE id='$id'");
+    while($profile=mysqli_fetch_array($getselect))
     {
         $username=$profile['username'];
         $usermail=$profile['emailid'];

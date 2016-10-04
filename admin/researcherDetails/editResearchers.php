@@ -9,7 +9,7 @@ if(isset($_GET['id']))
         $eusername=$_POST['eusername'];
         $eusermail=$_POST['eusermail'];
         $emobile=$_POST['eusermobile'];
-        $updated=mysql_query("UPDATE researcher_details SET
+        $updated=mysqli_query($bd,"UPDATE researcher_details SET
         username='$eusername', emailid='$eusermail', mobileno='$emobile' WHERE id='$id'")or die();
         if($updated)
         {
@@ -62,8 +62,8 @@ ob_end_flush();
                             if(isset($_GET['id']))
                             {
                                 $id=$_GET['id'];
-                                $getselect=mysql_query("SELECT * FROM researcher_details WHERE id='$id'");
-                                while($profile=mysql_fetch_array($getselect))
+                                $getselect=mysqli_query($bd,"SELECT * FROM researcher_details WHERE id='$id'");
+                                while($profile=mysqli_fetch_array($getselect))
                                 {
                                     $username=$profile['username'];
                                     $usermail=$profile['emailid'];

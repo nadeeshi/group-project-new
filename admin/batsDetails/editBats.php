@@ -29,7 +29,7 @@ if(isset($_GET['id']))
         $conservation=$_POST['conservation'];
 
 
-        $updated=mysql_query("UPDATE bats_details SET
+        $updated=mysqli_query($bd,"UPDATE bats_details SET
         scientificName='$scientificName', kingdom='$kingdom', phylum='$phylum'  ,class='$class' ,orderr='$orderr' ,genus='$genus',
          family='$family',subFamily='$subFamily',speciesAuthority='$speciesAuthority',commonNames='$commonNames', synonyms='$synonyms',
            redListCategory='$redListCategory',distribution='$distribution',oioCountries='$oioCountries',population='$population',
@@ -85,8 +85,8 @@ ob_end_flush();
                             if(isset($_GET['id']))
                             {
                                 $id=$_GET['id'];
-                                $getselect=mysql_query("SELECT * FROM bats_details WHERE id='$id'");
-                                while($profile=mysql_fetch_array($getselect))
+                                $getselect=mysqli_query($bd,"SELECT * FROM bats_details WHERE id='$id'");
+                                while($profile=mysqli_fetch_array($getselect))
                                 {
 
                                     $scientificName=$profile['scientificName'];

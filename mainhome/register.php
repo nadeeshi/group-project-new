@@ -21,7 +21,7 @@ if (isset($_POST['signup'])) {
     $major = mysqli_real_escape_string($con, $_POST['major']);
     $address = mysqli_real_escape_string($con, $_POST['address']);
     $email = mysqli_real_escape_string($con, $_POST['email']);
-    $password= mysqli_real_escape_string($con, $_POST['password']);
+    
     
     //name can contain only alpha characters and space
     if (!preg_match("/^[a-zA-Z ]+$/",$fname)) {
@@ -48,7 +48,7 @@ if (isset($_POST['signup'])) {
         $email_error = "Please Enter Valid Email ID";
     }
     if (!$error) {
-        if(mysqli_query($con, "INSERT INTO users(fname,lname,nic,age,gender,country,major,address,email,password) VALUES('" . $fname . "','" . $lname . "','" . $nic . "','" . $age . "','" . $gender . "','" . $country . "','" . $major . "','" . $address . "','" . $email . "', '" . md5($password) . "')"))
+        if(mysqli_query($con, "INSERT INTO users(fname,lname,nic,age,gender,country,major,address,email) VALUES('" . $fname . "','" . $lname . "','" . $nic . "','" . $age . "','" . $gender . "','" . $country . "','" . $major . "','" . $address . "','" . $email . "')"))
     
            {
             $successmsg = " <a href='register22.php'>Click here to Proceed</a>";
@@ -133,11 +133,6 @@ if (isset($_POST['signup'])) {
                         <label for="email">Email</label>
                         <input type="text" name="email" placeholder="Email" required value="<?php if($error) echo $email; ?>" class="form-control" />
                         <span class="text-danger"><?php if (isset($email_error)) echo $email_error; ?></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="name">Password</label>
-                        <input type="password" name="password" placeholder="Password" required class="form-control" />
-                        <span class="text-danger"><?php if (isset($password_error)) echo $password_error; ?></span>
                     </div>
 
                     <div class="form-group">

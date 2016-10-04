@@ -14,10 +14,11 @@ $errflag = false;
 //Function to sanitize values received from the form. Prevents SQL injection
 function clean($str) {
     $str = @trim($str);
+    global $bd;
     if(get_magic_quotes_gpc()) {
         $str = stripslashes($str);
     }
-    return mysql_real_escape_string($str);
+    return mysqli_real_escape_string($bd,$str);
 }
 
 //Sanitize the POST values
@@ -48,14 +49,14 @@ if($errflag) {
 
 //Create query
 $qry="SELECT * FROM admin_details WHERE username='$username' AND password='$password'";
-$result=mysql_query($qry);
+$result=mysqli_query($bd, $qry);
 
 //Check whether the query was successful or not
 if($result) {
-    if(mysql_num_rows($result) > 0) {
+    if(mysqli_num_rows($result) > 0) {
         //Login Successful
         session_regenerate_id();
-        $member = mysql_fetch_assoc($result);
+        $member = mysqli_fetch_assoc($result);
         $_SESSION['SESS_MEMBER_ID'] = $member['id'];
         $_SESSION['SESS_FIRST_NAME'] = $member['username'];
         $_SESSION['SESS_LAST_NAME'] = $member['password'];

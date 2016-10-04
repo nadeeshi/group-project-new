@@ -8,7 +8,7 @@ include("connect.php");
     $password=mysql_real_escape_string($_POST['password']);
 
 
-    $update=mysql_query("INSERT INTO admin_details(username,emailid,mobileno,created,password)VALUES
+    $update=mysqli_query($bd,"INSERT INTO admin_details(username,emailid,mobileno,created,password)VALUES
                                       ('$username','$usermail','$usermobile',now(),'$password')");
 
     if($update)

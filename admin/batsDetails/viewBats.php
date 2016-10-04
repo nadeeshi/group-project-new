@@ -46,8 +46,8 @@
                             {
                             include('connect.php');
                             $id=$_GET['id'];
-                            $getselect=mysql_query("SELECT * FROM bats_details WHERE id='$id'");
-                            while($profile=mysql_fetch_array($getselect))
+                            $getselect=mysqli_query($bd,"SELECT * FROM bats_details WHERE id='$id'");
+                            while($profile=mysqli_fetch_array($getselect))
 
                             {
                                 $id=$profile['id'];

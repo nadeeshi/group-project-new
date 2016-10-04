@@ -107,9 +107,9 @@
                         <!--start  viewAdmin---------------------------------------------------------------------->
                         <?php
                         include('connect.php');
-                        $select=mysql_query("SELECT * FROM admin_details order by id desc");
+                        $select=mysqli_query($bd,"SELECT * FROM admin_details order by id desc");
                         $i=1;
-                        while($userrow=mysql_fetch_array($select))
+                        while($userrow=mysqli_fetch_array($select))
                         {
                             $id=$userrow['id'];
                             $username=$userrow['username'];

@@ -26,7 +26,7 @@ if(isset($_POST['send'])!="")
 
 
 
-    $update=mysql_query("INSERT INTO bats_details(scientificName,kingdom,phylum,class,orderr,genus,family,subFamily,
+    $update=mysqli_query($bd,"INSERT INTO bats_details(scientificName,kingdom,phylum,class,orderr,genus,family,subFamily,
 speciesAuthority,commonNames,synonyms,redListCategory,distribution,oioCountries,population,roosts,commonFood,bibliography,conservation,created)VALUES
                                       ('$scientificName','$kingdom','$phylum','$class','$orderr','$genus','$family','$subFamily','$speciesAuthority','$commonNames','$synonyms','$redListCategory','$distribution','$oioCountries',
                                       '$population','$roosts','$commonFood','$bibliography','$conservation',now())");

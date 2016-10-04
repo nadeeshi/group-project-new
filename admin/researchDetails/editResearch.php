@@ -43,7 +43,7 @@ if(isset($_GET['id']))
 
 
 
-        $updated=mysql_query("UPDATE research_details SET
+        $updated=mysqli_query($db,"UPDATE research_details SET
         researchName='$researchName', assessmentNames='$assessmentNames',kingdom='$kingdom', phylum='$phylum'  ,class='$class' ,orderr='$orderr',
          family='$family',taxonName='$taxonName',synonyms='$synonyms',commonNames='$commonNames',taxonomicNotes='$taxonomicNotes',redListCategory='$redListCategory',
          criteria='$criteria',more1='$more1',description='$description',countryOccurrences='$countryOccurrences',more2='$more2',population='$population',
@@ -80,8 +80,8 @@ ob_end_flush();
     <div id="page-inner">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="page-head-line" style="color: #500a6f">Bats Details</h1>
-                <h1 class="page-subhead-line">All bats details </h1>
+                <h1 class="page-head-line" style="color: #500a6f">Research Details</h1>
+                <h1 class="page-subhead-line">All research details </h1>
 
             </div>
         </div>
@@ -95,14 +95,14 @@ ob_end_flush();
                     </div>
 
                     <div class="panel-body">
-                        <h4 style="color: #cc006a">Update Bat details</h4>
+                        <h4 style="color: #cc006a">Update Research details</h4>
                         <div style="margin-top: 20px;">
                             <?php
                             if(isset($_GET['id']))
                             {
                                 $id=$_GET['id'];
-                                $getselect=mysql_query("SELECT * FROM research_details WHERE id='$id'");
-                                while($profile=mysql_fetch_array($getselect))
+                                $getselect=mysqli_query($bd,"SELECT * FROM research_details WHERE id='$id'");
+                                while($profile=mysqli_fetch_array($getselect))
                                 {
 
                                     $researchName=$profile['researchName'];
