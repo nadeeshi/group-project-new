@@ -1,22 +1,26 @@
-<!DOCTYPE html>
+<?php
+require_once('auth.php');
+?>
+
+
+
+<!DOCTYPE>
 <html>
-
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Login</title>
 
-    <title>BatFacts.com</title>
+
 
     <!-- BOOTSTRAP STYLES-->
-    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/bootstrap.css" rel="stylesheet" />
     <!-- FONTAWESOME STYLES-->
-    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="../css/font-awesome.css" rel="stylesheet" />
 
     <!--CUSTOM BASIC STYLES-->
-    <link href="css/basic.css" rel="stylesheet" />
+    <link href="../css/basic.css" rel="stylesheet" />
     <!--CUSTOM MAIN STYLES-->
-    <link href="css/custom.css" rel="stylesheet" />
+    <link href="../css/custom.css" rel="stylesheet" />
 
     <!-- GOOGLE FONTS-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
@@ -27,21 +31,18 @@
     <!-- /. FOOTER  -->
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
     <!-- JQUERY SCRIPTS -->
-    <script src="js/jquery-1.10.2.js"></script>
+    <script src="../js/jquery-1.10.2.js"></script>
     <!-- BOOTSTRAP SCRIPTS -->
-    <script src="js/bootstrapjs.js"></script>
+    <script src="../js/bootstrapjs.js"></script>
     <!-- METISMENU SCRIPTS -->
-    <script src="js/jquery.metisMenu.js"></script>
+    <script src="../js/jquery.metisMenu.js"></script>
     <!-- CUSTOM SCRIPTS -->
-    <script src="js/custom.js"></script>
-
-
+    <script src="../js/custom.js"></script>
 
 </head>
 
-
-
 <body>
+
 <div id="wrapper">
 
 <!--Nav Top -->
@@ -53,7 +54,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="home.php">Admin Panel</a>
+        <a class="navbar-brand" href="home.php" >Admin Panel</a>
     </div>
 
 
@@ -78,10 +79,13 @@
         <ul class="nav" id="main-menu">
             <li>
                 <div class="user-img-div">
-                    <img src="img/2.jpg" class="img-thumbnail" />
+                    <img src="../img/2.jpg" class="img-thumbnail" />
 
                     <div class="inner-text">
-                        Nadee Sansari
+                        <?php
+                        echo $_SESSION['SESS_FIRST_NAME'];
+                        ?>
+
                         <br />
                         <small>online</small>
                     </div>
@@ -92,22 +96,21 @@
 
 
             <li>
-                <a class="active-menu" href="home.php"><i class="fa fa-dashboard "></i>Dashboard</a>
+                <a class="active-menu" href="../home.php" ><i class="fa fa-dashboard "></i>Dashboard</a>
             </li>
 
 
 
 
             <li>
-                <a href="#"><i class="fa fa-yelp "></i>User Details <span class="fa arrow"></span></a>
+                <a href="#"><i class="fa fa-desktop "></i>User Details <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="adminDetails/adminDetailsValidate.php"></i>Admin Details</a>
+                        <a href="adminDetailsValidate.php"></i>Admin Details</a>
                     </li>
                     <li>
-                        <a href="researcherDetails/researcherDetailsValidate.php"></i>Researchers Details</a>
+                        <a href="../researcherDetails/researcherDetailsValidate.php">Researchers Details</a>
                     </li>
-
 
 
                 </ul>
@@ -121,12 +124,15 @@
                 <a href="#"><i class="fa fa-yelp "></i>Reaserch Details <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="researchDetails/listOfResearch.php"></i>list of Research</a>
+                        <a href="../researchDetails/listOfResearch.php"></i>list of Research</a>
                     </li>
 
                     <li>
-                        <a href="researchDetails/researchDetails.php"></i>Add New Research Details</a>
+                        <a href="../researchDetails/researchDetails.php">Add New Research Details</a>
                     </li>
+
+
+
 
                 </ul>
             </li>
@@ -143,14 +149,14 @@
 
 
             <li>
-                <a href="#"><i class="fa fa-yelp ">Bats Details <span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level">
+                <a href="#"><i class="fa fa-yelp "></i>Bats Details <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
 
-                    <li>
-                        <a href="batsDetails/listOfBats.php"></i>List of Bats</a>
-                    </li>
-                    <li>
-                        <a href="batsDetails/newBat.php">Add New Bats</a>
+                            <li>
+                                <a href="../batsDetails/listOfBats.php"></i>List of Bats</a>
+                            </li>
+                            <li>
+                        <a href="../batsDetails/newBat.php"></i>Add New Bats</a>
                     </li>
 
 
@@ -179,7 +185,7 @@
 
 
             <li>
-                <a href="blank.html"><i class="fa fa-yelp ">Test 2</a>
+                <a href="blank.html"><i class="fa fa-yelp "></i>Test 2</a>
             </li>
         </ul>
 
@@ -188,6 +194,17 @@
 </nav>
 <!-- /. NAV SIDE  -->
 
+
+
+
+
+
+
+
+<div id="footer-sec"><b>Group 23-UCSC Group Project</b>
+</div>
+</body>
+</html>
 
 
 

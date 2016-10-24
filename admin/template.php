@@ -81,6 +81,9 @@
                     <img src="img/2.jpg" class="img-thumbnail" />
 
                     <div class="inner-text">
+                        <?php
+                        echo $_SESSION['SESS_FIRST_NAME'];
+                        ?>
                         Nadee Sansari
                         <br />
                         <small>online</small>

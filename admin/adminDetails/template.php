@@ -1,3 +1,7 @@
+
+<?php
+require_once('auth.php');
+?>
 <!DOCTYPE html>
 <html>
 
@@ -81,7 +85,9 @@
                     <img src="../img/2.jpg" class="img-thumbnail" />
 
                     <div class="inner-text">
-                        Nadee Sansari
+
+
+
                         <br />
                         <small>online</small>
                     </div>

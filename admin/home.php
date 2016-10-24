@@ -82,7 +82,10 @@ require_once('auth.php');
                     <img src="img/2.jpg" class="img-thumbnail" />
 
                     <div class="inner-text">
-                        Nadee Sansari
+                        <?php
+                        echo $_SESSION['SESS_FIRST_NAME'];
+                        ?>
+
                         <br />
                         <small>online</small>
                     </div>

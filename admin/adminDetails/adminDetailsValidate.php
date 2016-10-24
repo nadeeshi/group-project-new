@@ -133,6 +133,11 @@ function validatePassword($pword){
 
 <head>
     <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>BatFacts.com</title>
@@ -146,7 +151,7 @@ function validatePassword($pword){
 
 
 <body>
-<?php include("template.php")?>
+<?php include("home.php")?>
 
 
 
