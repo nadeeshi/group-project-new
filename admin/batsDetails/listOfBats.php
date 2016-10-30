@@ -47,7 +47,7 @@
                             while($userrow=mysqli_fetch_array($select))
                             {
                                 $id=$userrow['id'];
-                                $scientificName=$userrow['scientificName'];
+                                $scientificName=$userrow['scientific_name'];
                                 $kingdom=$userrow['kingdom'];
                                 $phylum=$userrow['phylum'];
                                 $created=$userrow['created']

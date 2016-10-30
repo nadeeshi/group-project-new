@@ -48,9 +48,11 @@ include_once '../mainhome/dbconnect.php';
 
               <?php } ?>
               <li class="min-link"><a href="../phpPages/researcherHomePage.php">Home</a></li>
-              <li class="min-link"><a href="../final_insert_update_del/insert.php">Add Information</a></li>
+                    <li class="min-link"><a href="../nadee/listOfBats.php">Bats Info</a></li>
+                    <li class="min-link"><a href="../nadee/listOfResearch.php">Research Info</a></li>
+              <!--<li class="min-link"><a href="../final_insert_update_del/insert.php">Add Information</a></li>
               <li class="min-link"><a href="../final_insert_update_del/update_bat.php">Update Information</a></li>
-              <li class="min-link"><a href="../final_insert_update_del/delete_bat.php">Delete Information</a></li>
+              <li class="min-link"><a href="../final_insert_update_del/delete_bat.php">Delete Information</a></li>-->
               <li class="min-link"><a href="../forum/forum.php">Forum</a></li>
               <li class="min-link"><a href="../batnews/grid31.php">News</a></li>
               <li class="min-link"><a href="../help/index.php">Help</a></li>
@@ -70,9 +72,11 @@ include_once '../mainhome/dbconnect.php';
  			</div>
 			<ul class="nav nav-pills nav-stacked list-of-content">
 				<li><a href="../phpPages/researcherHomePage.php">Home</a></li>
-				<li><a href="../final_insert_update_del/insert.php">Add Information</a></li>
+                <li><a href="../nadee/listOfBats.php">Bats Info</a></li>
+                <li><a href="../nadee/listOfResearch.php">Research Info</a></li>
+				<!--<li><a href="../final_insert_update_del/insert.php">Add Information</a></li>
         <li><a href="../final_insert_update_del/update_bat.php">Update Information</a></li>
-        <li><a href="../final_insert_update_del/delete_bat.php">Delete Information</a></li>
+        <li><a href="../final_insert_update_del/delete_bat.php">Delete Information</a></li>-->
 				<li><a href="../forum/forum.php">Forum</a></li>
 				<li><a href="../batnews/grid31.php">News</a></li>
         <li><a href="../help/index.php">Help</a></li>

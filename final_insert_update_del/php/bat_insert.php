@@ -170,7 +170,7 @@ if (isset($_POST['submit'])) {
 
         require_once('../mysqli_connect.php');
 
-        $query = "INSERT INTO batinsert(scientific_name, bat_order, kingdom, genus, phylum, family, sub_family, bat_class,species,common_names,synonyms,roost,conservation_status,country_occurence,feeding,breeding,threats,conservation_action,measurements,other_details)
+        $query = "INSERT INTO bat_details(scientific_name, bat_order, kingdom, genus, phylum, family, sub_family, bat_class,species,common_names,synonyms,roost,conservation_status,country_occurence,feeding,breeding,threats,conservation_action,measurements,other_details)
                 
                 VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
