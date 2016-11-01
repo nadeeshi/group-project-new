@@ -1,4 +1,9 @@
 <?php
+require_once('auth.php');
+?>
+
+
+<?php
 // define variables and set to empty values
 $usernameErr = $emailidErr = $mobilenoErr = $passwordErr  = "";
 $username = $emailid = $mobileno = $password =  "";
@@ -125,244 +130,285 @@ function validatePassword($pword){
 
 
 ?>
-
-
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
-
-
 <head>
-    <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Login</title>
+
+
+
+    <!-- BOOTSTRAP STYLES-->
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <!-- FONTAWESOME STYLES-->
+    <link href="../css/font-awesome.css" rel="stylesheet" />
+
+    <!--CUSTOM BASIC STYLES-->
+    <link href="../css/basic.css" rel="stylesheet" />
+    <!--CUSTOM MAIN STYLES-->
+    <link href="../css/custom.css" rel="stylesheet" />
+
+    <!-- GOOGLE FONTS-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 
 
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>BatFacts.com</title>
-    <style>
-        .error {color: #FF0000;}
-    </style>
-
+    <!-- /. FOOTER  -->
+    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+    <!-- JQUERY SCRIPTS -->
+    <script src="../js/jquery-1.10.2.js"></script>
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="../js/bootstrapjs.js"></script>
+    <!-- METISMENU SCRIPTS -->
+    <script src="../js/jquery.metisMenu.js"></script>
+    <!-- CUSTOM SCRIPTS -->
+    <script src="../js/custom.js"></script>
 
 </head>
 
 
-
 <body>
-<?php include("home.php")?>
-
-
-
-<div id="page-wrapper">
-<div id="page-inner">
-    <div class="row">
-        <div class="col-md-12">
-            <h1 class="page-head-line" style="color: #500a6f"><b>Admin Details</b></h1>
-            <h1 class="page-subhead-line">All administrators details </h1>
-
-        </div>
-    </div>
-
-
-    <div class="row">
-        <div class="col-md-6">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    Insert data to the Database
-                </div>
-
-                <div class="panel-body">
-                    <h4 style="color: #cc006a">Add New Admin</h4>
-                    <div style="margin-top: 20px;">
-
-
-                        <!--add new Admin--------------------------------------------------------->
-                        <div class="display">
-
-                            <!-- <form action="insertAdmin.php" method="post" name="insertform">
-
-
-                                 <div class="col-xs-12">
-                                     <label for="name" id="preinput" class="col-xs-5"> USER NAME : </label>
-
-                                     <input type="text" name="username" required placeholder="Enter admin name" id="inputid" class="col-xs-7"/>
-                                 </div>
-                                 <div class="col-xs-12">
-                                     <label  for="email" id="preinput" class="col-xs-5"> EMAIL ID : </label>
-                                     <input type="email" name="usermail" required placeholder="Enter Email" id="inputid" class="col-xs-7"/>
-                                 </div>
-                                 <div class="col-xs-12">
-                                     <label for="mobile" id="preinput" class="col-xs-5"> PHONE NUMBER : </label>
-                                     <input type="text" name="usermobile" required placeholder="Enter mobile number" id="inputid" class="col-xs-7"/>
-                                 </div>
-                                 <div class="col-xs-12">
-                                     <label  for="password" id="preinput" class="col-xs-5"> PASSWORD : </label>
-                                     <input type="password" name="password" required placeholder="Enter password" id="inputid" class="col-xs-7"/>
-                                 </div>
-
-
-
-                                 <div class="col-xs-12">
-                                     <input type="submit" name="send" value="Submit" id="inputid1"  />
-                                 </div>
-                             </form>-->
-
-
-
-
-                            <!--close new admin------------------------------------------------------------------------------->
-                            <p><span class="error">* required field.</span></p>
-                            <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-                                <div class="col-xs-12">
-                                    <label for="firstname" class="col-xs-5">User Name:</label>
-                                    <input type="text" name="username"  required id="inputid" class="col-xs-6" value="<?php echo $username; ?>" /><span class="error">* <?php echo $usernameErr; ?></span><br/><br/></div>
-                                <div class="col-xs-12">
-                                    <label for="lastname" class="col-xs-5">Email:</label>
-                                    <input type="text" name="emailid" id="inputid" required class="col-xs-6"  value="<?php echo $emailid; ?>" /><span class="error"> <?php echo $emailidErr; ?></span><br/><br/></div>
-                                <div class="col-xs-12">
-                                    <label for="username" class="col-xs-5">Mobile No:</label>
-                                    <input type="text" name="mobileno" id="inputid" required  class="col-xs-6" value="<?php echo $mobileno; ?>" /><span class="error">* <?php echo $mobilenoErr; ?></span><br/><br/></div>
-                                <div class="col-xs-12">
-                                    <label for="password" class="col-xs-5">Password:</label>
-                                    <input type="password" name="password" class="col-xs-6" required id="inputid" /><span class="error">* <?php echo $passwordErr; ?></span><br/><br/></div>
-                                <br/>
-                                <input type = "submit" value="Submit" name="submit">
-                            </form>
-
-                            <?php
-                            echo "<h2>New Input:</h2>";
-                            echo "username:" . $username;
-                            echo "<br>";
-                            echo "emailid:" . $emailid;
-                            echo '<br>';
-                            echo "mobilno:" . $mobileno;
-                            echo '<br>';
-                            echo "Password:" . $password;
-                            echo '<br>';
-
-                            ?>
-
-
-
-
-                            <?php
-                            ob_start();
-                            include("connect.php");
-
-                            /*$username=($_POST['username']);
-                            $usermail=($_POST['emailid']);
-                            $usermobile=($_POST['mobileno']);
-                            $password=($_POST['password']);*/
-
-
-                            if(($username != '' )&& ($password != '') && ($emailid != '') && ($mobileno != '')){
-                                $update=mysqli_query($bd,"INSERT INTO admin_details(username,emailid,mobileno,created,password)VALUES
-                                      ('$username','$emailid','$mobileno',now(),'$password')");
-
-                                if($update)
-                                {
-                                    //$msg="Successfully Updated!!";
-                                    //echo "<script type='text/javascript'>alert('$msg');</script>";
-                                    // header('Location:adminDetails.php');
-                                }
-                                else
-                                {
-                                    $errormsg="Something went wrong, Try again";
-                                    echo "<script type='text/javascript'>alert('$errormsg');</script>";
-                                }
-                            }
-
-                            ob_end_flush();
-                            ?>
-
-
-
-
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-
-                </div>
-            </div>
-
-
-
-
-
-        </div>
-
-        <div class="col-md-6">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    Details of Admin
-                </div>
-
-                <div class="panel-body">
-
-
-                    <!--start  viewAdmin---------------------------------------------------------------------->
-                    <?php
-                    include('connect.php');
-                    $select=mysqli_query($bd,"SELECT * FROM admin_details order by id desc");
-                    $i=1;
-                    while($userrow=mysqli_fetch_array($select))
-                    {
-                        $id=$userrow['id'];
-                        $username=$userrow['username'];
-                        $usermail=$userrow['emailid'];
-                        $usermobile=$userrow['mobileno'];
-                        $created=$userrow['created']
-                        ?>
-
-                        <div class="display">
-                            <p> USER NAME : <span style="color: #125acd"><?php echo $username; ?></span>
-
-                                <a href="editAdmin.php?id=<?php echo $id; ?>"><span class="edit" title="Edit" style="color: #ff0084"> Edit </span></a>
-                                <a href="deleteAdmin.php?id=<?php echo $id; ?>"
-                                   onclick="return confirm('Are you sure you wish to delete this Record?');">
-                                    <span class="delete" title="Delete" style="color: #ff0084"> Delete </span></a>
-                            </p>
-                            <br />
-                            <p> EMAIL ID : <span style="color: #125acd"><?php echo $usermail; ?></span>
-
-                            </p>
-                            <br />
-                            <p> MOBILE NO : <span style="color: #125acd"><?php echo $usermobile; ?></span>
-                            </p>
-                            <br />
-                            <p> CREATED ON : <span style="color: #125acd"><?php echo $created; ?></span>
-                            </p>
-                            <br />
-                        </div>
-                    <?php } ?>
-                    <!--close viewAdmin---------------------------------------------------------------->
-
-
-                </div>
-            </div>
-        </div>
-
-
-
-    </div>
+<div>
+    <?php include "template.php" ?>
 </div>
 
+<div id="page-wrapper">
+    <div id="page-inner">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-head-line" style="color: #500a6f"><b>Admin Details</b></h1>
+                <h1 class="page-subhead-line">All administrators details </h1>
+
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Insert data to the Database
+                    </div>
+
+                    <div class="panel-body">
+                        <h4 style="color: #cc006a">Add New Admin</h4>
+                        <div style="margin-top: 20px;">
+
+
+                            <!--add new Admin--------------------------------------------------------->
+                            <div class="display">
+
+                                <!-- <form action="insertAdmin.php" method="post" name="insertform">
+
+
+                                     <div class="col-xs-12">
+                                         <label for="name" id="preinput" class="col-xs-5"> USER NAME : </label>
+
+                                         <input type="text" name="username" required placeholder="Enter admin name" id="inputid" class="col-xs-7"/>
+                                     </div>
+                                     <div class="col-xs-12">
+                                         <label  for="email" id="preinput" class="col-xs-5"> EMAIL ID : </label>
+                                         <input type="email" name="usermail" required placeholder="Enter Email" id="inputid" class="col-xs-7"/>
+                                     </div>
+                                     <div class="col-xs-12">
+                                         <label for="mobile" id="preinput" class="col-xs-5"> PHONE NUMBER : </label>
+                                         <input type="text" name="usermobile" required placeholder="Enter mobile number" id="inputid" class="col-xs-7"/>
+                                     </div>
+                                     <div class="col-xs-12">
+                                         <label  for="password" id="preinput" class="col-xs-5"> PASSWORD : </label>
+                                         <input type="password" name="password" required placeholder="Enter password" id="inputid" class="col-xs-7"/>
+                                     </div>
+
+
+
+                                     <div class="col-xs-12">
+                                         <input type="submit" name="send" value="Submit" id="inputid1"  />
+                                     </div>
+                                 </form>-->
+
+
+
+
+                                <!--close new admin------------------------------------------------------------------------------->
+                                <p><span class="error">* required field.</span></p>
+                                <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+                                    <div class="col-xs-12">
+                                        <label for="firstname" class="col-xs-5">User Name:</label>
+                                        <input type="text" name="username"  required id="inputid" class="col-xs-6" value="<?php echo $username; ?>" /><span class="error">* <?php echo $usernameErr; ?></span><br/><br/></div>
+                                    <div class="col-xs-12">
+                                        <label for="lastname" class="col-xs-5">Email:</label>
+                                        <input type="text" name="emailid" id="inputid" required class="col-xs-6"  value="<?php echo $emailid; ?>" /><span class="error"> <?php echo $emailidErr; ?></span><br/><br/></div>
+                                    <div class="col-xs-12">
+                                        <label for="username" class="col-xs-5">Mobile No:</label>
+                                        <input type="text" name="mobileno" id="inputid" required  class="col-xs-6" value="<?php echo $mobileno; ?>" /><span class="error">* <?php echo $mobilenoErr; ?></span><br/><br/></div>
+                                    <div class="col-xs-12">
+                                        <label for="password" class="col-xs-5">Password:</label>
+                                        <input type="password" name="password" class="col-xs-6" required id="inputid" /><span class="error">* <?php echo $passwordErr; ?></span><br/><br/></div>
+                                    <br/>
+                                    <input type = "submit" value="Submit" name="submit">
+                                </form>
+
+                                <?php
+                                echo "<h2>New Input:</h2>";
+                                echo "username:" . $username;
+                                echo "<br>";
+                                echo "emailid:" . $emailid;
+                                echo '<br>';
+                                echo "mobilno:" . $mobileno;
+                                echo '<br>';
+                                echo "Password:" . $password;
+                                echo '<br>';
+
+                                ?>
+
+
+
+
+                                <?php
+                                ob_start();
+                                include("../connect.php");
+
+                                /*$username=($_POST['username']);
+                                $usermail=($_POST['emailid']);
+                                $usermobile=($_POST['mobileno']);
+                                $password=($_POST['password']);*/
+
+
+                                if(($username != '' )&& ($password != '') && ($emailid != '') && ($mobileno != '')){
+                                    $update=mysqli_query($bd,"INSERT INTO admin_details(username,emailid,mobileno,created,password)VALUES
+                                      ('$username','$emailid','$mobileno',now(),'$password')");
+
+                                    if($update)
+                                    {
+                                        //$msg="Successfully Updated!!";
+                                        //echo "<script type='text/javascript'>alert('$msg');</script>";
+                                        // header('Location:adminDetails.php');
+                                    }
+                                    else
+                                    {
+                                        $errormsg="Something went wrong, Try again";
+                                        echo "<script type='text/javascript'>alert('$errormsg');</script>";
+                                    }
+                                }
+
+                                ob_end_flush();
+                                ?>
+
+
+
+
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Details of Admin
+                    </div>
+
+                    <div class="panel-body">
+
+
+                        <!--start  viewAdmin---------------------------------------------------------------------->
+                        <?php
+                        include('../connect.php');
+                        $select=mysqli_query($bd,"SELECT * FROM admin_details order by id desc");
+                        $i=1;
+                        while($userrow=mysqli_fetch_array($select))
+                        {
+                            $id=$userrow['id'];
+                            $username=$userrow['username'];
+                            $usermail=$userrow['emailid'];
+                            $usermobile=$userrow['mobileno'];
+                            $created=$userrow['created']
+                            ?>
+
+                            <div class="display">
+                                <p> USER NAME : <span style="color: #125acd"><?php echo $username; ?></span>
+
+                                    <a href="editAdmin.php?id=<?php echo $id; ?>"><span class="edit" title="Edit" style="color: #ff0084"> Edit </span></a>
+                                    <a href="deleteAdmin.php?id=<?php echo $id; ?>"
+                                       onclick="return confirm('Are you sure you wish to delete this Record?');">
+                                        <span class="delete" title="Delete" style="color: #ff0084"> Delete </span></a>
+                                </p>
+                                <br />
+                                <p> EMAIL ID : <span style="color: #125acd"><?php echo $usermail; ?></span>
+
+                                </p>
+                                <br />
+                                <p> MOBILE NO : <span style="color: #125acd"><?php echo $usermobile; ?></span>
+                                </p>
+                                <br />
+                                <p> CREATED ON : <span style="color: #125acd"><?php echo $created; ?></span>
+                                </p>
+                                <br />
+                            </div>
+                        <?php } ?>
+                        <!--close viewAdmin---------------------------------------------------------------->
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
 
 
 
 <div id="footer-sec"><b>Group 23-UCSC Group Project</b>
 </div>
-
-
-
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

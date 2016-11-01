@@ -1,7 +1,3 @@
-
-<?php
-require_once('auth.php');
-?>
 <!DOCTYPE html>
 <html>
 
@@ -85,8 +81,9 @@ require_once('auth.php');
                     <img src="../img/2.jpg" class="img-thumbnail" />
 
                     <div class="inner-text">
-
-
+                        <?php
+                        echo $_SESSION['SESS_FIRST_NAME'];
+                        ?>
 
                         <br />
                         <small>online</small>
@@ -153,10 +150,10 @@ require_once('auth.php');
                 <ul class="nav nav-second-level">
 
                     <li>
-                        <a href="../batsDetails/listOfBats.php">List of Bats</a>
+                        <a href="listOfBats.php">List of Bats</a>
                     </li>
                     <li>
-                        <a href="../batsDetails/newBat.php">Add New Bats</a>
+                        <a href="newBat.php">Add New Bats</a>
                     </li>
 
 

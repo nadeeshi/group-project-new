@@ -1,4 +1,9 @@
 <?php
+require_once('auth.php');
+?>
+
+
+<?php
 // define variables and set to empty values
 $usernameErr = $usermailErr = $usermobileErr   = "";
 $username = $usermail = $usermobile =   "";

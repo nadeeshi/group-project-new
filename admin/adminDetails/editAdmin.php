@@ -36,7 +36,7 @@ ob_end_flush();
 </head>
 
 <body>
-<?php include("template.php")?>
+<?php include("template.php") ?>
 
 
 <div id="page-wrapper">
