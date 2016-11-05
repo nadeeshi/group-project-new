@@ -1,29 +1,28 @@
 ﻿
 
 /*==============================================
-    MAIN BOX  STYLES    
+    MAIN BOX  STYLES
     =============================================*/
 .main-box {
     text-align:center;
     padding:20px;
     border-radius:5px;
-    -moz-border-radius:5px ;
-    -webkit-border-radius:5px;
+
     margin-bottom:40px;
 }
     .main-box a,.main-box a:hover {
-        color:#fff;
+        color:blue;
         text-decoration:none;
 
     }
 .mb-dull {
-    background-color:#ce8483;
+    background-color:#1AA7ED !important;
 }
 .mb-red {
-    background-color:#a94442;
+    background-color:#1ACAED;
 }
 .mb-pink {
-    background-color:#843534;
+    background-color:#1ACAED;
 }
     .main-box h5 {
         font-size:16px;
@@ -31,7 +30,7 @@
         text-transform:uppercase;
     }
 /*==============================================
-    CHAT WINDOW  STYLES    
+    CHAT WINDOW  STYLES
     =============================================*/
 
 .chat-widget-main {
@@ -48,7 +47,7 @@
     border-top-color: #424242;
     border-width: 15px;
     margin-left: -15px;
-   
+
 }
 
 .chat-widget-left {
@@ -61,7 +60,7 @@
     position: relative;
     border: 1px solid #424242;
     font-size:14px;
-   
+
 }
 .chat-widget-right:after {
     top: 100%;
@@ -69,7 +68,7 @@
     border: solid transparent;
     content: " ";
     position: absolute;
-    border-top-color: #d51111;
+    border-top-color:blue;
     border-width: 15px;
     margin-left: -15px;
 }
@@ -84,7 +83,7 @@
     position: relative;
     border: 1px solid #d51111;
     font-size:14px;
-    
+
 }
 
 .chat-widget-name-left {
@@ -104,7 +103,7 @@
     text-align:right;
     font-weight:900;
     padding-bottom:20px;
-    
+
 
 }
 
@@ -181,8 +180,8 @@ background-color: #929292;
     =====================================================*/
 
 #port-folio {
-    padding-top: 10px; 
-    padding-bottom: 100px; 
+    padding-top: 10px;
+    padding-bottom: 100px;
 }
 .portfolio-item {
     border:1px solid #000;
@@ -195,11 +194,11 @@ background-color: #929292;
     }
 
 .portfolio-item .overlay {
-   
+
   background-color: #000;
   text-align: center;
   padding-bottom:30px;
-  
+
 }
 
 /*==========================================
@@ -229,7 +228,7 @@ ul#filters {
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		-o-box-sizing: border-box;
-		width: 100%;		
+		width: 100%;
         opacity:.2;
 		float:left;
 		overflow:hidden;
@@ -245,4 +244,18 @@ ul#filters {
 }
     .logout{
         color: #ffffff !important;
+}
+
+
+
+.panel-default {
+    border-color:lightsteelblue;
+}
+.panel {
+    margin-bottom: 20px;
+    background-color:  lightsteelblue;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 }

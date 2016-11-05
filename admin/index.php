@@ -61,47 +61,47 @@ unset($_SESSION['SESS_LAST_NAME']);
 
 
                         <tr>
-                        <div class="form-group input-group">
-                            <span class="input-group-addon"><i class="fa fa-tag"  ></i></span><!--for get small icon-->
-                            <input type="text" name="username" class="form-control" placeholder="Your Username " required/><!--for get input field-->
-                        </div>
+                            <div class="form-group input-group">
+                                <span class="input-group-addon"><i class="fa fa-tag"  ></i></span><!--for get small icon-->
+                                <input type="text" name="username" class="form-control" placeholder="Your Username " required/><!--for get input field-->
+                             </div>
 
-                         </tr>
+                        </tr>
 
                          <tr>
-                         <div class="form-group input-group">
-                             <span class="input-group-addon"><i class="fa fa-lock"  ></i></span>
-                             <input type="password" name="password" class="form-control"  placeholder="Your Password" required/>
-                         </div>
+                            <div class="form-group input-group">
+                                <span class="input-group-addon"><i class="fa fa-lock"  ></i></span>
+                                <input type="password" name="password" class="form-control"  placeholder="Your Password" required/>
+                             </div>
                          </tr>
 
 
                          <tr>
                         <!--for checkme & forgot password?-->
-                        <div class="form-group">
-                             <label class="checkbox-inline">
-                             <input type="checkbox" /> Remember me
-                            </label>
-                                            <span class="pull-right">
-                                                   <a href="index.php" >Forget password ? </a>
-                                            </span>
-                        </div>
+                            <div class="form-group">
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" /> Remember me
+                                </label>
+                                <span class="pull-right">
+                                    <a href="index.php" >Forget password ? </a>
+                                </span>
+                             </div>
                              <!--close checkme-->
                          </tr>
 
 
                         <tr>
-                         <div align="center">
-                            <input name="" type="submit" class="btn btn-primary" style="width: 100px" value="login" />
-                         </div>
+                            <div align="center">
+                                <input name="" type="submit" class="btn btn-primary" style="width: 100px" value="login" />
+                            </div>
                          </tr>
                     </table>
                 </form>
 
-                </div>
             </div>
         </div>
     </div>
+</div>
 
 </body>
 </html>
