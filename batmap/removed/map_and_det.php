@@ -1,28 +1,29 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>thread</title>
-	<link href="https://fonts.googleapis.com/css?family=Alike+Angular" rel="stylesheet"> 
-	<link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="../css/mapstyle.css" >	
-	<link href="../css/navbar1n2.css" rel="stylesheet" type="text/css">
-	<link href="../css/footer.css" rel="stylesheet">
-	<script src="../js/jquary.js"></script> 
-  	<script src="../js/bootstrapjs.js"></script>
+  <title>batsinfo</title>
+  <link href="https://fonts.googleapis.com/css?family=Alike+Angular" rel="stylesheet"> 
 	
-	
+	<link href="../assets/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="../assets/css/mapstyle.css" rel="stylesheet" type="text/css">	
+	<link href="../assets/css/navbar1n2.css" rel="stylesheet" type="text/css">
+	<link href="../assets/css/footer.css" rel="stylesheet">
+	<script src="../assets/bootstrap/jquary.js"></script> 
+  	<script src="../assets/bootstrap/bootstrapjs.js"></script>
 	
 	
 	
 </head>
 <body>
 	<div>
-		<?php include ("../template/navbarTemplate.php"); ?>
+		<?php include ("../IncludedFiles/navbarTemplate.php"); ?>
 	</div>
 	<div class="col-sm-8 col-sm-push-2 col-xs-12 insert-form">
 		<?php
 			
-			include ('from_search_image.php');	
+			include ('image.php');	
 		if($count ==1){
 	?>
 		<div id="page">
@@ -49,7 +50,7 @@
 							</p>
 						</li>
 						<li>
-							<?php include ('from_search_map.php');?>
+							<?php include ('googlemap.php')?>
 						</li>
 					</ul>
 				
@@ -110,7 +111,7 @@
 
 	<div class="row">
 	    <div class="col-xs-10 col-xs-push-2">
-	      <?php include ("../template/footer.php"); ?>
+	      <?php include ("../IncludedFiles/footer.php"); ?>
 	    </div>  
   	</div>
 

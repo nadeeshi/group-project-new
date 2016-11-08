@@ -35,9 +35,9 @@ include_once '../mainhome/dbconnect.php';
         
     		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       
-      			<form class="navbar-form  navbar-right">
+      			<form class="navbar-form  navbar-right" action="../search/testing.php" method="post">
         			<div class="form-group">
-          				<input type="text" class="form-control input-area" placeholder="Enter name here">
+          				<input type="text" class="form-control input-area" name='address' placeholder="Enter name here">
         			</div>
         			<button type="submit" class="btn btn-default">Search</button>
       			</form>
