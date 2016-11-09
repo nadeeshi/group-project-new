@@ -150,10 +150,10 @@
                 <ul class="nav nav-second-level">
 
                     <li>
-                        <a href="listOfBats.php">List of Bats</a>
+                        <a href="../batsDetails/listOfBats.php">List of Bats</a>
                     </li>
                     <li>
-                        <a href="newBat.php">Add New Bats</a>
+                        <a href="../batsDetails/newBat.php">Add New Bats</a>
                     </li>
 
 

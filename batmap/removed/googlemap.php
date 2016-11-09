@@ -2,7 +2,7 @@
 error_reporting(E_ALL ^ E_DEPRECATED);
 @mysql_connect("localhost","root","") or die("could not connect");
 
-@mysql_select_db("test2") or die("could not find");
+@mysql_select_db("project") or die("could not find");
 
 
 ?>
@@ -39,15 +39,15 @@ error_reporting(E_ALL ^ E_DEPRECATED);
 <body>
  
 <?php
-/*if($_POST){
+if($_POST){
 
 	
 		if(isset($_POST['address'])){
 		$searchq = $_POST['address'];
 		$searchq = preg_replace("#[^a-z]#i","",$searchq);
-		if(!empty($searchq)){*/
+		if(!empty($searchq)){
 
-		$query = mysql_query("SELECT * FROM fulldemo WHERE id = '".$_GET['batid']."';") or die("could not search");
+		$query = mysql_query("SELECT * FROM fulldemo WHERE name = '$searchq'") or die("could not search");
 		$count = mysql_num_rows($query);
 		$kk = array();
 			if($count == 0){
@@ -142,14 +142,14 @@ foreach($places_ar as $lplace){
 	<?php
 	}
 	}
-/*}else{echo 'nothing';
+}else{echo 'nothing';
 	break;
 }
 }else{echo 'nothing';}
 
     
     
-	}*/
+	}
 
 function geocode($address){
  

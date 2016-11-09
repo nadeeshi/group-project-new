@@ -2,18 +2,20 @@
 error_reporting(E_ALL ^ E_DEPRECATED);
 @mysql_connect("localhost","root","") or die("could not connect");
 
-@mysql_select_db("test2") or die("could not find");
+@mysql_select_db("project") or die("could not find");
 
 
 
-
+if($_POST){
 
 	
-		
+		if(isset($_POST['address'])){
+		$searchq = $_POST['address'];
+		$searchq = preg_replace("#[^a-z]#i","",$searchq);
 		$count = 0;
-		//if($_GET['batid']>=0){
+		if(!empty($searchq)){
 
-		$query = mysql_query("SELECT * FROM fulldemo WHERE id = '".$_GET['batid']."' ;") or die("could not search");
+		$query = mysql_query("SELECT * FROM fulldemo WHERE name = '$searchq'") or die("could not search");
 			while($row = mysql_fetch_array($query)){
 					$fname = $row['name'];
 					$lplace1 = $row['city'];
@@ -28,5 +30,5 @@ error_reporting(E_ALL ^ E_DEPRECATED);
 		
 		//echo '<p><img src="'.$row['description'].'"></p>';
 		
-	}//}
+	}}}}
 ?>
