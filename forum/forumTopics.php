@@ -35,7 +35,7 @@ require_once ("connection.php");
 		</div>
 		<div class="row">
 			<?php
-				$sql= "SELECT topic_subject, topic_date, topic_by FROM topics";
+				$sql= "SELECT topic_id, topic_subject, topic_date, topic_by FROM topics";
 				$result= mysqli_query($db, $sql);
 
 				echo "<table>";
@@ -48,7 +48,7 @@ require_once ("connection.php");
 		    	echo "<tr>";
 		        foreach ($result as $user) {
 		          	echo  "<td class='col-xs-9' height='50'>";
-		          	echo "<a href=discussion.php?id=>".$user['topic_subject']."</a>"." "."</td>";
+		          	echo "<a href='discussion.php?id=".$user['topic_id']."'>".$user['topic_subject']."</a>"." "."</td>";
 		          	echo  "<td height='50' class='col-xs-2'>";
 		            echo $user['topic_date']." "."</td>";
 		            echo "<td class='col-xs-1'>";

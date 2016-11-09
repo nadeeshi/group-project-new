@@ -22,10 +22,11 @@ require_once ("connection.php");
 			<?php
 				/*$sql= "SELECT topic_content FROM topics WHERE topic_content=" . mysqli_real_escape_string ($db,isset($_GET['topic_id']) ? $_GET['topic_id'] : null);*/
 
-				$sql="SELECT topic_id, topic_contect FROM topics 
+				$sql="SELECT topic_id, topic_content FROM topics 
 				WHERE topics.topic_id = " . mysqli_real_escape_string($db, isset($_GET['id']) ? $_GET['id'] : null);
 				$result= mysqli_query($db, $sql);
-				
+				$row = mysqli_fetch_assoc($result);
+				echo $row['topic_content'];
 			?>
 		</div>
 	</div>
