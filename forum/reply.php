@@ -1,28 +1,7 @@
-<?php 
-$msg ='';
-require_once ('connection.php');
-if (!empty($_POST)) {
-  $topic = $_POST['topic'];
-  $message =$_POST['message'];
-  $date= date('Y-m-d');
-
-  $query= "INSERT INTO topics (topic_subject, topic_content, topic_date) VALUES ('$topic' ,'$message', '$date' )";
-  $result= mysqli_query($db, $query);
-
-  if ($result){
-    $msg ='<a href=forumTopics.php>View your topics</a>';
-  }
-  else{
-    $msg= "Error" .'<br>'. mysqli_error($db);
-  }
-
-}
-?>
-
 <!DOCTYPE html>
 <html>
   <head>
-  	<title>addThread</title>
+  	<title>reply</title>
   	<link href="bootstrap.css" rel="stylesheet" type="text/css">
   	<link href="../assets/css/forum.css" rel="stylesheet" type="text/css">
     <link href="../assets/css/navbar1n2.css" rel="stylesheet" type="text/css">
@@ -38,24 +17,12 @@ if (!empty($_POST)) {
     </div>
     <div class="col-sm-8 col-sm-push-2 col-xs-12 insert-form">
     	<div class="content col-xs-12">
-        <h4 class="header-content">Your New Discussion Topic</h4>
+        <h4 class="header-content">Your Reply</h4>
           <form class="form-horizontal form-group-custom" method="post" action="addThread.php">
-            <div class="form-group">
-              <label class="control-label col-xs-2" for="subject">Subject:</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control form-row" id="subject" name="topic" placeholder="Enter Subject" required>
-              </div>
-            </div>
             <div class="form-group">
               <label class="control-label col-xs-2" for="pwd">Massage:</label>
               <div class="col-xs-8">
-                <textarea class="massage form-row form-control" rows="6" cols="8" name="message">Enter Massage Here</textarea>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-xs-2" for="pwd">Attachment:</label>
-              <div class="col-xs-8">
-                <input type="file" name="files" >
+                <textarea class="massage form-row form-control" rows="6" cols="8" name="massage">Enter Massage Here</textarea>
               </div>
             </div>
             <div class="form-group form-group-custom">
@@ -65,8 +32,7 @@ if (!empty($_POST)) {
             </div>
             <div class="form-group">
               <label class="control-label col-xs-2" for="pwd"></label>
-              <div class="col-xs-8">
-                <?php echo $msg; ?>
+              <div class="col-xs-8">                
               </div>
             </div>
           </form>

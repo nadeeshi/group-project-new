@@ -45,6 +45,11 @@
     margin-bottom: 10px;
 }
 
+a:hover, a:focus {
+    color: #0c0c0c;
+    text-decoration: underline;
+}
+
 
 /*addThread*/
 
