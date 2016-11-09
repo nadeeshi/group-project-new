@@ -2,13 +2,17 @@
 <html>
 <head>
 	<title>thread</title>
+	
+	
+	
 	<link href="https://fonts.googleapis.com/css?family=Alike+Angular" rel="stylesheet"> 
-	<link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="../css/newsmain.css">	
-	<link href="../css/navbar1n2.css" rel="stylesheet" type="text/css">
-	<link href="../css/footer.css" rel="stylesheet">
-	<script src="../js/jquary.js"></script> 
-  	<script src="../js/bootstrapjs.js"></script>
+	
+	<link href="../assets/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="../assets/css/newsmain.css" rel="stylesheet" type="text/css">	
+	<link href="../assets/css/navbar1n2.css" rel="stylesheet" type="text/css">
+	<link href="../assets/css/footer.css" rel="stylesheet">
+	<script src="../assets/bootstrap/jquary.js"></script> 
+  	<script src="../assets/bootstrap/bootstrapjs.js"></script>
 	
 	
 	
@@ -17,7 +21,7 @@
 </head>
 <body>
 	<div>
-		<?php include ("../template/navbarTemplate.php"); ?>
+		<?php include ("../includedFiles/navbarTemplate.php"); ?>
 	</div>
 	<div class="col-sm-8 col-sm-push-2 col-xs-12 insert-form">
 		<div class="container">
@@ -269,7 +273,7 @@
 
 	<div class="row">
 	    <div class="col-xs-10 col-xs-push-2">
-	      <?php include ("../template/footer.php"); ?>
+	      <?php include ("../includedFiles/footer.php"); ?>
 	    </div>  
   	</div>
 

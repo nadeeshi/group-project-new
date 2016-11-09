@@ -13,15 +13,17 @@ error_reporting(E_ALL ^ E_DEPRECATED);
   <title>nav</title> 
   <head>
 	<title>thread</title>
+	
+			
+	
 	<link href="https://fonts.googleapis.com/css?family=Alike+Angular" rel="stylesheet"> 
-	<link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="../css/testing.css">		
-	<link href="../css/navbar1n2.css" rel="stylesheet" type="text/css">
-	<link href="../css/footer.css" rel="stylesheet">
-	<script src="../js/jquary.js"></script> 
-  	<script src="../js/bootstrapjs.js"></script>
 	
-	
+	<link href="../assets/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="../assets/css/testing.css" rel="stylesheet" type="text/css">	
+	<link href="../assets/css/navbar1n2.css" rel="stylesheet" type="text/css">
+	<link href="../assets/css/footer.css" rel="stylesheet">
+	<script src="../assets/bootstrap/jquary.js"></script> 
+  	<script src="../assets/bootstrap/bootstrapjs.js"></script>
 	
 	
 	
