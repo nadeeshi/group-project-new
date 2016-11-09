@@ -104,7 +104,7 @@ require_once('auth.php');
 
         <div class="row">
             <div class="col-md-8">
-                <div class="col-md-12">
+                <div class="col-md-8">
                     <h1 style="color: #500a6f ;font-size: 20px"><b>List Of Research Details</b></h1>
                 </div>
 
@@ -159,7 +159,18 @@ require_once('auth.php');
                     </div>
                 </div>
             </div>
+
+            <div class="col-md-4">
+                <h1 style="color: #500a6f ;font-size: 20px"><b>Calander</b></h1>
+            </div>
+            <div class="col-md-4" >
+                <?php include('calander.php');?>
+            </div>
+
         </div>
+
+
+
     </div>
 </div>
 

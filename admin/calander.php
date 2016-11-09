@@ -112,6 +112,6 @@
         //  End -->
     </script>
 </center>
-<br/><div style="clear:both"></div><div><a target="_blank" href="http://www.htmlbestcodes.com/"><span style="font-size: 8pt; text-decoration: none">HTML Best Codes</span></a></div>
+<br/><div style="clear:both"></div>
 </body>
 </html>

@@ -1,40 +1,51 @@
 <?php
-// This is a simple example on how to draw a chart using FusionCharts and PHP.
-// We have included includes/fusioncharts.php, which contains functions
-// to help us easily embed the charts.
-include("includes/fusioncharts.php");
-// Create the chart - Column 2D Chart with data given in constructor parameter
-// Syntax for the constructor - new FusionCharts("type of chart", "unique chart id", "width of chart", "height of chart", "div id to render the chart", "type of data", "actual data")
-$columnChart = new FusionCharts("column2d", "ex1", "100%", 400, "chart-1", "json", '{
-"chart":{
-"caption":"Harry\'s SuperMart",
-"subCaption":"Top 5 stores in last month by revenue",
-"numberPrefix":"$",
-"theme":"ocean"
-},
-"data":[
-{
-"label":"Bakersfield Central",
-"value":"880000"
-},
-{
-"label":"Garden Groove harbour",
-"value":"730000"
-},
-{
-"label":"Los Angeles Topanga",
-"value":"590000"
-},
-{
-"label":"Compton-Rancho Dom",
-"value":"520000"
-},
-{
-"label":"Daly City Serramonte",
-"value":"330000"
-}
-]
-}');
-// Render the chart
-$columnChart->render();
+/**
+ * Charts 4 PHP
+ *
+ * @author Shani <support@chartphp.com> - http://www.chartphp.com
+ * @version 1.2.3
+ * @license: see license.txt included in package
+ */
+
+include("../../config.php");
+include("../../lib/inc/chartphp_dist.php");
+
+$p = new chartphp();
+
+$p->data_sql = "select c.categoryname, sum(a.quantity) as Sales
+                from products b, `order details` a, categories c
+                where a.productid = b.productid and c.categoryid = b.categoryid
+                group by c.categoryid
+                order by c.categoryid";
+
+$p->chart_type = "bar";
+
+// Common Options
+$p->title = "Category Sales";
+$p->xlabel = "Category";
+$p->ylabel = "Sales";
+
+$color = array("#1AAF5D","#F2C500","#F45B00","#8E0000","#0E948C");
+$p->color = $color[rand(0,4)];
+
+$out = $p->render('c1');
 ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="../../lib/js/jquery.min.js"></script>
+    <script src="../../lib/js/chartphp.js"></script>
+    <link rel="stylesheet" href="../../lib/js/chartphp.css">
+</head>
+
+<body>
+<div style="width:40%; min-width:450px;">
+    <?php echo $out; ?>
+</div>
+</body>
+</html>
+
+
+
+
+Technical Support
