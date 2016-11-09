@@ -2,7 +2,7 @@
 error_reporting(E_ALL ^ E_DEPRECATED);
 @mysql_connect("localhost","root","") or die("could not connect");
 
-@mysql_select_db("project") or die("could not find");
+@mysql_select_db("project") or die("coul");
 
 
 ?>
