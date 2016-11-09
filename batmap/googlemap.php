@@ -1,120 +1,203 @@
+<?php
+error_reporting(E_ALL ^ E_DEPRECATED);
+@mysql_connect("localhost","root","") or die("could not connect");
+
+@mysql_select_db("test2") or die("could not find");
+
+
+?>
+
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>thread</title>
-	<link href="https://fonts.googleapis.com/css?family=Alike+Angular" rel="stylesheet"> 
-	<link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="../css/mapstyle.css" >	
-	<link href="../css/navbar1n2.css" rel="stylesheet" type="text/css">
-	<link href="../css/footer.css" rel="stylesheet">
-	<script src="../js/jquary.js"></script> 
-  	<script src="../js/bootstrapjs.js"></script>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <title>Live Demo of Google Maps Geocoding Example with PHP</title>
+     
+    <style>
+   
+     
+    
+    input[type=submit]{
+        padding:0.4em;
+    }
+     
+    #gmap_canvas{
+        width:100%;
+        height:30em;
+		border-style: outset;
+    }
+
+    </style>
 	
-	
-	
-	
-	
+ 
 </head>
 <body>
-	<div>
-		<?php include ("../template/navbarTemplate.php"); ?>
-	</div>
-	<div class="col-sm-8 col-sm-push-2 col-xs-12 insert-form">
-		<?php
-			
-			include ('from_search_image.php');	
-		if($count ==1){
-	?>
-		<div id="page">
-		<div id="header">
-			
-		</div>
-		
-		<div id="contents">
-		
-		 
-			<div class="background">
-		
-				<div id="news">
-				
-					<h4>BAT Profile </h4>
-					<ul>
-						<li>
-							<img src="<?php echo $img;?>" alt="Img" style = "display: block;  height: 80% ; width: 35%; height:auto;"/>
-							<p>
-								<em style="color: #2D343E; font: bold 15px/30px 'Alike Angular', serif; !important;">   <?php echo $output;?> </br>
-								<?php $des;?></br>
-								</em>
-								
-							</p>
-						</li>
-						<li>
-							<?php include ('from_search_map.php');?>
-						</li>
-					</ul>
-				
-			</div>
-		
-		<div id="footer">
-		</div>	
-		</div>
-		</div>
-	</div>
+ 
+<?php
+/*if($_POST){
+
 	
-	
-	
-<?php 
+		if(isset($_POST['address'])){
+		$searchq = $_POST['address'];
+		$searchq = preg_replace("#[^a-z]#i","",$searchq);
+		if(!empty($searchq)){*/
+
+		$query = mysql_query("SELECT * FROM fulldemo WHERE id = '".$_GET['batid']."';") or die("could not search");
+		$count = mysql_num_rows($query);
+		$kk = array();
+			if($count == 0){
+				$output = 'there is no search results!!';
+			}else{
+				while($row = mysql_fetch_array($query)){
+					$fname = $row['name'];
+					$lplace1 = $row['city'];
+					$id = $row['id'];
+					//$img = $row['location'];
+					//$des = $row['description'];
+		
+		
+		//echo '<p><img src="'.$row['location'].'"></p>';
+		//$output = '<div>'.$fname.' -> '.$lplace1.'</div>'.$des ;
+		//echo $output;
+		//echo '<p><img src="'.$row['description'].'"></p>';
+		
+		$places_ar = explode(",",$lplace1);
+		$length = count($places_ar);
 	}
-	else{
-?>
+$ll = array();
+$ln = array();
+$fd = array();
+
+
+foreach($places_ar as $lplace){
+
+  $data_arr = geocode($lplace);
+     
+    if($data_arr){
+        
+        $latitude = $data_arr[0];
+		array_push($ll, $latitude);
+        $longitude = $data_arr[1];
+		array_push($ln, $longitude);
+        $formatted_address = $data_arr[2];
+		array_push($fd, $formatted_address);
+		
+		$ljn = json_encode($ll);
+		$lgjn = json_encode($ln);
+		$fjn = json_encode($fd);
+		
+    }else{
+        echo "No map found.";
+    }
+	} 
+
+		if($length!=0){
+    ?>
+ 
+    
+    <div id="gmap_canvas">Loading map...</div>
+  
+ 
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyAnFdtTApWgyi6Rv96ouN1uCTmwctBOsic"></script>    
+    <script type="text/javascript">
 	
+	var php1 = <?php echo $ljn;?>;
+	var php2 = <?php echo $lgjn;?>;
+	var php3 = <?php echo $fjn;?>;
+	var cnt = <?php echo $length?>;
 	
-	
-	<div id="page">
-		<div id="header">
+        function init_map() {
+            var myOptions = {
+                zoom: 7,
+                center: new google.maps.LatLng(7.8731, 80.7718),
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
+            
 			
-		</div>
-		
-		<div id="contents">
-		
-		 
-			<div class="background">
-		
-				<div id="news">
+			for(i = 0; i < cnt; i++){
+			var marker = new google.maps.Marker({
+                map: map,
+				animation: google.maps.Animation.BOUNCE,
 				
-				
-					<h4>OOPS!!! NO MATCH FOUND</h4>
-					<ul>
-						<li>
-							<img src="images/404.jpg" alt="404" style = "display: block; margin:auto !important;  height: 80% ; width: 100%; height:auto;"/>
-						</li>
-					</ul>
-				
-			</div>
-			</div>
-		<div id="footer">
-		</div>	
-		</div>
+			    position: new google.maps.LatLng(php1[i],php2[i])
+			
+			});
+			infowindow = new google.maps.InfoWindow({
+                content: php3[i]
+            });
+			infowindow.open(map, marker);
+			
+			}
 		
-	
+        }
+		
+        google.maps.event.addDomListener(window, 'load', init_map);
+    </script>
+	<?php
+	}
+	}
+/*}else{echo 'nothing';
+	break;
+}
+}else{echo 'nothing';}
 
+    
+    
+	}*/
 
-</div>
-	
-	<?php }?>
-	
-	</div>
+function geocode($address){
+ 
+    
+    $address = urlencode($address);
+     
+    
+    $url = "http://maps.google.com/maps/api/geocode/json?address={$address}";
+ 
+    
+    $resp_json = file_get_contents($url);
+     
+  
+    $resp = json_decode($resp_json, true);
+ 
+    
+    if($resp['status']='OK'){
+ 
+        
+        $lati = $resp['results'][0]['geometry']['location']['lat'];
+        $longi = $resp['results'][0]['geometry']['location']['lng'];
+        $formatted_address = $resp['results'][0]['formatted_address'];
+         
+     
+        if($lati && $longi && $formatted_address){
+         
+            
+            $data_arr = array();            
+             
+            array_push(
+                $data_arr, 
+                    $lati, 
+                    $longi, 
+                    $formatted_address
+                );
+             
+            return $data_arr;
+             
+        }else{
+            return false;
+        }
+         
+    }else{
+        return false;
+    }
+}
 
+?>
 
-	<!-- start footer -->
-
-	<div class="row">
-	    <div class="col-xs-10 col-xs-push-2">
-	      <?php include ("../template/footer.php"); ?>
-	    </div>  
-  	</div>
-
-
-	<!-- end of footer -->
 </body>
 </html>

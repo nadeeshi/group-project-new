@@ -20,7 +20,7 @@
 					$mysql_hostname = "localhost";
 					$mysql_user = "root";
 					$mysql_password = "";
-					$mysql_database = "test2";
+					$mysql_database = "project";
 					$con = mysqli_connect($mysql_hostname, $mysql_user, $mysql_password, $mysql_database );
 					$qry = "SELECT * FROM photos WHERE id = '".$_GET['photoid']."' ;";
 					$result = mysqli_query($con, $qry);
