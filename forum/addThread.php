@@ -49,7 +49,7 @@ if (!empty($_POST)) {
             <div class="form-group">
               <label class="control-label col-xs-2" for="pwd">Massage:</label>
               <div class="col-xs-8">
-                <textarea class="massage form-row form-control" rows="6" cols="8" name="message">Enter Massage Here</textarea>
+                <textarea class="massage form-row form-control" rows="6" cols="8" name="message"></textarea>
               </div>
             </div>
             <div class="form-group">
@@ -83,7 +83,6 @@ if (!empty($_POST)) {
   </div>
 
 <!-- end of footer -->
-
 
   </body>
 </html>

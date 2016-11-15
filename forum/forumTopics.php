@@ -5,7 +5,7 @@ require_once ("connection.php");
 <!DOCTYPE html>
 <html>
 <head>
-	<title>thread</title>
+	<title>addThread</title>
 	<link href="../assets/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
 	<link href="../assets/css/forum.css" rel="stylesheet" type="text/css">	
 	<link href="../assets/css/navbar1n2.css" rel="stylesheet" type="text/css">
@@ -41,13 +41,13 @@ require_once ("connection.php");
 				echo "<table>";
 		   		echo "<tr height='50'>";
 		        echo "<th class='col-sm-8'> Topic </th>";
-		        echo "<th> Posted Date </th>";
-		        echo "<th> Posted by </th>";
+		        echo "<th class='col-sm-2'> Posted Date </th>";
+		        echo "<th class='col-sm-2'> Posted by </th>";
 		    	echo "</tr>";
 
 		    	echo "<tr>";
 		        foreach ($result as $user) {
-		          	echo  "<td class='col-xs-9' height='50'>";
+		          	echo  "<td class='col-xs-10' height='50'>";
 		          	echo "<a href='discussion.php?id=".$user['topic_id']."'>".$user['topic_subject']."</a>"." "."</td>";
 		          	echo  "<td height='50' class='col-xs-2'>";
 		            echo $user['topic_date']." "."</td>";

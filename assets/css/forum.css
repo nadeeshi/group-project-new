@@ -45,10 +45,6 @@
     margin-bottom: 10px;
 }
 
-a:hover, a:focus {
-    color: #0c0c0c;
-    text-decoration: underline;
-}
 
 
 /*addThread*/
@@ -83,4 +79,25 @@ a:hover, a:focus {
 }
 .btn-class {
     margin-bottom: 20px;
+}
+
+
+
+
+
+/*discussion*/
+
+.thread-topic-content {
+    border-style: solid;
+    border-color: #e0e0d2;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.topic-subject{
+    font-size: 16px;
+    font-weight: bold;
+}
+.topic-date{
+    font-size: 11px;
 }
