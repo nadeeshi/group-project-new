@@ -1,4 +1,5 @@
 <?php
+
 require_once('auth.php');
 ?>
 
@@ -8,7 +9,8 @@ require_once('auth.php');
 $usernameErr = $emailidErr = $mobilenoErr = $passwordErr  = "";
 $username = $emailid = $mobileno = $password =  "";
 $course = array();
-//var_dump($_POST['gender']);
+
+
 //exit;
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
 
@@ -18,16 +20,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
     $errors = validate_errors($variables);
 
     if (count($errors) == 0) {
-        //database operation
-        //exit;
+
     }
 }
 function clean($data) {
     $data = strip_tags(htmlspecialchars(stripslashes(trim($data))));
-    //trim :- Strip whitespace (or other characters) from the beginning and end of a string
-    //The stripslashes() function removes backslashes.Prevents XSS
-    //htmlspecialchars :- Converts the predefined characters "<" (less than) and ">" (greater than) to HTML entities:< (less than) becomes &lt; and > (greater than) becomes &gt;Helps in preventing XSS
-    //The strip_tags() function strips a string from HTML, XML, and PHP tags.
     return $data;
 }
 
@@ -37,7 +34,6 @@ function initialize(){
     $var['emailid'] = clean($_POST['emailid']);
     $var['mobileno'] = clean($_POST['mobileno']);
     $var['password'] = clean($_POST['password']);
-
 
     return $var;
 }
@@ -120,16 +116,9 @@ function validatePassword($pword){
 }
 
 
-
-
-
-
-
-//renderform();
-
-
-
 ?>
+
+
 <!DOCTYPE>
 <html>
 <head>
@@ -153,10 +142,6 @@ function validatePassword($pword){
 
 
 
-
-    <!-- /. FOOTER  -->
-    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
-    <!-- JQUERY SCRIPTS -->
     <script src="../js/jquery-1.10.2.js"></script>
     <!-- BOOTSTRAP SCRIPTS -->
     <script src="../js/bootstrapjs.js"></script>
@@ -199,38 +184,6 @@ function validatePassword($pword){
                             <!--add new Admin--------------------------------------------------------->
                             <div class="display">
 
-                                <!-- <form action="insertAdmin.php" method="post" name="insertform">
-
-
-                                     <div class="col-xs-12">
-                                         <label for="name" id="preinput" class="col-xs-5"> USER NAME : </label>
-
-                                         <input type="text" name="username" required placeholder="Enter admin name" id="inputid" class="col-xs-7"/>
-                                     </div>
-                                     <div class="col-xs-12">
-                                         <label  for="email" id="preinput" class="col-xs-5"> EMAIL ID : </label>
-                                         <input type="email" name="usermail" required placeholder="Enter Email" id="inputid" class="col-xs-7"/>
-                                     </div>
-                                     <div class="col-xs-12">
-                                         <label for="mobile" id="preinput" class="col-xs-5"> PHONE NUMBER : </label>
-                                         <input type="text" name="usermobile" required placeholder="Enter mobile number" id="inputid" class="col-xs-7"/>
-                                     </div>
-                                     <div class="col-xs-12">
-                                         <label  for="password" id="preinput" class="col-xs-5"> PASSWORD : </label>
-                                         <input type="password" name="password" required placeholder="Enter password" id="inputid" class="col-xs-7"/>
-                                     </div>
-
-
-
-                                     <div class="col-xs-12">
-                                         <input type="submit" name="send" value="Submit" id="inputid1"  />
-                                     </div>
-                                 </form>-->
-
-
-
-
-                                <!--close new admin------------------------------------------------------------------------------->
                                 <p><span class="error">* required field.</span></p>
                                 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                                     <div class="col-xs-12">
@@ -268,22 +221,13 @@ function validatePassword($pword){
                                 <?php
                                 ob_start();
                                 include("../connect.php");
-
-                                /*$username=($_POST['username']);
-                                $usermail=($_POST['emailid']);
-                                $usermobile=($_POST['mobileno']);
-                                $password=($_POST['password']);*/
-
-
                                 if(($username != '' )&& ($password != '') && ($emailid != '') && ($mobileno != '')){
                                     $update=mysqli_query($bd,"INSERT INTO admin_details(username,emailid,mobileno,created,password)VALUES
                                       ('$username','$emailid','$mobileno',now(),'$password')");
 
                                     if($update)
                                     {
-                                        //$msg="Successfully Updated!!";
-                                        //echo "<script type='text/javascript'>alert('$msg');</script>";
-                                        // header('Location:adminDetails.php');
+
                                     }
                                     else
                                     {
@@ -294,28 +238,10 @@ function validatePassword($pword){
 
                                 ob_end_flush();
                                 ?>
-
-
-
-
                             </div>
                         </div>
-
-
-
-
-
-
-
-
-
                     </div>
                 </div>
-
-
-
-
-
             </div>
 
             <div class="col-md-6">

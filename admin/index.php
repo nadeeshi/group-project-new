@@ -7,12 +7,15 @@ unset($_SESSION['SESS_FIRST_NAME']);
 unset($_SESSION['SESS_LAST_NAME']);
 ?>
 
+
+
+
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title></title>
-
-
+    <title>Bat Facts</title>
+    <meta charset="utf-8">
     <!-- BOOTSTRAP STYLES-->
     <link href="css/bootstrap.css" rel="stylesheet" />
     <!-- FONTAWESOME STYLES-->
@@ -20,88 +23,74 @@ unset($_SESSION['SESS_LAST_NAME']);
     <!-- GOOGLE FONTS-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 
+    <link href="css/index.css" rel='stylesheet' type='text/css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!--webfonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+    <!--//webfonts-->
 </head>
+<body>
 
+<!-----start-main---->
+<div class="login-form">
+    <div class="head">
 
-<body style="background-color: #E2E2E2;" >
-<div class="container">
-    <!--for get small image-->
-    <div class="row text-center " style="padding-top:100px;">
-        <div class="col-md-12">
-            <img src="img/003.jpg" />
-        </div>
+        <img src="img/003.jpg" />
+
     </div>
+    <form name="loginform" action="login_exec.php" method="post">
+
+            <li>
+                <td colspan="2">
+                    <!--the code bellow is used to display the message of the input validation-->
+                    <?php
+                    if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
+                        echo '<ul class="err">';
+                        foreach($_SESSION['ERRMSG_ARR'] as $msg) {
+                            echo '<li>',$msg,'</li>';
+                        }
+                        echo '</ul>';
+                        unset($_SESSION['ERRMSG_ARR']);
+                    }
+                    ?>
+                </td>
+            </li>
 
 
-    <div class="row ">
-        <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
-            <div class="panel-body">
+            <li>
+                <div class="form-group input-group">
+                    <span class="input-group-addon"><i class="fa fa-tag"  ></i></span><!--for get small icon-->
+                    <input type="text" name="username" class="form-control" placeholder="Your Username " required/><!--for get input field-->
+                </div>
 
-                <hr />
-                <h5><b>Enter Details to Login</b></h5>
-                <br />
+            </li>
 
-                <form name="loginform" action="login_exec.php" method="post">
-                    <table width="309" border="0" align="center" cellpadding="2" cellspacing="5">
-                        <tr>
-                             <td colspan="2">
-                                <!--the code bellow is used to display the message of the input validation-->
-                                    <?php
-                                        if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
-                                            echo '<ul class="err">';
-                                            foreach($_SESSION['ERRMSG_ARR'] as $msg) {
-                                                echo '<li>',$msg,'</li>';
-                                             }
-                                            echo '</ul>';
-                                            unset($_SESSION['ERRMSG_ARR']);
-                                         }
-                                     ?>
-                             </td>
-                         </tr>
+            <li>
+                <div class="form-group input-group">
+                    <span class="input-group-addon"><i class="fa fa-lock"  ></i></span>
+                    <input type="password" name="password" class="form-control"  placeholder="Your Password" required/>
+                </div>
+            </li>
 
 
-                        <tr>
-                            <div class="form-group input-group">
-                                <span class="input-group-addon"><i class="fa fa-tag"  ></i></span><!--for get small icon-->
-                                <input type="text" name="username" class="form-control" placeholder="Your Username " required/><!--for get input field-->
-                             </div>
-
-                        </tr>
-
-                         <tr>
-                            <div class="form-group input-group">
-                                <span class="input-group-addon"><i class="fa fa-lock"  ></i></span>
-                                <input type="password" name="password" class="form-control"  placeholder="Your Password" required/>
-                             </div>
-                         </tr>
 
 
-                         <tr>
-                        <!--for checkme & forgot password?-->
-                            <div class="form-group">
-                                <label class="checkbox-inline">
-                                    <input type="checkbox" /> Remember me
-                                </label>
-                                <span class="pull-right">
-                                    <a href="index.php" >Forget password ? </a>
-                                </span>
-                             </div>
-                             <!--close checkme-->
-                         </tr>
 
+        <div class="p-container">
+            <label class="checkbox"><input type="checkbox" name="checkbox" checked><i></i>Remember Me</label>
 
-                        <tr>
-                            <div align="center">
-                                <input name="" type="submit" class="btn btn-primary" style="width: 100px" value="login" />
-                            </div>
-                         </tr>
-                    </table>
-                </form>
-
-            </div>
+            <input name="" type="submit" class="btn btn-primary"  value="login" />
+            <div class="clear"> </div>
         </div>
-    </div>
+    </form>
 </div>
+<!--//End-login-form-->
+<!-----start-copyright---->
+<div class="copy-right">
+    <p>Created by <a href="">UCSC</a></p>
+</div>
+<!-----//end-copyright---->
 
 </body>
 </html>

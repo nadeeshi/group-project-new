@@ -51,16 +51,16 @@
 
                             {
                                 $id=$profile['id'];
-                                $scientificName=$profile['scientificName'];
+                                $scientificName=$profile['scientific_name'];
                                 $kingdom=$profile['kingdom'];
                                 $phylum=$profile['phylum'];
-                                $class=$profile['class'];
-                                $orderr=$profile['orderr'];
+                                $class=$profile['bat_class'];
+                                $orderr=$profile['bat_order'];
                                 $genus=$profile['genus'];
                                 $family=$profile['family'];
-                                $subFamily=$profile['subFamily'];
-                                $speciesAuthority=$profile['speciesAuthority'];
-                                $commonNames=$profile['commonNames'];
+                                $subFamily=$profile['sub_family'];
+                                $speciesAuthority=$profile['species'];
+                                $commonNames=$profile['common_names'];
                                 $synonyms=$profile['synonyms'];
                                 $redListCategory=$profile['redListCategory'];
                                 $distribution=$profile['distribution'];
@@ -69,7 +69,7 @@
                                 $roosts=$profile['roosts'];
                                 $commonFood=$profile['commonFood'];
                                 $bibliography=$profile['bibliography'];
-                                $conservation=$profile['conservation'];
+                                $conservation=$profile['conservation_status'];
 
                                 $created=$profile['created'];
 

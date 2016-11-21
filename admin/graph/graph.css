@@ -1,0 +1,18 @@
+rect{
+    x: 300;
+    y: 45;
+    width: 50;
+    height: 263;
+    fill: rgb(92, 92, 97);
+    rx: 0;
+    ry: 0;
+}
+.highcharts-background{
+    width:385;
+    height:400;
+    fill:#654 !important;
+
+
+
+}
+/*<rect x="0" y="0" width="385" height="400" fill="#FFFFFF" class=" highcharts-background"></rect>

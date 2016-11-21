@@ -135,7 +135,7 @@
 
 
             <li>
-                <a href="table.html"><i class="fa fa-yelp "></i>Thread Details </a>
+                <a href="../graph/graph.php"><i class="fa fa-yelp "></i>Graph Details </a>
 
             </li>
 
@@ -161,26 +161,14 @@
 
 
 
-            <li>
-                <a href="gallery.html"><i class="fa fa-yelp "></i>Insert Info Forms</a>
-            </li>
-
-
-            <li>
-                <a href="error.html"><i class="fa fa-yelp "></i>Map Details</a>
-            </li>
-
-
-            <li>
-                <a href="login.html"><i class="fa fa-yelp "></i>Test 1</a>
-            </li>
-
 
 
 
             <li>
-                <a href="blank.html"><i class="fa fa-yelp "></i>Test 2</a>
+                <a href="../mapDetails/map_and_det.php"><i class="fa fa-yelp "></i>Map Details</a>
             </li>
+
+
         </ul>
 
     </div>

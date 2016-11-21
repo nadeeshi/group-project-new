@@ -1,15 +1,19 @@
-
+<?php
+ob_start();
+include("../connect.php");
+?>
 
 <!DOCTYPE html>
 <html>
 <head>
-    <title>batsinfo</title>
+    <title>thread</title>
+
+
     <link href="https://fonts.googleapis.com/css?family=Alike+Angular" rel="stylesheet">
 
     <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="../assets/css/mapstyle.css" rel="stylesheet" type="text/css">
-    <link href="../assets/css/navbar1n2.css" rel="stylesheet" type="text/css">
-    <link href="../assets/css/footer.css" rel="stylesheet">
+    <link href="mapstyle.css" rel="stylesheet" type="text/css">
+
     <script src="../js/jquery-1.10.2.js"></script>
     <script src="../js/bootstrapjs.js"></script>
 
@@ -17,48 +21,11 @@
 
 </head>
 <body>
-<div>
-    <?//php include ("../IncludedFiles/navbarTemplate.php"); ?>
-</div>
+
 <div class="col-sm-8 col-sm-push-2 col-xs-12 insert-form">
     <?php
-    ob_start();
-    include("../connect.php");
 
-    //include ('image.php');
-
-    if($_POST){
-
-
-        if(isset($_POST['address'])){
-            $searchq = $_POST['address'];
-            $searchq = preg_replace("#[^a-z]#i","",$searchq);
-            $count = 0;
-            if(!empty($searchq)){
-
-                ob_start();
-                include("../connect.php");
-                $query = mysqli_query($bd,"SELECT * FROM fulldemo WHERE name = '$searchq'") or die("could not search");
-                while($row = mysqli_fetch_array($query)){
-                    $fname = $row['name'];
-                    $lplace1 = $row['city'];
-                    $id = $row['id'];
-                    $img = $row['location'];
-                    $des = $row['description'];
-                    $count = 1;
-
-                    //echo '<p><img src="'.$row['location'].'"></p>';
-                    $output = '<div> '.'name :  '.$fname.'</br> </br> place :  '. $lplace1.'</div></br>discription :  '.$des;
-                    //echo $output;
-
-                    //echo '<p><img src="'.$row['description'].'"></p>';
-
-                }}}
-
-
-
-
-
+    include ('from_search_image.php');
     if($count ==1){
         ?>
         <div id="page">
@@ -85,7 +52,7 @@
                                 </p>
                             </li>
                             <li>
-                                <?php include ('googleMap.php')?>
+                                <?php include ('from_search_map.php');?>
                             </li>
                         </ul>
 
@@ -137,18 +104,14 @@
 
         </div>
 
-    <?php }}?>
+    <?php }?>
 
 </div>
 
 
 <!-- start footer -->
 
-<div class="row">
-    <div class="col-xs-10 col-xs-push-2">
-        <?//php include ("../IncludedFiles/footer.php"); ?>
-    </div>
-</div>
+
 
 
 <!-- end of footer -->

@@ -214,7 +214,7 @@ function validateMobileNo($umobile) {
 
                                 <?php
                                 ob_start();
-                                include("connect.php");
+                                include("../connect.php");
 
                                 /*$username=($_POST['username']);
                                 $usermail=($_POST['emailid']);
@@ -279,7 +279,7 @@ function validateMobileNo($umobile) {
                         <!-----view Researchers details------------------------------------------>
 
                         <?php
-                        include('connect.php');
+                        include('../connect.php');
                         $select=mysqli_query($bd,"SELECT * FROM researcher_details order by id desc");
                         //$select=mysql_query("SELECT * FROM researcher_details order by id desc");
                         $i=1;

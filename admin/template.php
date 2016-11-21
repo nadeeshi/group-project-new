@@ -3,9 +3,6 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <title>Login</title>
-
-
-
     <!-- BOOTSTRAP STYLES-->
     <link href="css/bootstrap.css" rel="stylesheet" />
     <!-- FONTAWESOME STYLES-->
@@ -19,12 +16,6 @@
     <!-- GOOGLE FONTS-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 
-
-
-
-    <!-- /. FOOTER  -->
-    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
-    <!-- JQUERY SCRIPTS -->
     <script src="js/jquery-1.10.2.js"></script>
     <!-- BOOTSTRAP SCRIPTS -->
     <script src="js/bootstrapjs.js"></script>
@@ -65,8 +56,6 @@
 
 
 
-
-
     <!--Nav Side Bar -->
     <nav class="navbar-default navbar-side" role="navigation">
         <div class="sidebar-collapse">
@@ -94,8 +83,6 @@
                 </li>
 
 
-
-
                 <li>
                     <a href="#"><i class="fa fa-desktop "></i>User Details <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
@@ -111,9 +98,6 @@
                 </li>
 
 
-
-
-
                 <li>
                     <a href="#"><i class="fa fa-yelp "></i>Reaserch Details <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
@@ -125,62 +109,35 @@
                             <a href="researchDetails/researchDetails.php">Add New Research Details</a>
                         </li>
 
-
-
-
                     </ul>
                 </li>
 
 
-
-
                 <li>
-                    <a href="table.html"><i class="fa fa-yelp "></i>Thread Details </a>
+                    <a href="graph/graph.php"><i class="fa fa-yelp "></i>Graph Details </a>
 
                 </li>
 
 
-
-
                 <li>
-                    <a href="#"><i class="fa fa-yelp "></i>Bats Details <span class="fa arrow"></span></a>
+                    <a href="#"><i class="fa fa-yelp "></i>Bats Details </a>
                     <ul class="nav nav-second-level">
 
                         <li>
-                            <a href="batsDetails/listOfBats.php"></i>List of Bats</a>
+                            <a href="batsDetails/listOfBats.php">List of Bats</a>
                         </li>
                         <li>
-                            <a href="batsDetails/newBat.php"></i>Add New Bats</a>
+                            <a href="batsDetails/newBat.php">Add New Bats</a>
                         </li>
-
 
                     </ul>
                 </li>
 
 
-
-
-
                 <li>
-                    <a href="gallery.html"><i class="fa fa-yelp "></i>Insert Info Forms</a>
+                    <a href="graph/graph.php"><i class="fa fa-yelp "></i>Map Details</a>
                 </li>
 
-
-                <li>
-                    <a href="error.html"><i class="fa fa-yelp "></i>Map Details</a>
-                </li>
-
-
-                <li>
-                    <a href="login.html"><i class="fa fa-yelp "></i>Test 1</a>
-                </li>
-
-
-
-
-                <li>
-                    <a href="blank.html"><i class="fa fa-yelp "></i>Test 2</a>
-                </li>
             </ul>
 
         </div>

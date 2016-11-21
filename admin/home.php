@@ -1,15 +1,10 @@
 <html>
 
-
-
-
 <?php
 require_once('auth.php');
 ?>
 
-
 <?php include("template.php")?>
-
 
 
 
@@ -24,26 +19,19 @@ require_once('auth.php');
         </div>
        <!-- /. ROW  -->
 
-
-
-
+        <!--for get counters-->
         <div class="row" >
             <div class="col-md-10">
                 <div class="col-xs-4" >
-                    <div class="main-box mb-red" style="width: 200px;>
+                    <div class="main-box mb-red" style="width: 200px; height: 80px;">
                         <a href="#">
                             <h3>bats :
                             <?php
                             ob_start();
                             include("connect.php");
-
-
                                 $query = mysqli_query($bd,"select count(*) as total from bats_details");
                                 $result = mysqli_fetch_array($query);
                                 echo $result['total'];
-
-
-
                             ob_end_flush();
                             ?>
                                 </h3>
@@ -51,20 +39,15 @@ require_once('auth.php');
                      </div>
                 </div>
                 <div class="col-xs-4">
-                    <div class="main-box mb-dull" style="width: 200px;">
+                    <div class="main-box mb-dull" style="width: 200px; height: 80px;">
                         <a href="#">
                             <h3> Admin :
                             <?php
                             ob_start();
                             include("connect.php");
-
-
                             $query = mysqli_query($bd,"select count(*) as total from admin_details");
                             $result = mysqli_fetch_array($query);
                             echo $result['total'];
-
-
-
                             ob_end_flush();
                             ?>
                                 </h3>
@@ -72,20 +55,15 @@ require_once('auth.php');
                     </div>
                 </div>
                 <div class="col-xs-4">
-                    <div class="main-box mb-pink" style="width: 230px; height: 100px;">
+                    <div class="main-box mb-pink" style="width: 230px; height: 80px;">
                         <a href="#">
                             <h3>Researchers :
                             <?php
                             ob_start();
                             include("connect.php");
-
-
                             $query = mysqli_query($bd,"select count(*) as total from researcher_details");
                             $result = mysqli_fetch_array($query);
                             echo $result['total'];
-
-
-
                             ob_end_flush();
                             ?>
                                 </h3>
@@ -95,13 +73,9 @@ require_once('auth.php');
              </div>
 
         </div>
-        <!-- /. ROW  -->
+        <!-- / counters -->
 
-
-
-
-
-
+        <!--list of research details -->
         <div class="row">
             <div class="col-md-8">
                 <div class="col-md-8">
@@ -150,9 +124,6 @@ require_once('auth.php');
                                             <br />
                                         </div>
                                     <?php } ?>
-
-
-
                                 </div>
                             </div>
                         </div>
@@ -169,8 +140,11 @@ require_once('auth.php');
 
         </div>
 
-
-
+        <div class="row">
+            <div class="col-md-5">
+                <?php include('piechart.php');?>
+            </div>
+        </div>
     </div>
 </div>
 

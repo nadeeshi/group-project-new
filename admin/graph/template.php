@@ -81,7 +81,10 @@
                     <img src="../img/2.jpg" class="img-thumbnail" />
 
                     <div class="inner-text">
-                        Nadee Sansari
+                        <?php
+                        echo $_SESSION['SESS_FIRST_NAME'];
+                        ?>
+
                         <br />
                         <small>online</small>
                     </div>
@@ -102,7 +105,7 @@
                 <a href="#"><i class="fa fa-desktop "></i>User Details <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="../adminDetails/adminDetailsValidate.php">Admin Details</a>
+                        <a href="adminDetailsValidate.php">Admin Details</a>
                     </li>
                     <li>
                         <a href="../researcherDetails/researcherDetailsValidate.php">Researchers Details</a>
@@ -121,11 +124,11 @@
                 <a href="#"><i class="fa fa-yelp "></i>Reaserch Details <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="listOfResearch.php">list of Research</a>
+                        <a href="../researchDetails/listOfResearch.php">list of Research</a>
                     </li>
 
                     <li>
-                        <a href="researchDetails.php">Add New Research Details</a>
+                        <a href="../researchDetails/researchDetails.php">Add New Research Details</a>
                     </li>
 
                 </ul>
@@ -135,9 +138,10 @@
 
 
             <li>
-                <a href="../graph/graph.php"><i class="fa fa-yelp "></i>Graph Details </a>
+                <a href="table.html"><i class="fa fa-yelp "></i>Thread Details </a>
 
             </li>
+
 
 
 
@@ -160,15 +164,26 @@
 
 
 
-
+            <li>
+                <a href="gallery.html"><i class="fa fa-yelp "></i>Insert Info Forms</a>
+            </li>
 
 
             <li>
-                <a href="../mapDetails/map_and_det.php"><i class="fa fa-yelp "></i>Map Details</a>
+                <a href="error.html"><i class="fa fa-yelp "></i>Map Details</a>
+            </li>
+
+
+            <li>
+                <a href="login.html"><i class="fa fa-yelp "></i>Test 1</a>
             </li>
 
 
 
+
+            <li>
+                <a href="blank.html"><i class="fa fa-yelp "></i>Test 2</a>
+            </li>
         </ul>
 
     </div>
