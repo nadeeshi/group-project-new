@@ -1,6 +1,5 @@
 
 <!DOCTYPE html>
-<?php>
 <html lang="en">
 <head>
  <meta charset="UTF-8">
@@ -57,10 +56,11 @@
 
     
 <link href="css/bootstrap.css" rel="stylesheet">
-  <link href="css/navnew.css" rel="stylesheet">
-  <link href="css/footer.css" rel="stylesheet">
-  <script src="js/jquary.js"></script>
-  <script src="js/bootstrapjs.js"></script>
+<!-- <link href="css/navnew.css" rel="stylesheet"> -->
+<link href="../assets/css/navbar1n2.css" rel="stylesheet">
+<link href="css/footer.css" rel="stylesheet">
+<script src="js/jquary.js"></script>
+<script src="js/bootstrapjs.js"></script>
     
     
 
@@ -151,4 +151,3 @@
 
 </body>
 </html>
-</?>

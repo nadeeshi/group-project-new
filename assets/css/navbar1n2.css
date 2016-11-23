@@ -17,8 +17,7 @@
 	margin-right: -0.75%;
 	font-size: 15px;
 	position: fixed;
-	width: 101%;
-	z-index:2000; 
+	width: 101%; 
 	border-bottom:none; 
 	border-radius:0;
 	font-family: 'Varela Round', sans-serif;
@@ -46,6 +45,11 @@
 }
 .nav-header{
 	/*position: fixed;*/
+}
+.btn1 {
+	font-size: 15px !important; 
+	color:#ffffff; 
+	padding-top:17px;
 }
 
 /*overrides*/
@@ -157,7 +161,7 @@ div.profile-picture {
 .insert-form{
 	margin-top: 140px;
 	margin-left: 85px;
-	z-index: 1000;
+	z-index: -1;
 }
 
 @media(max-width:768px){

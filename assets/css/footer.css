@@ -5,11 +5,14 @@
     color: #ffffff;
     background-color: #4c4743;
     margin-bottom: -10px;
-    margin-left: -5px;
     font-family: 'Varela Round', sans-serif;
     margin-top: 30px;
 }
 .footcon-col-1 {
     margin-top: 10px;
     margin-left: 10px;
+}
+
+.body{
+	min-height: 100%;
 }
