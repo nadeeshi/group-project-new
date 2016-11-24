@@ -35,13 +35,13 @@ include "../mainhome/footer3.php" ;
             }else {
                $title = $_POST['title'];
                $content = $_POST['content'];
-               $img1 = $_POST['img1'];
+               //$img1 = $_POST['img1'];
                //$link = $_POST['link'];
             }
             
            
             
-            $sql = "INSERT INTO articles (title,content,img1) VALUES('$title','$content','$img1')";
+            $sql = "INSERT INTO articles (title,content) VALUES('$title','$content')";
                
             mysqli_select_db($conn,'project');
             $retval = mysqli_query( $conn, $sql );
