@@ -120,7 +120,7 @@ function validatePassword($pword){
 
 
 <!DOCTYPE>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <title>Login</title>
@@ -150,6 +150,27 @@ function validatePassword($pword){
     <!-- CUSTOM SCRIPTS -->
     <script src="../js/custom.js"></script>
 
+
+    <style>
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            border: none;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even){background-color: #f2f2f2}
+
+    </style>
+
+
+
 </head>
 
 
@@ -158,8 +179,8 @@ function validatePassword($pword){
     <?php include "template.php" ?>
 </div>
 
-<div id="page-wrapper">
-    <div id="page-inner">
+<div id="page-wrapper" >
+    <div id="page-inner" >
         <div class="row">
             <div class="col-md-12">
                 <h1 class="page-head-line" style="color: #500a6f"><b>Admin Details</b></h1>
@@ -170,7 +191,8 @@ function validatePassword($pword){
 
 
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-1"></div>
+            <div class="col-md-9">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         Insert data to the Database
@@ -243,8 +265,10 @@ function validatePassword($pword){
                     </div>
                 </div>
             </div>
+            </div>
 
-            <div class="col-md-6">
+<br>
+            <div class="col-md-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         Details of Admin
@@ -257,7 +281,23 @@ function validatePassword($pword){
                         <?php
                         include('../connect.php');
                         $select=mysqli_query($bd,"SELECT * FROM admin_details order by id desc");
-                        $i=1;
+                        $i=1;?>
+
+                        <div class="display">
+
+                            <table>
+                                <tr>
+                                    <th>USER NAME : </th>
+                                    <th>EMAIL ID : </th>
+                                    <th> MOBILE NO : </th>
+                                    <th>CREATED ON : </th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+
+
+                                </tr>
+
+                        <?php
                         while($userrow=mysqli_fetch_array($select))
                         {
                             $id=$userrow['id'];
@@ -267,39 +307,51 @@ function validatePassword($pword){
                             $created=$userrow['created']
                             ?>
 
-                            <div class="display">
-                                <p> USER NAME : <span style="color: #125acd"><?php echo $username; ?></span>
 
-                                    <a href="editAdmin.php?id=<?php echo $id; ?>"><span class="edit" title="Edit" style="color: #ff0084"> Edit </span></a>
-                                    <a href="deleteAdmin.php?id=<?php echo $id; ?>"
-                                       onclick="return confirm('Are you sure you wish to delete this Record?');">
-                                        <span class="delete" title="Delete" style="color: #ff0084"> Delete </span></a>
-                                </p>
-                                <br />
-                                <p> EMAIL ID : <span style="color: #125acd"><?php echo $usermail; ?></span>
 
-                                </p>
-                                <br />
-                                <p> MOBILE NO : <span style="color: #125acd"><?php echo $usermobile; ?></span>
-                                </p>
-                                <br />
-                                <p> CREATED ON : <span style="color: #125acd"><?php echo $created; ?></span>
-                                </p>
-                                <br />
+
+                                        <tr>
+                                            <td><?php echo $username; ?></td>
+
+
+
+                                            <td><?php echo $usermail; ?></td>
+
+
+                                            <td><?php echo $usermobile; ?></td>
+
+
+
+                                            <td><?php echo $created; ?></td>
+
+                                            <td><a href="editAdmin.php?id=<?php echo $id; ?>"><span class="edit" title="Edit" style="color: #ff0084"> Edit </span></a></td>
+
+                                            <td><a href="deleteAdmin.php?id=<?php echo $id; ?>"
+                                                   onclick="return confirm('Are you sure you wish to delete this Record?');">
+                                                    <span class="delete" title="Delete" style="color: #ff0084"> Delete </span></a></td>
+
+
+
+
+                                        </tr>
+
+
+
+
                             </div>
                         <?php } ?>
                         <!--close viewAdmin---------------------------------------------------------------->
-
+                        </table>
 
                     </div>
                 </div>
             </div>
 
-
-
-        </div>
-    </div>
 </div>
+        </div>
+  </div>
+
+
 
 
 

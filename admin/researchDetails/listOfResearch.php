@@ -9,6 +9,24 @@
     <title>BatFacts.com</title>
 
 
+    <style>
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            border: none;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even){background-color: #f2f2f2}
+
+    </style>
+
 </head>
 
 
@@ -30,7 +48,7 @@
 
 
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-11">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         View data from the database
@@ -44,6 +62,23 @@
                             include('connect.php');
                             $select=mysqli_query($bd,"SELECT * FROM research_details order by id desc");
                             $i=1;
+                            ?>
+
+                            <div class="display">
+
+                                <table>
+                                    <tr>
+                                        <th>RESEARCH  NAME : </th>
+                                        <th>CREATED ON : : </th>
+                                        <th>VIEW : </th>
+                                        <th>Edit</th>
+                                        <th>Delete</th>
+
+
+                                    </tr>
+
+
+                                    <?php
                             while($userrow=mysqli_fetch_array($select))
                             {
                                 $id=$userrow['id'];
@@ -53,27 +88,41 @@
                                 $created=$userrow['created']
                                 ?>
 
-                                <div class="display">
-                                    <p style="color: #cc006a"> Research NAME : <span style="color: #080808"><?php echo $researchName; ?></span>
-                                        <a href="viewResearch.php?id=<?php echo $id; ?>">
-                                            <span class="view" title="View"> View </span></a>
 
-                                        <a href="editResearch.php?id=<?php echo $id; ?>"><span class="edit" title="Edit"> Edit </span></a>
 
-                                        <a href="deleteResearch.php?id=<?php echo $id; ?>"
-                                           onclick="return confirm('Are you sure you wish to delete this Record?');">
-                                            <span class="delete" title="Delete"> Delete </span></a>
 
-                                    </p>
+                                <tr>
+                                    <td><?php echo $researchName; ?></td>
 
-                                    <br />
-                                    <p> Created On : <span><?php echo $created; ?></span>
-                                    </p>
-                                    <br />
-                                </div>
+
+
+                                    <td><?php echo $created; ?></td>
+
+
+                                    <td> <a href="viewResearch.php?id=<?php echo $id; ?>">
+                                            <span class="view" title="View"> View </span></a></td>
+
+
+
+
+
+                                    <td> <a href="editResearch.php?id=<?php echo $id; ?>"><span class="edit" title="Edit"> Edit </span></a></td>
+
+                                    <td> <a href="deleteResearch.php?id=<?php echo $id; ?>"
+                                            onclick="return confirm('Are you sure you wish to delete this Record?');">
+                                            <span class="delete" title="Delete"> Delete </span></a></td>
+
+
+
+
+                                </tr>
+
+
+
+
                             <?php } ?>
 
-
+</table>
 
                         </div>
                     </div>
@@ -92,11 +141,13 @@
 </div>
 
 
-
-
-<div id="footer-sec"><b>Group 23-UCSC Group Project</b>
 </div>
 
+
+<div class="row">
+<div id="footer-sec"><b>Group 23-UCSC Group Project</b>
+</div>
+</div>
 
 
 </body>

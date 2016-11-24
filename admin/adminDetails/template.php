@@ -41,8 +41,13 @@
 
 
 
+
+
+
+
+
 <body>
-<div id="wrapper">
+<div id="wrapper" >
 
 <!--Nav Top -->
 <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
@@ -73,9 +78,9 @@
 
 
 <!--Nav Side Bar -->
-<nav class="navbar-default navbar-side" role="navigation">
-    <div class="sidebar-collapse">
-        <ul class="nav" id="main-menu">
+<nav class="navbar-default navbar-side" role="navigation" >
+    <div class="sidebar-collapse" >
+        <ul class="nav" id="main-menu" >
             <li>
                 <div class="user-img-div">
                     <img src="../img/2.jpg" class="img-thumbnail" />
@@ -170,5 +175,5 @@
 
 
 
-
+</div>
 

@@ -268,3 +268,9 @@ body {
     background-color: #5bc0de;
     border-color: #46b8da;
 }
+
+
+.navbar-default {
+    background-color: #000000 ;!important;
+    border-color: #000000;
+}

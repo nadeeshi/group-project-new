@@ -1,10 +1,34 @@
 <html>
+<head>
+<style>
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        border: 1px solid #ddd;
+    }
+
+    th, td {
+        border: none;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even){background-color: #f2f2f2}
+
+</style>
+
+
+
+</head>
+
 
 <?php
 require_once('auth.php');
 ?>
 
 <?php include("template.php")?>
+
 
 
 
@@ -76,14 +100,42 @@ require_once('auth.php');
         <!-- / counters -->
 
         <!--list of research details -->
+
+        <div class="row">
+
+            <div class="col-md-8">
+                <h1><a href="mapDetails/googleMap.php" style="color: deeppink;font-size: 20px"><b>Bats Details</b></a></h1>
+            </div>
+            <div class="col-md-4">
+                <h1><a href="" style="color: deeppink;font-size: 20px"><b>Calander</b></a></h1>
+            </div>
+
+        </div>
+
         <div class="row">
             <div class="col-md-8">
-                <div class="col-md-8">
-                    <h1 style="color: #500a6f ;font-size: 20px"><b>List Of Research Details</b></h1>
-                </div>
+                <img src="img/1.PNG" style="width: 500px; height: 300px">
+            </div>
+            <div class="col-md-4" >
+                <?php include('calander.php');?>
+            </div>
 
+        </div>
+
+
+        <br><br>
+
+        <div class="row">
+
+            <div class="col-md-8">
+                <h1 style="color: #500a6f ;font-size: 20px"><b>List Of Research Details</b></h1>
+            </div>
+        </div>
+        
+        
+        
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-10">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 View data from the database
@@ -94,36 +146,68 @@ require_once('auth.php');
                                     <?php
                                     include('connect.php');
                                     $select=mysqli_query($bd,"SELECT * FROM research_details order by id desc");
-                                    //$select=mysqli_query( "SELECT * FROM research_details order by id desc");
-                                    $i=1;
-                                    while($userrow=mysqli_fetch_array($select))
-                                    {
-                                        $id=$userrow['id'];
-                                        $researchName=$userrow['researchName'];
-                                        $kingdom=$userrow['kingdom'];
-                                        $phylum=$userrow['phylum'];
-                                        $created=$userrow['created']
-                                        ?>
+                                    ?>
 
-                                        <div class="display">
-                                            <p style="color: #cc006a"> RESEARCH NAME : <span style="color: #080808"><?php echo $researchName; ?></span>
-                                                <a href="researchDetails/viewResearch.php?id=<?php echo $id; ?>">
-                                                    <span class="view" title="View"> View </span></a>
 
-                                                <a href="researchDetails/editResearch.php?id=<?php echo $id; ?>"><span class="edit" title="Edit"> Edit </span></a>
+                                    <div class="display">
 
-                                                <a href="researchDetails/deleteResearch.php?id=<?php echo $id; ?>"
-                                                   onclick="return confirm('Are you sure you wish to delete this Record?');">
-                                                    <span class="delete" title="Delete"> Delete </span></a>
+                                        <table>
+                                            <tr>
+                                                <th>RESEARCH  NAME : </th>
+                                                <th>CREATED ON : : </th>
+                                                <th>VIEW : </th>
+                                                <th>Edit</th>
+                                                <th>Delete</th>
 
-                                            </p>
 
-                                            <br />
-                                            <p> Created On : <span><?php echo $created; ?></span>
-                                            </p>
-                                            <br />
-                                        </div>
-                                    <?php } ?>
+                                            </tr>
+
+
+                                            <?php
+                                            while($userrow=mysqli_fetch_array($select))
+                                            {
+                                                $id=$userrow['id'];
+                                                $researchName=$userrow['researchName'];
+                                                $kingdom=$userrow['kingdom'];
+                                                $phylum=$userrow['phylum'];
+                                                $created=$userrow['created']
+                                                ?>
+
+
+
+
+                                                <tr>
+                                                    <td><?php echo $researchName; ?></td>
+
+
+
+                                                    <td><?php echo $created; ?></td>
+
+
+                                                    <td> <a href="researchDetails/viewResearch.php?id=<?php echo $id; ?>">
+                                                            <span class="view" title="View"> View </span></a></td>
+
+
+
+
+
+                                                    <td> <a href="researchDetails/editResearch.php?id=<?php echo $id; ?>"><span class="edit" title="Edit"> Edit </span></a></td>
+
+                                                    <td> <a href="researchDetails/deleteResearch.php?id=<?php echo $id; ?>"
+                                                            onclick="return confirm('Are you sure you wish to delete this Record?');">
+                                                            <span class="delete" title="Delete"> Delete </span></a></td>
+
+
+
+
+                                                </tr>
+
+
+
+
+                                            <?php } ?>
+
+                                        </table>
                                 </div>
                             </div>
                         </div>
@@ -131,22 +215,14 @@ require_once('auth.php');
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <h1 style="color: #500a6f ;font-size: 20px"><b>Calander</b></h1>
-            </div>
-            <div class="col-md-4" >
-                <?php include('calander.php');?>
-            </div>
+
+
 
         </div>
 
-        <div class="row">
-            <div class="col-md-5">
-                <?php include('piechart.php');?>
-            </div>
-        </div>
+
     </div>
-</div>
+ 
 
 
 
