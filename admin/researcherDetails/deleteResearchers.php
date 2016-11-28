@@ -1,6 +1,6 @@
 <?php
 ob_start();
-include("connect.php");
+include("../include_files/connect.php");
 if(isset($_GET['id'])!="")
 {
     $delete=$_GET['id'];

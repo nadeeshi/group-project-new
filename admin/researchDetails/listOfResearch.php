@@ -32,7 +32,7 @@
 
 
 <body>
-<?php include("template.php")?>
+<?php include("../include_files/template.php")?>
 
 
 
@@ -59,7 +59,7 @@
                         <div style="margin-top: 20px;">
 
                             <?php
-                            include('connect.php');
+                            include('../include_files/connect.php');
                             $select=mysqli_query($bd,"SELECT * FROM research_details order by id desc");
                             $i=1;
                             ?>
@@ -141,7 +141,7 @@
 </div>
 
 
-</div>
+
 
 
 <div class="row">

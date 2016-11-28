@@ -1,6 +1,6 @@
 <?php
 ob_start();
-include("connect.php");
+include("../include_files/connect.php");
 
     $username=mysql_real_escape_string($_POST['username']);
     $usermail=mysql_real_escape_string($_POST['usermail']);

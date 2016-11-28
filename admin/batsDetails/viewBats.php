@@ -14,7 +14,7 @@
 
 
 <body>
-<?php include("template.php")?>
+<?php include "../include_files/template.php" ?>
 
 
 
@@ -44,7 +44,7 @@
                             <?php
                             if(isset($_GET['id']))
                             {
-                            include('connect.php');
+                            include('../include_files/connect.php');
                             $id=$_GET['id'];
                             $getselect=mysqli_query($bd,"SELECT * FROM bats_details WHERE id='$id'");
                             while($profile=mysqli_fetch_array($getselect))

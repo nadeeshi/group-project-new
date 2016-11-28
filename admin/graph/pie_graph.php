@@ -23,7 +23,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h1 class="page-head-line" style="color: #500a6f">Bats Details Using Charts</h1>
-                <h1 class="page-subhead-line">Select Graph Type:- <a href="">Bar Chart</a>......<a href="pie_graph.php">Pie chart</a></h1>
+                <h1 class="page-subhead-line">Select Graph Type:- <a href="graph.php">Bar Chart</a>......<a href="">Pie chart</a></h1>
 
             </div>
         </div>
@@ -41,7 +41,7 @@
                         <div style="margin-top: 20px;">
 
                             <?php
-                                include('bargraph2.html');?>
+                            include('piegraph.html');?>
 
 
 

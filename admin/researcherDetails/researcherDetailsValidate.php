@@ -1,6 +1,4 @@
-<?php
-require_once('auth.php');
-?>
+
 
 
 <?php
@@ -136,7 +134,7 @@ function validateMobileNo($umobile) {
 
 
 <body>
-<?php include("template.php")?>
+<?php include("../include_files/template.php")?>
 
 
 
@@ -214,7 +212,7 @@ function validateMobileNo($umobile) {
 
                                 <?php
                                 ob_start();
-                                include("../connect.php");
+                                include("../include_files/connect.php");
 
                                 /*$username=($_POST['username']);
                                 $usermail=($_POST['emailid']);
@@ -279,7 +277,7 @@ function validateMobileNo($umobile) {
                         <!-----view Researchers details------------------------------------------>
 
                         <?php
-                        include('../connect.php');
+                        include('../include_files/connect.php');
                         $select=mysqli_query($bd,"SELECT * FROM researcher_details order by id desc");
                         //$select=mysql_query("SELECT * FROM researcher_details order by id desc");
                         $i=1;
@@ -326,7 +324,7 @@ function validateMobileNo($umobile) {
 
     </div>
 </div>
-
+</div>
 
 
 

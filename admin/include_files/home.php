@@ -104,20 +104,20 @@ require_once('auth.php');
         <div class="row">
 
             <div class="col-md-8">
-                <h1><a href="mapDetails/googleMap.php" style="color: deeppink;font-size: 20px"><b>Bats Details</b></a></h1>
+                <h1><a href="../mapDetails/googleMap.php" style="color: deeppink;font-size: 20px"><b>Bats Details</b></a></h1>
             </div>
             <div class="col-md-4">
-                <h1><a href="" style="color: deeppink;font-size: 20px"><b>Calander</b></a></h1>
+                <h1><a style="color: deeppink;font-size: 20px" href="http://www.google.com/calendar/event?action=TEMPLATE&text=Example%20Event&dates=20131124T010000Z/20131124T020000Z&details=Event%20Details%20Here&location=123%20Main%20St%2C%20Example%2C%20NY"><b>Go to Google Calander</b></a></h1>
             </div>
 
         </div>
 
         <div class="row">
             <div class="col-md-8">
-                <img src="img/1.PNG" style="width: 500px; height: 300px">
+                <img src="../img/1.PNG" style="width: 500px; height: 300px">
             </div>
             <div class="col-md-4" >
-                <?php include('calander.php');?>
+                <?php include('../calander.php');?>
             </div>
 
         </div>
@@ -125,10 +125,16 @@ require_once('auth.php');
 
         <br><br>
 
+
+
+
+
+
         <div class="row">
 
             <div class="col-md-8">
                 <h1 style="color: #500a6f ;font-size: 20px"><b>List Of Research Details</b></h1>
+
             </div>
         </div>
         
@@ -184,16 +190,16 @@ require_once('auth.php');
                                                     <td><?php echo $created; ?></td>
 
 
-                                                    <td> <a href="researchDetails/viewResearch.php?id=<?php echo $id; ?>">
+                                                    <td> <a href="../researchDetails/viewResearch.php?id=<?php echo $id; ?>">
                                                             <span class="view" title="View"> View </span></a></td>
 
 
 
 
 
-                                                    <td> <a href="researchDetails/editResearch.php?id=<?php echo $id; ?>"><span class="edit" title="Edit"> Edit </span></a></td>
+                                                    <td> <a href="../researchDetails/editResearch.php?id=<?php echo $id; ?>"><span class="edit" title="Edit"> Edit </span></a></td>
 
-                                                    <td> <a href="researchDetails/deleteResearch.php?id=<?php echo $id; ?>"
+                                                    <td> <a href="../researchDetails/deleteResearch.php?id=<?php echo $id; ?>"
                                                             onclick="return confirm('Are you sure you wish to delete this Record?');">
                                                             <span class="delete" title="Delete"> Delete </span></a></td>
 

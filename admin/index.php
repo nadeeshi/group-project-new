@@ -39,7 +39,7 @@ unset($_SESSION['SESS_LAST_NAME']);
         <img src="img/003.jpg" />
 
     </div>
-    <form name="loginform" action="login_exec.php" method="post">
+    <form name="loginform" action="include_files/login_exec.php" method="post">
 
             <li>
                 <td colspan="2">
@@ -61,7 +61,7 @@ unset($_SESSION['SESS_LAST_NAME']);
             <li>
                 <div class="form-group input-group">
                     <span class="input-group-addon"><i class="fa fa-tag"  ></i></span><!--for get small icon-->
-                    <input type="text" name="username" class="form-control" placeholder="Your Username " required/><!--for get input field-->
+                    <input type="text"  name="username" class="form-control" placeholder="Your Username " required/><!--for get input field-->
                 </div>
 
             </li>

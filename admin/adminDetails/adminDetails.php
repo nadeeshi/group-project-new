@@ -14,7 +14,7 @@
 
 
 <body>
-<?php include("template.php") ?>
+<?php include("../include_files/template.php") ?>
 
 
 
@@ -106,7 +106,7 @@
 
                         <!--start  viewAdmin---------------------------------------------------------------------->
                         <?php
-                        include('connect.php');
+                        include('../include_files/connect.php');
                         $select=mysqli_query($bd,"SELECT * FROM admin_details order by id desc");
                         $i=1;
                         while($userrow=mysqli_fetch_array($select))

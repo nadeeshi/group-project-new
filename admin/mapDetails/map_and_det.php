@@ -1,6 +1,6 @@
 <?php
 ob_start();
-include("../connect.php");
+include("../include_files/connect.php");
 ?>
 
 <!DOCTYPE html>

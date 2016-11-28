@@ -14,7 +14,7 @@
 
 
 <body>
-<?php include("template.php")?>
+<?php include("../include_files/template.php")?>
 
 
 

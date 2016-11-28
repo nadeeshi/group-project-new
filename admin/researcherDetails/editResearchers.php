@@ -1,6 +1,6 @@
 <?php
 ob_start();
-include('connect.php');
+include('../include_files/connect.php');
 if(isset($_GET['id']))
 {
     $id=$_GET['id'];
@@ -34,7 +34,7 @@ ob_end_flush();
 </head>
 
 <body>
-<?php include("template.php")?>
+<?php include("../include_files/template.php")?>
 
 
 <div id="page-wrapper">
