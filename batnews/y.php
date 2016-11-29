@@ -2,177 +2,126 @@
 <html>
 <head>
 	<title>thread</title>
+		
 	<link href="https://fonts.googleapis.com/css?family=Alike+Angular" rel="stylesheet"> 
-	<link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="../css/newsmain.css">	
-	<link href="../css/navbar1n2.css" rel="stylesheet" type="text/css">
-	<link href="../css/footer.css" rel="stylesheet">
-	<script src="../js/jquary.js"></script> 
-  	<script src="../js/bootstrapjs.js"></script>
-	
-<style>
-ul.pagination {
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-}
-
-ul.pagination li {display: inline;}
-
-ul.pagination li a {
-    color: black;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-    transition: background-color .3s;
-    border: 1px solid #ddd;
-}
-
-ul.pagination li a.active {
-    background-color: #4CAF50;
-    color: white;
-    border: 1px solid #4CAF50;
-}
-
-ul.pagination li a:hover:not(.active) {background-color: #ddd;}
-
-div.center {text-align: center;}
-</style>	
-	
+	<link href="../assets/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="../assets/css/newsmain.css" rel="stylesheet" type="text/css">	
+	<link href="../assets/css/navbar1n2.css" rel="stylesheet" type="text/css">
+	<link href="../assets/css/footer.css" rel="stylesheet">
+	<script src="../assets/bootstrap/jquary.js"></script> 
+  	<script src="../assets/bootstrap/bootstrapjs.js"></script>
 	
 	
 </head>
 <body>
 	<div>
-		<?php include ("../template/navbarTemplate.php"); ?>
+		<?php include ("../includedFiles/navbarTemplate.php"); ?>
 	</div>
 	<div class="col-sm-8 col-sm-push-2 col-xs-12 insert-form">
-		<div class="container">
+            <div class="container">
 	
-	<?php 
-					$mysql_hostname = "localhost";
-					$mysql_user = "root";
-					$mysql_password = "";
-					$mysql_database = "test2";
-					$con = mysqli_connect($mysql_hostname, $mysql_user, $mysql_password, $mysql_database );
-					$qry = "SELECT * FROM photos ORDER BY id DESC;";
-					$imgList =array(1,2,3,4);
-					$desc = array(1,2,3,4);
-					$caption =array(1,2,3,4);
-					$id = array(1,2,3,4);
-					$result = mysqli_query($con, $qry) or die();
-					if (mysqli_num_rows($result) >= 4){
-						for($i = 0 ; $i < 4;$i++){
-							mysqli_data_seek($result,$i);
-							$record = mysqli_fetch_assoc($result);
-							$imgList[$i] ='photos/'.$record['location'];
-							$desc[$i] = $record['desc'];
-							$caption[$i] =$record['caption'];
-							$id[$i] =$record['id'];
-						}
-					}
-					
-					
-					?>
+                <?php 
+                $mysql_hostname = "localhost";
+                $mysql_user = "root";
+		$mysql_password = "";
+		$mysql_database = "project";
+		$con = mysqli_connect($mysql_hostname, $mysql_user, $mysql_password, $mysql_database );
+                $qry = "SELECT * FROM photos ORDER BY id DESC;";
+		$imgList =array(1,2,3,4);
+		$desc = array(1,2,3,4);
+		$caption =array(1,2,3,4);
+		$id = array(1,2,3,4);
+		$result = mysqli_query($con, $qry) or die();
+		if (mysqli_num_rows($result) >= 4){
+                    for($i = 0 ; $i < 4;$i++){
+			mysqli_data_seek($result,$i);
+			$record = mysqli_fetch_assoc($result);
+                        $imgList[$i] ='photos/'.$record['location'];
+			$desc[$i] = $record['desc'];
+			$caption[$i] =$record['caption'];
+			$id[$i] =$record['id'];
+                    }
+		}					
+                ?>
 						
 		
 
 		<div class="s">
-        <div class="row">
-          <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6">
 
-             <div id="news_hm">		
+                            <div id="news_hm">		
 			 
-			 <div class="moduletable">
-					
-					
-					
-					<div class="aidanews2" >
-					<div class="aidanews2_art aidaord_1 aidaid_1006 aidacat_83  odd first" >
+                               <div class="moduletable">
+															
+				<div class="aidanews2" >
+                                    <div class="aidanews2_art aidaord_1 aidaid_1006 aidacat_83  odd first" >
 					<div class="aidanews2_positions">
-					<div class="aidanews2_main" >
-					<div class="aidanews2_mainL">
-					<a class="aidanews2_img1" href=<?php echo "'z.php?photoid=".$id[0]."'"; ?>>
-						<img src="<?php echo $imgList[0];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 75%; height:auto;"/>
-					</a>
+                                            <div class="aidanews2_main" >
+                                                <div class="aidanews2_mainL">
+                                                    <a class="aidanews2_img1" href=<?php echo "'z.php?photoid=".$id[0]."'"; ?>>
+                                                        <img src="<?php echo $imgList[0];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 75%; height:auto;"/>
+                                                    </a>
+                                                </div>
+                                                <div class="aidanews2_mainC">
+                                                    <h1 class="aidanews2_title press-release">
+                                                        <a href=<?php echo "'z.php?photoid=".$id[0]."'"; ?>><?php echo $caption[0]; ?></a>
+                                                    </h1>					
+                                                    <span class="aidanews2_text">
+                                                        <?php echo substr($desc[0],0,150)."..."; ?>
+                                                    </span>					
+                                                        <a href=<?php echo "'z.php?photoid=".$id[0]."'"; ?> class="readon">
+                                                            <span class="aidanews2_readmore">Read More</span>
+                                                        </a>
+                                                </div>
+                                            </div>					
+                                            <div class="aidanews2_line" style="clear: both; padding: 0;">
+                                            </div>
 					</div>
-					<div class="aidanews2_mainC">
-					<h1 class="aidanews2_title press-release">
-					<a href=<?php echo "'z.php?photoid=".$id[0]."'"; ?>><?php echo $caption[0]; ?></a>
-					</h1>					
-					<span class="aidanews2_text">
-					<?php echo substr($desc[0],0,150)."..."; ?>
-					</span>					
-					<a href=<?php echo "'z.php?photoid=".$id[0]."'"; ?> class="readon">
-					<span class="aidanews2_readmore">Read More</span>
-					</a>
-					</div>
-					</div>					
-					<div class="aidanews2_line" style="clear: both; padding: 0;">
-					</div>
-					</div>
-					</div>
+                                    </div>
+										
+                                </div>
 					
-					
-					
-					
-					
-					
-		</div>
-					
-					
-					<div ></div>		
-					</div>
+                            </div>
 			</div><!--end news_hm-->
-		</div>
+                    </div>
 		
-		<div class="col-md-6">
+                <div class="col-md-6">
 
-             <div id="news_hm">		
+                    <div id="news_hm">		
 			 
-			 <div class="moduletable">
-			 
-					
-					
-					
-					<div class="aidanews2" >
-					<div class="aidanews2_art aidaord_2 aidaid_1003 aidacat_80  even" >
-					<div class="aidanews2_positions">
+			<div class="moduletable">
+
+                            <div class="aidanews2" >
+				<div class="aidanews2_art aidaord_2 aidaid_1003 aidacat_80  even" >
+                                    <div class="aidanews2_positions">
 					<div class="aidanews2_main" >
-					<div class="aidanews2_mainL">
-					<a class="aidanews2_img1" href=<?php echo "'z.php?photoid=".$id[1]."'"; ?> >
-					<img src="<?php echo $imgList[1];?>" alt="locals-go-loco-for-bats" style = "display: block; max-height: 25em ; min-height:14em; width: 75%; height:auto;"/>
-					</a>
-					</div>
-					<div class="aidanews2_mainC">
-					<h1 class="aidanews2_title latest-news">
-					<a href=<?php echo "'z.php?photoid=".$id[1]."'"; ?> ><?php echo $caption[1]; ?></a>
-					</h1>
-					<span class="aidanews2_text">
-					<?php echo substr($desc[1],0,150)."..."; ?>
-					</span>
-					<a href=<?php echo "'z.php?photoid=".$id[1]."'"; ?> class="readon">
-					<span class="aidanews2_readmore">Read More
-					</span>
-					</a>
-					</div>
-					</div>
+                                            <div class="aidanews2_mainL">
+                                                <a class="aidanews2_img1" href=<?php echo "'z.php?photoid=".$id[1]."'"; ?> >
+                                                    <img src="<?php echo $imgList[1];?>" alt="locals-go-loco-for-bats" style = "display: block; max-height: 25em ; min-height:14em; width: 75%; height:auto;"/>
+                                                </a>
+                                            </div>
+                                            <div class="aidanews2_mainC">
+                                                <h1 class="aidanews2_title latest-news">
+                                                    <a href=<?php echo "'z.php?photoid=".$id[1]."'"; ?> ><?php echo $caption[1]; ?></a>
+                                                </h1>
+                                                <span class="aidanews2_text">
+                                                    <?php echo substr($desc[1],0,150)."..."; ?>
+                                                </span>
+                                                    <a href=<?php echo "'z.php?photoid=".$id[1]."'"; ?> class="readon">
+                                                <span class="aidanews2_readmore">Read More
+                                                </span>
+                                                    </a>
+                                            </div>
+                                        </div>
 					<div class="aidanews2_line" style="clear: both; padding: 0;">
 					</div>
-					</div>
-					</div>
-					
-					
-					
-					
-					
-					
-		</div>
-					
-					
-					<div ></div>		
-					</div>
-			</div><!--end news_hm-->
+                                    </div>
+				</div>			
+                            </div>
+                                
+                        </div>
+                    </div><!--end news_hm-->
 		</div>
 		
 		
@@ -290,28 +239,13 @@ div.center {text-align: center;}
 	</div>
 	
 	</div>
-	
-	
-	<div class="center">
-  <ul class="pagination">
-    <li><a href="#">«</a></li>
-    <li><a href=<?php echo "'z.php?photoid=".$id[3]."'"; ?>>1</a></li>
-    <li><a class="active" href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li><a href="#">6</a></li>
-    <li><a href="#">7</a></li>
-    <li><a href="#">»</a></li>
-  </ul>
-</div>
 
 
 	<!-- start footer -->
 
 	<div class="row">
 	    <div class="col-xs-10 col-xs-push-2">
-	      <?php include ("../template/footer.php"); ?>
+	      <?php include ("../includedFiles/footer.php"); ?>
 	    </div>  
   	</div>
 
