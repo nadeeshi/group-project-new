@@ -2,26 +2,49 @@
 <html>
 <head>
 	<title>thread</title>
-	
-	
-	
 	<link href="https://fonts.googleapis.com/css?family=Alike+Angular" rel="stylesheet"> 
+	<link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="../css/newsmain.css">	
+	<link href="../css/navbar1n2.css" rel="stylesheet" type="text/css">
+	<link href="../css/footer.css" rel="stylesheet">
+	<script src="../js/jquary.js"></script> 
+  	<script src="../js/bootstrapjs.js"></script>
 	
-	<link href="../assets/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
-	<link href="../assets/css/newsmain.css" rel="stylesheet" type="text/css">	
-	<link href="../assets/css/navbar1n2.css" rel="stylesheet" type="text/css">
-	<link href="../assets/css/footer.css" rel="stylesheet">
-	<script src="../assets/bootstrap/jquary.js"></script> 
-  	<script src="../assets/bootstrap/bootstrapjs.js"></script>
-	
-	
+<style>
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+ul.pagination li a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+ul.pagination li a:hover:not(.active) {background-color: #ddd;}
+
+div.center {text-align: center;}
+</style>	
 	
 	
 	
 </head>
 <body>
 	<div>
-		<?php include ("../includedFiles/navbarTemplate.php"); ?>
+		<?php include ("../template/navbarTemplate.php"); ?>
 	</div>
 	<div class="col-sm-8 col-sm-push-2 col-xs-12 insert-form">
 		<div class="container">
@@ -30,7 +53,7 @@
 					$mysql_hostname = "localhost";
 					$mysql_user = "root";
 					$mysql_password = "";
-					$mysql_database = "project";
+					$mysql_database = "test2";
 					$con = mysqli_connect($mysql_hostname, $mysql_user, $mysql_password, $mysql_database );
 					$qry = "SELECT * FROM photos ORDER BY id DESC;";
 					$imgList =array(1,2,3,4);
@@ -267,13 +290,28 @@
 	</div>
 	
 	</div>
+	
+	
+	<div class="center">
+  <ul class="pagination">
+    <li><a href="#">«</a></li>
+    <li><a href=<?php echo "'z.php?photoid=".$id[3]."'"; ?>>1</a></li>
+    <li><a class="active" href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">6</a></li>
+    <li><a href="#">7</a></li>
+    <li><a href="#">»</a></li>
+  </ul>
+</div>
 
 
 	<!-- start footer -->
 
 	<div class="row">
 	    <div class="col-xs-10 col-xs-push-2">
-	      <?php include ("../includedFiles/footer.php"); ?>
+	      <?php include ("../template/footer.php"); ?>
 	    </div>  
   	</div>
 

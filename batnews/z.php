@@ -2,18 +2,13 @@
 <html>
 <head>
 	<title>thread</title>
-	
-	
-	
-	
 	<link href="https://fonts.googleapis.com/css?family=Alike+Angular" rel="stylesheet"> 
-	
-	<link href="../assets/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
-	<link href="../assets/css/newschild.css" rel="stylesheet" type="text/css">	
-	<link href="../assets/css/navbar1n2.css" rel="stylesheet" type="text/css">
-	<link href="../assets/css/footer.css" rel="stylesheet">
-	<script src="../assets/bootstrap/jquary.js"></script> 
-  	<script src="../assets/bootstrap/bootstrapjs.js"></script>
+	<link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="../css/newschild.css">	
+	<link href="../css/navbar1n2.css" rel="stylesheet" type="text/css">
+	<link href="../css/footer.css" rel="stylesheet">
+	<script src="../js/jquary.js"></script> 
+  	<script src="../js/bootstrapjs.js"></script>
 	
 	
 	
@@ -25,7 +20,7 @@
 					$mysql_hostname = "localhost";
 					$mysql_user = "root";
 					$mysql_password = "";
-					$mysql_database = "project";
+					$mysql_database = "test2";
 					$con = mysqli_connect($mysql_hostname, $mysql_user, $mysql_password, $mysql_database );
 					$qry = "SELECT * FROM photos WHERE id = '".$_GET['photoid']."' ;";
 					$result = mysqli_query($con, $qry);
@@ -34,7 +29,7 @@
 					?>
 	
 	<div>
-		<?php include ("../includedFiles/navbarTemplate.php"); ?>
+		<?php include ("../template/navbarTemplate.php"); ?>
 	</div>
 	<div class="col-sm-8 col-sm-push-2 col-xs-12 insert-form">
 	
@@ -93,7 +88,7 @@
 
 	<div class="row">
 	    <div class="col-xs-10 col-xs-push-2">
-	      <?php include ("../includedFiles/footer.php"); ?>
+	      <?php include ("../template/footer.php"); ?>
 	    </div>  
   	</div>
 

@@ -2,37 +2,32 @@
 error_reporting(E_ALL ^ E_DEPRECATED);
 @mysql_connect("localhost","root","") or die("could not connect");
 
-@mysql_select_db("project") or die("coul");
+@mysql_select_db("test2") or die("could not find");
 
 
 ?>
 
 <!DOCTYPE html>
 <html>
-<head>
-  <title>nav</title> 
-  <head>
+
+
+	
+	<head>
 	<title>thread</title>
-	
-			
-	
 	<link href="https://fonts.googleapis.com/css?family=Alike+Angular" rel="stylesheet"> 
-	
-	<link href="../assets/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
-	<link href="../assets/css/testing.css" rel="stylesheet" type="text/css">	
-	<link href="../assets/css/navbar1n2.css" rel="stylesheet" type="text/css">
-	<link href="../assets/css/footer.css" rel="stylesheet">
-	<script src="../assets/bootstrap/jquary.js"></script> 
-  	<script src="../assets/bootstrap/bootstrapjs.js"></script>
-	
-	
-	
-</head>
-</head>
+	<link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="../css/testing.css">		
+	<link href="../css/navbar1n2.css" rel="stylesheet" type="text/css">
+	<link href="../css/footer.css" rel="stylesheet">
+	<script src="../js/jquary.js"></script> 
+  	<script src="../js/bootstrapjs.js"></script>
+
+	</head>
+
 <body>
 
 	<div>
-	<?php include('../includedFiles/navbarTemplate.php');?>
+	<?php include('../template/navbarTemplate.php');?>
 	</div>
 	<div class="col-sm-8 col-sm-push-2 col-xs-12 insert-form">
 		<div class="container">
@@ -48,7 +43,7 @@ error_reporting(E_ALL ^ E_DEPRECATED);
 	
 		if(isset($_POST['address'])){
 		$searchq = $_POST['address'];
-		$searchq = preg_replace("#[^a-z]#i","",$searchq);
+		$searchq = preg_replace("#[^0-9a-z]#i","",$searchq);
 		
 		
 		if(!empty($searchq)){
@@ -101,21 +96,11 @@ while($row = mysql_fetch_array($query)){
 	SearchString($ab[$i], $searchq);
 		if ($rec == 1){
 		$count1=1;
-		//$k=0;
-		//echo  $d[$i].' '.$rec.'<br/>';
+		
 		$fo=$d[$i];
-		//$k++;
-		//echo $fo;
+		
 		array_push($xx,$fo);
-		//$r = count($xx);
-		//echo $rec ;
-		//echo $r;
-		//echo $xx[0];
-		//echo $xx[1];
-		//echo $k;
-		//echo $xx[$i];
-		//$rec=0;
-		//echo $xx[0];
+		
 
 		$rec=0;
 		}
@@ -143,14 +128,14 @@ while($row = mysql_fetch_array($query)){
 	
 <ul style="list-style-type:circle">
 	<?php if($count ==1){?>
-  <li><a  href=<?php echo "'../batmap/map_and_det.php?batid=".$id."'";?>><?php echo $fname;?></a></li>
+  <li><a  href=<?php echo "'../batmap/distribution_c.php?batid=".$id."'";?>><?php echo $fname;?></a></li>
 	<?php echo $des,$id;
 	}		
 	?>
 	<?php if($count1 ==1){
 				for($s=0;$s<$r;$s++){
 	?>
-  <li><a href=<?php echo "'../batnews/s_new.php?batid1=".$xx[$s]."'";?>><?php echo $head[$xx[$s]-1];?></a></li>
+  <li><a href=<?php echo "'../batnews/news_child_s.php?batid1=".$xx[$s]."'";?>><?php echo $head[$xx[$s]-1];?></a></li>
 	<?php echo substr( $ab[$xx[$s]-1],0,150)."..."; 
 	}
 	}?>
@@ -163,7 +148,7 @@ while($row = mysql_fetch_array($query)){
 </div>  
 	<div class="row">
     <div class="col-sm-10 col-sm-push-2 col-xs-12">
-      <?php include ("../includedFiles/footer.php"); ?>
+      <?php include ("../template/footer.php"); ?>
     </div>  
   </div>
 </body>
