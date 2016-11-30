@@ -92,6 +92,7 @@
     border-color: #e0e0d2;
     border-radius: 4px;
     padding: 10px;
+    border-width: 2px;
 }
 
 .topic-subject{
@@ -100,4 +101,11 @@
 }
 .topic-date{
     font-size: 11px;
+}
+
+
+/*model*/
+
+.btn-custom {
+    background-color: #cac6c6!important;
 }
