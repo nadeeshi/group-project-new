@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <meta charset="UTF-8">
-        <title>Home | BatInfo</title>
+        <title>Home | BatsInfo</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     	  <!-- Bootstrap -->
     	  <link href="css/bootstrap.css" rel="stylesheet" media="screen">

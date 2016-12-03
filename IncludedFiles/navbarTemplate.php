@@ -1,8 +1,6 @@
 <?php
 session_start();
-
-include_once '../mainhome/dbconnect.php';
-
+include_once '../loginsystem/dbconnect.php';
 ?>
 <!-- start of the heading naavigation bar -->
 <!-- <div class="nav-header"> -->
@@ -30,12 +28,16 @@ include_once '../mainhome/dbconnect.php';
       			</div>
       			<button type="submit" class="btn btn-default">Search</button>
     			</form>
-    			<ul class="nav navbar-nav  navbar-right navbar-li">
-            <?php if (isset($_SESSION['usr_id'])) { ?>
-              <li class="btn1">Hi <?php echo $_SESSION['usr_name']; ?></li>
-              <li class="btn1"><a href="../mainhome/logout.php">Log Out</a></li>
-
-            <?php } ?>
+    			<div class="collapse navbar-collapse" id="navbar1">
+            	<ul class="nav navbar-nav navbar-right" style="font-size: 18px; padding-top: 1px; padding-bottom: 8px;">
+                <?php if (isset($_SESSION['usr_id'])) { ?>
+                <li><p class="navbar-text">Signed in as <?php echo $_SESSION['usr_name']; ?></p></li>
+                <li><a href="../loginsystem/logout.php">Log Out</a></li>
+                <?php } else { ?>
+                  <li><a href="../loginsystem/login.php">Login</a></li>
+                  <li><a href="../loginsystem/register.php">Sign Up</a></li>
+                <?php } ?>
+            </ul>
             <li class="min-link"><a href="../phpPages/researcherHomePage.php">Home</a></li>
             <li class="min-link"><a href="../nadee/listOfBats.php">Bats Info</a></li>
             <li class="min-link"><a href="../nadee/listOfResearch.php">Research Info</a></li>
