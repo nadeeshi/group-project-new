@@ -27,17 +27,8 @@
             }
 
 
-            .form-control:focus {
-
-            }
-            .form-control:focus {
-                border-color: #778ea0;
-            }
-
-
-
             .form-control:focus{
-
+                 border-color: #778ea0;
                 box-shadow: inset 0 1px 1px rgba(0, 0, 0, -6.925), 0 0 8px rgba(21, 19, 19, 0.6);
             }
             textarea:active, textarea:focus {
@@ -147,5 +138,17 @@
             .subtitle{
                 font-family: 'Copse', serif !important;
             }
+
+            .height_default_del{
+                
+               height: 400px;
+                
+            }
+            .table{
+
+                height: 480px;
+
+            } 
+             
 
  

@@ -1,17 +1,12 @@
 /*------------validation function-----------------*/
 var count=0; // to count blank fields
 function validation(event){
-	//fetching radio button by name
-	//var radio_check = document.getElementsByName('gender');
+	
 
 	//fetching all inputs with same class name text_field and an html tag textarea
 	var input_field = document.getElementsByClassName('text_field');
 	var text_area = document.getElementsByTagName('textarea');
 
-	//validating radio button
-	//if(radio_check[0].checked== false && radio_check[1].checked== false){
-	 //var y = 0;
-	//}
 
 	 var y = 0;
 
@@ -28,16 +23,7 @@ function validation(event){
 		}
 	}
 
-	//Notifying validation
-	/*	if(count!=0||y==0){
-
-			alert("*All Fields are mandatory*");
-			event.preventDefault();
-			}
-			else{
-				return true;
-			}
-	*/
+	
 }
 /*---------------------------------------------------------*/
 
