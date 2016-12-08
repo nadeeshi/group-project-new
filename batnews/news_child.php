@@ -229,12 +229,12 @@
 		
         <!-- start footer -->
 
-        <div class="row">
+        
             <div class="col-xs-10 col-xs-push-2">
                 <?php include ("../IncludedFiles/footer.php"); ?>
 	
             </div>  
-        </div>
+       
 
 
         <!-- end of footer -->
