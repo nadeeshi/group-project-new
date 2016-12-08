@@ -8,7 +8,16 @@
     <link href="../assets/css/footer.css" rel="stylesheet">
     <script src="../assets/bootstrap/jquary.js"></script>
     <script src="../assets/bootstrap/bootstrapjs.js"></script>
-</head>
+    <style>
+    .height_listofbats{
+        
+        height: 400px;
+        }
+    
+    </style>
+    
+    
+    </head>
 <body>
 <div>
     <?php include '../IncludedFiles/navbarTemplate.php' ?>
@@ -16,23 +25,23 @@
 <div class="col-sm-8 col-sm-push-2 col-xs-12 insert-form">
     <div class="row">
                 <div class="col-xs-3">
-                    <a href="../final_insert_update_del/view_bat.php">
+                    <a href="">
                         <button>View A Bat Info</button>
                     </a>
                 </div>
 
                 <div class="col-xs-3">
-                    <a href="../final_insert_update_del/insert.php">
+                    <a href="../insert_del_up/insert_form.php">
                         <button>Insert New Bat Info</button>
                     </a>
                 </div>
                 <div class="col-xs-3">
-                    <a href="../final_insert_update_del/update_bat.php">
+                    <a href="../insert_del_up/edit_delete_home.php">
                         <button>Update A Bat Info</button>
                     </a>
                 </div>
                 <div class="col-xs-3">
-                    <a href="../final_insert_update_del/delete_bat.php">
+                    <a href="../insert_del_up/edit_delete_home.php">
                         <button>Delete A Bat Info</button>
                     </a>
                 </div>
@@ -42,7 +51,7 @@
         </div>
     <br><br><br>
 
-    <div class="row">
+    <div class="row height_listofbats">
         <div class="col-xs-12 col-sm-12 list-content">
             <?php
             include('connect.php');
@@ -86,11 +95,10 @@
 
 <!-- start footer -->
 
-<div class="row">
+
     <div class="col-xs-10 col-xs-push-2">
         <?php include "../IncludedFiles/footer.php" ?>
     </div>
-</div>
 
 
 </body>
