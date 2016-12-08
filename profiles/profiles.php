@@ -8,23 +8,23 @@ error_reporting(E_ALL ^ E_DEPRECATED);
 <!DOCTYPE html>
 <html>
 <head>
-	<title>thread</title>
+	<title>profiles</title>
 	<link href="https://fonts.googleapis.com/css?family=Alike+Angular" rel="stylesheet"> 
-	<link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="../css/profile.css">	
-	<link href="../css/navbar1n2.css" rel="stylesheet" type="text/css">
-	<link href="../css/footer.css" rel="stylesheet">
-	<script src="../js/jquary.js"></script> 
-  	<script src="../js/bootstrapjs.js"></script>
 	
-	
+	<link href="../assets/bootstrap/bootstrap.css" rel="stylesheet"><link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/profile.css">		
+	<link href="../assets/css/navbar1n2.css" rel="stylesheet" type="text/css">
+	<link href="../assets/css/footer.css" rel="stylesheet">
+	<script src="../assets/bootstrap/jquary.js"></script> 
+  	<script src="../assets/bootstrap/bootstrapjs.js"></script>
+
 	
 	
 	
 </head>
 <body>
 	<div>
-		<?php include ("../template/navbarTemplate.php"); ?>
+		<?php include ("../IncludedFiles/navbarTemplate.php"); ?>
 	</div>
 	<div class="col-sm-8 col-sm-push-2 col-xs-12 insert-form">
 		<div class="container">
@@ -63,116 +63,499 @@ error_reporting(E_ALL ^ E_DEPRECATED);
 				</div>
 		
 				<div class="row">
-					
+				<div class="col-md-12">
+				<div class="ad">
+					<div class="row">
 					<div class="col-md-3">
 					<div class="x">
-						<a class="aidanews2_img1" href=<?php echo "'../batmap/distribution1.php?batid=".$id[0]."'"; ?>>
+						<a class="aidanews2_img1" href=<?php echo "'../batmap/distribution_c.php?batid=".$id[0]."'"; ?>>
 							<img class="x" src="<?php echo $imgList[0];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 100%; height:auto;"/>
 						</a>
 						
-						<h1 class="aidanews2_title">
-							<a href=<?php echo "'../batmap/distribution1.php?batid=".$id[0]."'"; ?>><?php echo $caption[0]; ?></a>
-						</h1>
+						<p class="aidanews2_title">
+							<a href=<?php echo "'../batmap/distribution_c.php?batid=".$id[0]."'"; ?>><?php echo $caption[0]; ?></a>
+						</p>
 
 					</div>
 					</div>
 					
 					<div class="col-md-3">
 					<div class="x">
-						<a class="aidanews2_img1" href=<?php echo "'../batmap/distribution1.php?batid=".$id[1]."'"; ?>>
+						<a class="aidanews2_img1" href=<?php echo "'../batmap/distribution_c.php?batid=".$id[1]."'"; ?>>
 							<img class="x" src="<?php echo $imgList[1];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 100%; height:auto;"/>
 						</a>
 						
-						<h1 class="aidanews2_title">
-							<a href=<?php echo "'../batmap/distribution1.php?batid=".$id[1]."'"; ?>><?php echo $caption[1]; ?></a>
-						</h1>
+						<p class="aidanews2_title">
+							<a href=<?php echo "'../batmap/distribution_c.php?batid=".$id[1]."'"; ?>><?php echo $caption[1]; ?></a>
+						</p>
 
 					</div>
 					</div>
 					
 					<div class="col-md-3">
 					<div class="x">
-						<a class="aidanews2_img1" href=<?php echo "'../batmap/distribution1.php?batid=".$id[2]."'"; ?>>
+						<a class="aidanews2_img1" href=<?php echo "'../batmap/distribution_c.php?batid=".$id[2]."'"; ?>>
 							<img class="x" src="<?php echo $imgList[2];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 100%; height:auto;"/>
 						</a>
 						
-						<h1 class="aidanews2_title">
-							<a href=<?php echo "'../batmap/distribution1.php?batid=".$id[2]."'"; ?>><?php echo $caption[2]; ?></a>
-						</h1>
+						<p class="aidanews2_title">
+							<a href=<?php echo "'../batmap/distribution_c.php?batid=".$id[2]."'"; ?>><?php echo $caption[2]; ?></a>
+						</p>
 
 					</div>
 					</div>
 					
 					<div class="col-md-3">
 					<div class="x">
-						<a class="aidanews2_img1" href=<?php echo "'news_child.php?photoid=".$id[0]."'"; ?>>
+						<a class="aidanews2_img1" href=<?php echo "'../batmap/distribution_c.php?batid=".$id[0]."'";  ?>>
 							<img class="x" src="<?php echo $imgList[0];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 100%; height:auto;"/>
 						</a>
 						
-						<h1 class="aidanews2_title">
-							<a href=<?php echo "'z.php?photoid=".$id[0]."'"; ?>><?php echo $caption[0]; ?></a>
-						</h1>
+						<p class="aidanews2_title">
+							<a href=<?php echo "'../batmap/distribution_c.php?batid=".$id[0]."'";  ?>><?php echo $caption[0]; ?></a>
+						</p>
 
 					</div>
 					</div>
+					
+					
+				</div>	
 				</div>
-				
+				</div>
+				</div>
+					<!--<div class="col-md-6">
+					</div>-->
 				
 				<div class="row">
+				<div class="col-md-12">
+				<div class="ad">
 				
+				<div class="row">
+					
 					<div class="col-md-3">
 					<div class="x">
-						<a class="aidanews2_img1" href=<?php echo "'news_child.php?photoid=".$id[1]."'"; ?>>
+						<a class="aidanews2_img1" href=<?php echo "'../batmap/distribution_c.php?batid=".$id[0]."'"; ?>>
 							<img class="x" src="<?php echo $imgList[0];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 100%; height:auto;"/>
 						</a>
 						
-						<h1 class="aidanews2_title">
-							<a href=<?php echo "'z.php?photoid=".$id[1]."'"; ?>><?php echo $caption[1]; ?></a>
-						</h1>
+						<p class="aidanews2_title">
+							<a href=<?php echo "'../batmap/distribution_c.php?batid=".$id[0]."'"; ?>><?php echo $caption[0]; ?></a>
+						</p>
 
 					</div>
 					</div>
 					
 					<div class="col-md-3">
 					<div class="x">
-						<a class="aidanews2_img1" href=<?php echo "'news_child.php?photoid=".$id[2]."'"; ?>>
-							<img class="x" src="<?php echo $imgList[0];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 100%; height:auto;"/>
-						</a>
-						
-						<h1 class="aidanews2_title">
-							<a href=<?php echo "'z.php?photoid=".$id[2]."'"; ?>><?php echo $caption[2]; ?></a>
-						</h1>
-
-					</div>
-					</div>
-					
-					<div class="col-md-3">
-					<div class="x">
-						<a class="aidanews2_img1" href=<?php echo "'news_child.php?photoid=".$id[0]."'"; ?>>
+						<a class="aidanews2_img1" href=<?php echo "'../batmap/distribution_c.php?batid=".$id[1]."'"; ?>>
 							<img class="x" src="<?php echo $imgList[1];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 100%; height:auto;"/>
 						</a>
 						
-						<h1 class="aidanews2_title">
-							<a href=<?php echo "'z.php?photoid=".$id[0]."'"; ?>><?php echo $caption[0]; ?></a>
-						</h1>
+						<p class="aidanews2_title">
+							<a href=<?php echo "'../batmap/distribution_c.php?batid=".$id[1]."'"; ?>><?php echo $caption[1]; ?></a>
+						</p>
 
 					</div>
 					</div>
 					
 					<div class="col-md-3">
 					<div class="x">
-						<a class="aidanews2_img1" href=<?php echo "'news_child.php?photoid=".$id[1]."'"; ?>>
-							<img class="x" src="<?php echo $imgList[0];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 100%; height:auto;"/>
+						<a class="aidanews2_img1" href=<?php echo "'../batmap/distribution_c.php?batid=".$id[2]."'"; ?>>
+							<img class="x" src="<?php echo $imgList[2];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 100%; height:auto;"/>
 						</a>
 						
-						<h1 class="aidanews2_title">
-							<a href=<?php echo "'z.php?photoid=".$id[1]."'"; ?>><?php echo $caption[1]; ?></a>
-						</h1>
+						<p class="aidanews2_title">
+							<a href=<?php echo "'../batmap/distribution_c.php?batid=".$id[2]."'"; ?>><?php echo $caption[2]; ?></a>
+						</p>
 
 					</div>
 					</div>
+					
+					<div class="col-md-3">
+					<div class="x">
+						<a class="aidanews2_img1" href=<?php echo "'../batmap/distribution_c.php?batid=".$id[0]."'";  ?>>
+							<img class="x" src="<?php echo $imgList[0];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 100%; height:auto;"/>
+						</a>
+						
+						<p class="aidanews2_title">
+							<a href=<?php echo "'../batmap/distribution_c.php?batid=".$id[0]."'";  ?>><?php echo $caption[0]; ?></a>
+						</p>
+
+					</div>
+					</div>
+					
+					
+				</div>
+				</div>
+				</div>	
 				</div>
 				
+				<!---->
+				
+				<div class="row">
+				<div class="col-md-12">
+				<div class="ad">
+				
+				<div class="row">
+					
+					<div class="col-md-3">
+					<div class="x">
+						<a class="aidanews2_img1" href=<?php echo "'../batmap/distribution_c.php?batid=".$id[0]."'"; ?>>
+							<img class="x" src="<?php echo $imgList[0];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 100%; height:auto;"/>
+						</a>
+						
+						<p class="aidanews2_title">
+							<a href=<?php echo "'../batmap/distribution_c.php?batid=".$id[0]."'"; ?>><?php echo $caption[0]; ?></a>
+						</p>
+
+					</div>
+					</div>
+					
+					<div class="col-md-3">
+					<div class="x">
+						<a class="aidanews2_img1" href=<?php echo "'../batmap/distribution_c.php?batid=".$id[1]."'"; ?>>
+							<img class="x" src="<?php echo $imgList[1];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 100%; height:auto;"/>
+						</a>
+						
+						<p class="aidanews2_title">
+							<a href=<?php echo "'../batmap/distribution_c.php?batid=".$id[1]."'"; ?>><?php echo $caption[1]; ?></a>
+						</p>
+
+					</div>
+					</div>
+					
+					<div class="col-md-3">
+					<div class="x">
+						<a class="aidanews2_img1" href=<?php echo "'../batmap/distribution_c.php?batid=".$id[2]."'"; ?>>
+							<img class="x" src="<?php echo $imgList[2];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 100%; height:auto;"/>
+						</a>
+						
+						<p class="aidanews2_title">
+							<a href=<?php echo "'../batmap/distribution_c.php?batid=".$id[2]."'"; ?>><?php echo $caption[2]; ?></a>
+						</p>
+
+					</div>
+					</div>
+					
+					<div class="col-md-3">
+					<div class="x">
+						<a class="aidanews2_img1" href=<?php echo "'../batmap/distribution_c.php?batid=".$id[0]."'";  ?>>
+							<img class="x" src="<?php echo $imgList[0];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 100%; height:auto;"/>
+						</a>
+						
+						<p class="aidanews2_title">
+							<a href=<?php echo "'../batmap/distribution_c.php?batid=".$id[0]."'";  ?>><?php echo $caption[0]; ?></a>
+						</p>
+
+					</div>
+					</div>
+					
+					
+				</div>
+				</div>	
+				</div>	
+				</div>
+				
+				<!---->
+				
+				<div class="row">
+				<div class="col-md-12">
+				<div class="ad">
+				<div class="row">
+					
+					<div class="col-md-3">
+					<div class="x">
+						<a class="aidanews2_img1" href=<?php echo "'../batmap/distribution_c.php?batid=".$id[0]."'"; ?>>
+							<img class="x" src="<?php echo $imgList[0];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 100%; height:auto;"/>
+						</a>
+						
+						<p class="aidanews2_title">
+							<a href=<?php echo "'../batmap/distribution_c.php?batid=".$id[0]."'"; ?>><?php echo $caption[0]; ?></a>
+						</p>
+
+					</div>
+					</div>
+					
+					<div class="col-md-3">
+					<div class="x">
+						<a class="aidanews2_img1" href=<?php echo "'../batmap/distribution_c.php?batid=".$id[1]."'"; ?>>
+							<img class="x" src="<?php echo $imgList[1];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 100%; height:auto;"/>
+						</a>
+						
+						<p class="aidanews2_title">
+							<a href=<?php echo "'../batmap/distribution_c.php?batid=".$id[1]."'"; ?>><?php echo $caption[1]; ?></a>
+						</p>
+
+					</div>
+					</div>
+					
+					<div class="col-md-3">
+					<div class="x">
+						<a class="aidanews2_img1" href=<?php echo "'../batmap/distribution_c.php?batid=".$id[2]."'"; ?>>
+							<img class="x" src="<?php echo $imgList[2];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 100%; height:auto;"/>
+						</a>
+						
+						<p class="aidanews2_title">
+							<a href=<?php echo "'../batmap/distribution_c.php?batid=".$id[2]."'"; ?>><?php echo $caption[2]; ?></a>
+						</p>
+
+					</div>
+					</div>
+					
+					<div class="col-md-3">
+					<div class="x">
+						<a class="aidanews2_img1" href=<?php echo "'../batmap/distribution_c.php?batid=".$id[0]."'";  ?>>
+							<img class="x" src="<?php echo $imgList[0];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 100%; height:auto;"/>
+						</a>
+						
+						<p class="aidanews2_title">
+							<a href=<?php echo "'../batmap/distribution_c.php?batid=".$id[0]."'";  ?>><?php echo $caption[0]; ?></a>
+						</p>
+
+					</div>
+					</div>
+					
+					
+					
+				</div>
+				</div>	
+				</div>	
+				</div>
+				
+				<!---->
+				
+				<div class="row">
+				<div class="col-md-12">
+				<div class="ad">
+				<div class="row">
+					
+					<div class="col-md-3">
+					<div class="x">
+						<a class="aidanews2_img1" href=<?php echo "'../batmap/distribution_c.php?batid=".$id[0]."'"; ?>>
+							<img class="x" src="<?php echo $imgList[0];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 100%; height:auto;"/>
+						</a>
+						
+						<p class="aidanews2_title">
+							<a href=<?php echo "'../batmap/distribution_c.php?batid=".$id[0]."'"; ?>><?php echo $caption[0]; ?></a>
+						</p>
+
+					</div>
+					</div>
+					
+					<div class="col-md-3">
+					<div class="x">
+						<a class="aidanews2_img1" href=<?php echo "'../batmap/distribution_c.php?batid=".$id[1]."'"; ?>>
+							<img class="x" src="<?php echo $imgList[1];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 100%; height:auto;"/>
+						</a>
+						
+						<p class="aidanews2_title">
+							<a href=<?php echo "'../batmap/distribution_c.php?batid=".$id[1]."'"; ?>><?php echo $caption[1]; ?></a>
+						</p>
+
+					</div>
+					</div>
+					
+					<div class="col-md-3">
+					<div class="x">
+						<a class="aidanews2_img1" href=<?php echo "'../batmap/distribution_c.php?batid=".$id[2]."'"; ?>>
+							<img class="x" src="<?php echo $imgList[2];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 100%; height:auto;"/>
+						</a>
+						
+						<p class="aidanews2_title">
+							<a href=<?php echo "'../batmap/distribution_c.php?batid=".$id[2]."'"; ?>><?php echo $caption[2]; ?></a>
+						</p>
+
+					</div>
+					</div>
+					
+					<div class="col-md-3">
+					<div class="x">
+						<a class="aidanews2_img1" href=<?php echo "'../batmap/distribution_c.php?batid=".$id[0]."'";  ?>>
+							<img class="x" src="<?php echo $imgList[0];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 100%; height:auto;"/>
+						</a>
+						
+						<p class="aidanews2_title">
+							<a href=<?php echo "'../batmap/distribution_c.php?batid=".$id[0]."'";  ?>><?php echo $caption[0]; ?></a>
+						</p>
+
+					</div>
+					</div>
+					
+					
+				</div>	
+				</div>	
+				</div>	
+				</div>
+				
+				<!---->
+				
+				<div class="row">
+				<div class="col-md-12">
+				<div class="ad">
+				<div class="row">
+					
+					<div class="col-md-3">
+					<div class="x">
+						<a class="aidanews2_img1" href=<?php echo "'../batmap/distribution_c.php?batid=".$id[0]."'"; ?>>
+							<img class="x" src="<?php echo $imgList[0];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 100%; height:auto;"/>
+						</a>
+						
+						<p class="aidanews2_title">
+							<a href=<?php echo "'../batmap/distribution_c.php?batid=".$id[0]."'"; ?>><?php echo $caption[0]; ?></a>
+						</p>
+
+					</div>
+					</div>
+					
+					<div class="col-md-3">
+					<div class="x">
+						<a class="aidanews2_img1" href=<?php echo "'../batmap/distribution_c.php?batid=".$id[1]."'"; ?>>
+							<img class="x" src="<?php echo $imgList[1];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 100%; height:auto;"/>
+						</a>
+						
+						<p class="aidanews2_title">
+							<a href=<?php echo "'../batmap/distribution_c.php?batid=".$id[1]."'"; ?>><?php echo $caption[1]; ?></a>
+						</p>
+
+					</div>
+					</div>
+					
+					<div class="col-md-3">
+					<div class="x">
+						<a class="aidanews2_img1" href=<?php echo "'../batmap/distribution_c.php?batid=".$id[2]."'"; ?>>
+							<img class="x" src="<?php echo $imgList[2];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 100%; height:auto;"/>
+						</a>
+						
+						<p class="aidanews2_title">
+							<a href=<?php echo "'../batmap/distribution_c.php?batid=".$id[2]."'"; ?>><?php echo $caption[2]; ?></a>
+						</p>
+
+					</div>
+					</div>
+					
+					<div class="col-md-3">
+					<div class="x">
+						<a class="aidanews2_img1" href=<?php echo "'../batmap/distribution_c.php?batid=".$id[0]."'";  ?>>
+							<img class="x" src="<?php echo $imgList[0];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 100%; height:auto;"/>
+						</a>
+						
+						<p class="aidanews2_title">
+							<a href=<?php echo "'../batmap/distribution_c.php?batid=".$id[0]."'";  ?>><?php echo $caption[0]; ?></a>
+						</p>
+
+					</div>
+					</div>
+					
+					
+				</div>	
+				</div>	
+				</div>	
+				</div>
+				
+				
+				
+				<div class="row">
+				<div class="col-md-12">
+				<div class="ad">
+				<div class="row">
+					
+					<div class="col-md-3">
+					<div class="x">
+						<a class="aidanews2_img1" href=<?php echo "'../batmap/distribution_c.php?batid=".$id[0]."'"; ?>>
+							<img class="x" src="<?php echo $imgList[0];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 100%; height:auto;"/>
+						</a>
+						
+						<p class="aidanews2_title">
+							<a href=<?php echo "'../batmap/distribution_c.php?batid=".$id[0]."'"; ?>><?php echo $caption[0]; ?></a>
+						</p>
+
+					</div>
+					</div>
+					
+					<div class="col-md-3">
+					<div class="x">
+						<a class="aidanews2_img1" href=<?php echo "'../batmap/distribution_c.php?batid=".$id[1]."'"; ?>>
+							<img class="x" src="<?php echo $imgList[1];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 100%; height:auto;"/>
+						</a>
+						
+						<p class="aidanews2_title">
+							<a href=<?php echo "'../batmap/distribution_c.php?batid=".$id[1]."'"; ?>><?php echo $caption[1]; ?></a>
+						</p>
+
+					</div>
+					</div>
+					
+					<div class="col-md-3">
+					<div class="x">
+						<a class="aidanews2_img1" href=<?php echo "'../batmap/distribution_c.php?batid=".$id[2]."'"; ?>>
+							<img class="x" src="<?php echo $imgList[2];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 100%; height:auto;"/>
+						</a>
+						
+						<p class="aidanews2_title">
+							<a href=<?php echo "'../batmap/distribution_c.php?batid=".$id[2]."'"; ?>><?php echo $caption[2]; ?></a>
+						</p>
+
+					</div>
+					</div>
+					
+					<div class="col-md-3">
+					<div class="x">
+						<a class="aidanews2_img1" href=<?php echo "'../batmap/distribution_c.php?batid=".$id[0]."'";  ?>>
+							<img class="x" src="<?php echo $imgList[0];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 100%; height:auto;"/>
+						</a>
+						
+						<p class="aidanews2_title">
+							<a href=<?php echo "'../batmap/distribution_c.php?batid=".$id[0]."'";  ?>><?php echo $caption[0]; ?></a>
+						</p>
+
+					</div>
+					</div>
+									
+					
+					
+				</div>	
+				</div>	
+				</div>	
+				</div>
+				
+				
+				
+				<div class="row">
+				<div class="col-md-12">
+				<div class="ad">
+				<div class="row">
+					<div class="col-md-3">
+					<div class="x">
+						<a class="aidanews2_img1" href=<?php echo "'../batmap/distribution_c.php?batid=".$id[2]."'"; ?>>
+							<img class="x" src="<?php echo $imgList[2];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 100%; height:auto;"/>
+						</a>
+						
+						<p class="aidanews2_title">
+							<a href=<?php echo "'../batmap/distribution_c.php?batid=".$id[2]."'"; ?>><?php echo $caption[2]; ?></a>
+						</p>
+
+					</div>
+					</div>
+					
+					<div class="col-md-3">
+					<div class="x">
+						<a class="aidanews2_img1" href=<?php echo "'../batmap/distribution_c.php?batid=".$id[0]."'";  ?>>
+							<img class="x" src="<?php echo $imgList[0];?>" alt="100-000-awarded-in-grants-to-battle-wns" style = "display: block; max-height: 25em ; min-height:14em; width: 100%; height:auto;"/>
+						</a>
+						
+						<p class="aidanews2_title">
+							<a href=<?php echo "'../batmap/distribution_c.php?batid=".$id[0]."'";  ?>><?php echo $caption[0]; ?></a>
+						</p>
+
+					</div>
+					</div>
+				
+				</div>	
+				</div>	
+				</div>	
+				</div>
+					
+				</div>
 				
 				
 			</div>
@@ -185,7 +568,7 @@ error_reporting(E_ALL ^ E_DEPRECATED);
 
 	<div class="row">
 	    <div class="col-xs-10 col-xs-push-2">
-	      <?php include ("../template/footer.php"); ?>
+	      <?php include ("../IncludedFiles/footer.php"); ?>
 	    </div>  
   	</div>
 

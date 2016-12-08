@@ -2,7 +2,7 @@
 error_reporting(E_ALL ^ E_DEPRECATED);
 @mysql_connect("localhost","root","") or die("could not connect");
 
-@mysql_select_db("project") or die("could not find");
+@mysql_select_db("test2") or die("could not find");
 
 
 ?>
@@ -115,7 +115,8 @@ foreach($places_ar as $lplace){
             var myOptions = {
                 zoom: 7,
                 center: new google.maps.LatLng(7.8731, 80.7718),
-                mapTypeId: google.maps.MapTypeId.ROADMAP
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+				scrollwheel: false
             };
             map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
             

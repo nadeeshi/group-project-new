@@ -42,7 +42,7 @@ include_once '../loginsystem/dbconnect.php';
             <li class="min-link"><a href="../nadee/listOfBats.php">Bats Info</a></li>
             <li class="min-link"><a href="../nadee/listOfResearch.php">Research Info</a></li>
             <li class="min-link"><a href="../forum/forumTopics.php">Forum</a></li>
-            <li class="min-link"><a href="../batnews/grid31.php">News</a></li>
+            <li class="min-link"><a href="../batnews/newst.php">News</a></li>
             <li class="min-link"><a href="../help/index.php">Help</a></li>
             <li class="min-link"><a href="../phpPages/aboutUs.php">About Us</a></li>
    			</ul> 
@@ -63,8 +63,11 @@ include_once '../loginsystem/dbconnect.php';
         <li><a href="../nadee/listOfBats.php">Bats Info</a></li>
         <li><a href="../nadee/listOfResearch.php">Research Info</a></li>
 				<li><a href="../forum/forumTopics.php">Forum</a></li>
-				<li><a href="../batnews/grid31.php">News</a></li>
-        <li><a href="../help/index.php">Help</a></li>
+				<li><a href="../batnews/newst.php">News</a></li>
+				
+				<li><a href="../news_insert/news_insert.php">News insert</a></li>
+				<li><a href="../profiles/profiles.php">profile</a></li>
+		<li><a href="../help/index.php">Help</a></li>
 				<li><a href="../phpPages/aboutUs.php">About Us</a></li>
 			</ul>
 		</div>

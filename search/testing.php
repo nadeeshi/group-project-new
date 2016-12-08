@@ -13,21 +13,20 @@ error_reporting(E_ALL ^ E_DEPRECATED);
 
 	
 	<head>
-	<title>thread</title>
-	<link href="https://fonts.googleapis.com/css?family=Alike+Angular" rel="stylesheet"> 
-	<link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="../css/testing.css">		
-	<link href="../css/navbar1n2.css" rel="stylesheet" type="text/css">
-	<link href="../css/footer.css" rel="stylesheet">
-	<script src="../js/jquary.js"></script> 
-  	<script src="../js/bootstrapjs.js"></script>
+	<title>search</title>
+	<link href="../assets/bootstrap/bootstrap.css" rel="stylesheet"><link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/testing.css">		
+	<link href="../assets/css/navbar1n2.css" rel="stylesheet" type="text/css">
+	<link href="../assets/css/footer.css" rel="stylesheet">
+	<script src="../assets/bootstrap/jquary.js"></script> 
+  	<script src="../assets/bootstrap/bootstrapjs.js"></script>
 
 	</head>
 
 <body>
 
 	<div>
-	<?php include('../template/navbarTemplate.php');?>
+	<?php include('../IncludedFiles/navbarTemplate.php');?>
 	</div>
 	<div class="col-sm-8 col-sm-push-2 col-xs-12 insert-form">
 		<div class="container">
@@ -35,6 +34,7 @@ error_reporting(E_ALL ^ E_DEPRECATED);
 	<?php
 	$count = 0;
 		$count1 = 0;
+		$count2 = 0;
 	//$rec =0;
 	
 	
@@ -68,6 +68,11 @@ error_reporting(E_ALL ^ E_DEPRECATED);
 	include ("vm.php");
 	
 	$query = mysql_query("SELECT * FROM photos;");
+	
+	//$result = mysql_query("SELECT * FROM photos");
+$num_rows = mysql_num_rows($query);
+//echo $num_rows;	
+	
 $dat = "zi";
 $ab = array();
 $d =array();
@@ -92,7 +97,7 @@ while($row = mysql_fetch_array($query)){
 		//echo '<p><img src="'.$row['description'].'"></p>';
 		
 	}
-	for($i=0;$i<4;$i++){
+	for($i=0;$i<=$num_rows-1;$i++){
 	SearchString($ab[$i], $searchq);
 		if ($rec == 1){
 		$count1=1;
@@ -106,6 +111,24 @@ while($row = mysql_fetch_array($query)){
 		}
 		$r = count($xx);
 		
+		}//NMMMN
+		if($count1==0){
+			for($i=0;$i<=$num_rows-1;$i++){
+			SearchString($head[$i], $searchq);
+		if ($rec == 1){
+		$count2=1;
+		
+		$fo=$d[$i];
+		
+		array_push($xx,$fo);
+		
+
+		$rec=0;
+		}
+		$r = count($xx);
+		
+		}
+		
 		}//echo $r;
 	}
 	}
@@ -116,7 +139,7 @@ while($row = mysql_fetch_array($query)){
 	<div  class="col-sm-1"  >
 	</div>
 	<div  class="col-sm-10"  >
-		<?php if(($count==1)||($count1==1)){	?><h2> search results</h2><?php } else {?><h2>no result found</h2><?php }?>
+		<?php if(($count==1)||($count1==1) ||($count2==1)){	?><h2> search results</h2><?php } else {?><h2>no result found</h2><?php }?>
 	</div>
 	<div  class="col-sm-1"  >
 	</div>
@@ -129,13 +152,14 @@ while($row = mysql_fetch_array($query)){
 <ul style="list-style-type:circle">
 	<?php if($count ==1){?>
   <li><a  href=<?php echo "'../batmap/distribution_c.php?batid=".$id."'";?>><?php echo $fname;?></a></li>
-	<?php echo $des,$id;
+	<?php echo $des;
 	}		
 	?>
-	<?php if($count1 ==1){
+	<?php if(($count1 ==1)||($count2==1)){
 				for($s=0;$s<$r;$s++){
+				//echo $xx[$s];
 	?>
-  <li><a href=<?php echo "'../batnews/news_child_s.php?batid1=".$xx[$s]."'";?>><?php echo $head[$xx[$s]-1];?></a></li>
+  <li><a href=<?php echo "'../batnews/news_child.php?photoid=".$xx[$s]."'";?>><?php echo $head[$xx[$s]-1];?></a></li>
 	<?php echo substr( $ab[$xx[$s]-1],0,150)."..."; 
 	}
 	}?>
@@ -148,7 +172,7 @@ while($row = mysql_fetch_array($query)){
 </div>  
 	<div class="row">
     <div class="col-sm-10 col-sm-push-2 col-xs-12">
-      <?php include ("../template/footer.php"); ?>
+      <?php include ("../IncludedFiles/footer.php"); ?>
     </div>  
   </div>
 </body>
