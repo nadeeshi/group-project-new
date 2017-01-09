@@ -29,8 +29,8 @@ include_once '../mainhome/dbconnect.php';
 			                <?php if (isset($_SESSION['usr_id'])) { ?>
 			                <li><a href="logout.php" class="navbar-head-list">Log Out</a></li>
 			                <?php } else { ?>
-			                <li><a href="login.php">Login</a></li>
-			                <li><a href="register.php">Sign Up</a></li>
+			                <li class="navbar-head-list"><a href="login.php">Login</a></li>
+			                <li class="navbar-head-list"><a href="register.php">Sign Up</a></li>
 			                <?php } ?>
 			            </ul>
 			            <form class="navbar-form  navbar-right" action="../search/testing.php" method="post">
