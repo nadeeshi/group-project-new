@@ -127,6 +127,29 @@ function validateMobileNo($umobile) {
         .error {color: #FF0000;}
     </style>
 
+    <style>
+        .error {color: #FF0000;}
+    </style>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            border: none;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even){background-color: #f2f2f2}
+
+    </style>
+
+
 
 
 </head>
@@ -266,7 +289,7 @@ function validateMobileNo($umobile) {
             </div>
 
 
-            <div class="col-md-5">
+            <div class="col-md-10">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         Details of Researchers
@@ -281,6 +304,27 @@ function validateMobileNo($umobile) {
                         $select=mysqli_query($bd,"SELECT * FROM researcher_details order by id desc");
                         //$select=mysql_query("SELECT * FROM researcher_details order by id desc");
                         $i=1;
+                        ?>
+
+                        <div class="display">
+
+                            <table>
+                                <tr>
+                                    <th>RESEACHER  NAME : </th>
+                                    <th>EMAIL : </th>
+
+
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+
+
+                                </tr>
+
+
+                                <?php
+
+
+
                         while($userrow=mysqli_fetch_array($select))
                         {
                             $id=$userrow['id'];
@@ -290,26 +334,27 @@ function validateMobileNo($umobile) {
                             $created=$userrow['created']
                             ?>
 
-                            <div class="display">
-                                <p> RESEARCHER NAME : <span style="color: #125acd"><?php echo $username; ?></span>
-                                    <a href="editResearchers.php?id=<?php echo $id; ?>"><span class="edit" title="Edit" style="color: #ff0084"> Edit </span></a>
-                                    <a href="deleteResearchers.php?id=<?php echo $id; ?>"
-                                       onclick="return confirm('Are you sure you wish to delete this Record?');">
-                                        <span class="delete" title="Delete" style="color: #ff0084"> Delete </span></a>
-                                </p>
-                                <br />
-                                <p> EMAIL ID : <span style="color: #125acd"><?php echo $usermail; ?></span>
+                                <tr>
+                                    <td><?php echo $username; ?></td>
 
-                                </p>
-                                <br />
-                                <p> MOBILE NO : <span style="color: #125acd"><?php echo $usermobile; ?></span>
-                                </p>
-                                <br />
-                                <p> CREATED ON : <span style="color: #125acd"><?php echo $created; ?></span>
-                                </p>
-                                <br />
-                            </div>
+                                    <td><?php echo $usermail;?></td>
+
+
+
+
+                                    <td><a href="editResearchers.php?id=<?php echo $id; ?>"><span class="edit" title="Edit" style="color: #ff0084"> Edit </span></a></td>
+                                    <td><a href="deleteResearchers.php?id=<?php echo $id; ?>"
+                                       onclick="return confirm('Are you sure you wish to delete this Record?');">
+                                        <span class="delete" title="Delete" style="color: #ff0084"> Delete </span></a></td>
+                                </tr>
+
+
+
+
                         <?php } ?>
+
+                            </table>
+
 
                         <!---close new researcher------------------------------------------------------>
 
