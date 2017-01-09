@@ -72,7 +72,7 @@
                             echo "</select>";
                             
                             //checking done
-                            
+                             mysqli_close($dbc);
                             ?>
                                 
                         </div>

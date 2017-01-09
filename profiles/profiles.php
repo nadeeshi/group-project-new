@@ -561,7 +561,6 @@ error_reporting(E_ALL ^ E_DEPRECATED);
 			</div>
 		</div>
 	
-	</div>
 
 
 	<!-- start footer -->
