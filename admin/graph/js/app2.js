@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
     $.ajax({
-        url: "http://localhost/group-project/group-project-new/group-project-new/group-project-new/admin/graph/data2.php",
+        url: "http://localhost/group-project-new/admin/graph/data2.php",
         method: "GET",
         success: function(data) {
             console.log(data);
@@ -9,7 +9,7 @@ $(document).ready(function(){
             var popultion = [];
 
             for(var i in data) {
-                bats.push("Bats " + data[i].id);
+                bats.push("Bats " + data[i].scientific_name);
                 popultion.push(data[i].population);
             }
 

@@ -49,7 +49,7 @@ require_once('auth.php');
                 <div class="col-xs-4" >
                     <div class="main-box mb-red" style="width: 200px; height: 80px;">
                         <a href="#">
-                            <h3>bats :
+                            <h3>Bats :
                             <?php
                             ob_start();
                             include("connect.php");

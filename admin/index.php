@@ -61,7 +61,7 @@ unset($_SESSION['SESS_LAST_NAME']);
             <li>
                 <div class="form-group input-group">
                     <span class="input-group-addon"><i class="fa fa-tag"  ></i></span><!--for get small icon-->
-                    <input type="text"  name="username" class="form-control" placeholder="Your Username " required/><!--for get input field-->
+                    <input type="text"  name="username" class="form-control" placeholder="Enter Username " required/><!--for get input field-->
                 </div>
 
             </li>
@@ -69,7 +69,7 @@ unset($_SESSION['SESS_LAST_NAME']);
             <li>
                 <div class="form-group input-group">
                     <span class="input-group-addon"><i class="fa fa-lock"  ></i></span>
-                    <input type="password" name="password" class="form-control"  placeholder="Your Password" required/>
+                    <input type="password" name="password" class="form-control"  placeholder="Enter Password" required/>
                 </div>
             </li>
 

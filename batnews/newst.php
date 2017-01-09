@@ -2,7 +2,6 @@
 <html>
 <head>
 	<title>news</title>
-	<link href="https://fonts.googleapis.com/css?family=Alike+Angular" rel="stylesheet"> 
 	<link href="../assets/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="../assets/css/editnewsmain.css">	
 	<link href="../assets/css/navbar1n2.css" rel="stylesheet" type="text/css">
@@ -222,11 +221,11 @@
 	</div>
 	<!-- start footer -->
 
-	<div class="row">
+	
 	    <div class="col-xs-10 col-xs-push-2">
 	      <?php include ("../IncludedFiles/footer.php"); ?>
 	    </div>  
-  	</div>
+  	
 
 
 	<!-- end of footer -->

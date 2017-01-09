@@ -8,6 +8,24 @@
 
     <title>BatFacts.com</title>
 
+    <style>
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            border: none;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even){background-color: #f2f2f2}
+
+    </style>
+
 
 </head>
 
@@ -30,7 +48,7 @@
 
 
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-10">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         View data from the database
@@ -44,6 +62,25 @@
                             include('../include_files/connect.php');
                             $select=mysqli_query($bd,"SELECT * FROM bats_details order by id desc");
                             $i=1;
+                            ?>
+                            <div class="display">
+
+                                <table>
+                                    <tr>
+                                        <th>BATS  NAME : </th>
+                                        <th>CREATED ON : : </th>
+                                        <th>VIEW : </th>
+                                        <th>Edit</th>
+                                        <th>Delete</th>
+
+
+                                    </tr>
+
+
+                                    <?php
+
+
+
                             while($userrow=mysqli_fetch_array($select))
                             {
                                 $id=$userrow['id'];
@@ -53,25 +90,27 @@
                                 $created=$userrow['created']
                                 ?>
 
-                                <div class="display">
-                                    <p style="color: #cc006a"> SCIENTIFIC NAME : <span style="color: #080808"><?php echo $scientificName; ?></span>
-                                        <a href="viewBats.php?id=<?php echo $id; ?>">
-                                            <span class="view" title="View"> View </span></a>
+                                    <tr>
+                                        <td><?php echo $scientificName; ?></td>
 
-                                        <a href="editBats.php?id=<?php echo $id; ?>"><span class="edit" title="Edit"> Edit </span></a>
+                                        <td><?php echo $created; ?></td>
 
-                                        <a href="deleteBats.php?id=<?php echo $id; ?>"
+                                        <td><a href="viewBats.php?id=<?php echo $id; ?>">
+                                            <span class="view" title="View"> View </span></a></td>
+
+                                        <td><a href="editBats.php?id=<?php echo $id; ?>"><span class="edit" title="Edit"> Edit </span></a></td>
+
+                                        <td><a href="deleteBats.php?id=<?php echo $id; ?>"
                                            onclick="return confirm('Are you sure you wish to delete this Record?');">
-                                            <span class="delete" title="Delete"> Delete </span></a>
-
-                                    </p>
-
-                                    <br />
-                                    <p> Created On : <span><?php echo $created; ?></span>
-                                    </p>
-                                    <br />
-                                </div>
+                                            <span class="delete" title="Delete"> Delete </span></a></td>
+                                        </tr>
                             <?php } ?>
+
+                                    </table>
+
+
+
+
 
 
 
@@ -82,7 +121,7 @@
             </div>
 
 
-
+</div>
 
         </div>
 
@@ -90,12 +129,8 @@
 
     </div>
 </div>
+    <div id="footer-sec"><b>Group 23-UCSC Group Project</b></div>
 
-
-
-
-<div id="footer-sec"><b>Group 23-UCSC Group Project</b>
-</div>
 
 
 

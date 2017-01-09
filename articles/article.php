@@ -74,7 +74,7 @@ while($row = $result->fetch_assoc()) {
   <div class="row">
     <div class="col-md-3">
     	<ul style="list-style-type: none; margin: 0; padding: 0; width: 200px; background-color: #f1f1f1;">
-    	<li><a href='articleinterface.php'>Post your Article</a></li>
+    	<li><a href='wsi.php'>Post your Article</a></li>
     </ul>
   </div>
 </div>
