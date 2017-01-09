@@ -43,8 +43,8 @@ include_once '../mainhome/dbconnect.php';
 			                <?php if (isset($_SESSION['usr_id'])) { ?>
 			                <li><a href= "#" class="navbar-head-list"><?php echo $_SESSION['usr_name']; ?></a></li>
 			                <?php } else { ?>
-			                <li><a href="login.php">Login</a></li>
-			                <li><a href="register.php">Sign Up</a></li>
+			                <!-- <li><a href="login.php">Login</a></li>
+			                <li><a href="register.php">Sign Up</a></li> -->
 			                <?php } ?>
 			            </ul>
 		        	</div>
