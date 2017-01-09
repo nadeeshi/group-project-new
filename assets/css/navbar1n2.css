@@ -12,12 +12,11 @@
 
 .navbar1{
 	background-color: #4c4743;
-	margin-top: -0.75%;
-	margin-left: -0.8%;
-	margin-right: -0.75%;
+	margin-left: -0.05%;
+	margin-right: -0.05%;
 	font-size: 15px;
 	position: fixed;
-	width: 101%; 
+	width: 100%; 
 	border-bottom:none; 
 	border-radius:0;
 	font-family: 'Varela Round', sans-serif;
@@ -52,6 +51,11 @@
 	padding-top:17px;
 }
 
+.navbar-head-list{
+	color: #ffffff !important;
+}
+
+
 /*overrides*/
 .navbar-default .navbar-brand {
 	color: #ffffff;
@@ -59,12 +63,16 @@
 	font-size: 30px;
 }
 
+.navbar-nav > li > a {
+	padding-top: 
+}
+
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
 	color: #a79e9e;
 }
 .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse{
-	margin-top: 12px;
-	margin-bottom: 4px;
+	margin-top: 6px;
+	margin-bottom: 5px;
 }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus{
@@ -129,8 +137,8 @@
 }
 .list-container{
 	background-color: #4c4743;
-	margin-top: 55px;
-	height: 800px;
+	margin-top: 67px;
+	height: 100%;
 	position: fixed;
 
 }
@@ -160,7 +168,7 @@ div.profile-picture {
 
 .insert-form{
 	margin-top: 140px;
-	margin-left: 85px;
+	/padding-top: 1.5%;
 	z-index: -1;
 }
 

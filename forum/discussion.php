@@ -25,7 +25,7 @@ require_once ("connection.php");
 		<?php include '../IncludedFiles/navbarTemplate.php' ?>
 	</div>
 	<div>
-		<div class="col-sm-8 col-sm-push-2 col-xs-12 insert-form">
+		<div class="col-sm-10 col-sm-push-2 col-xs-12 insert-form" style="padding: 2%;">
 			<div class="row">
 				<?php
 					$sql="SELECT topic_id, topic_subject, topic_content,topic_date FROM topics

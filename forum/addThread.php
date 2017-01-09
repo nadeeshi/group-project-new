@@ -36,7 +36,7 @@ if (!empty($_POST)) {
     <div>
       <?php include "../IncludedFiles/navbarTemplate.php" ?> 
     </div>
-      <div class="col-sm-8 col-sm-push-2 col-xs-12 insert-form">
+      <div class="col-sm-8 col-sm-push-3 col-xs-12 insert-form">
       	<div class="content col-xs-12">
           <h4 class="header-content">Your New Discussion Topic</h4>
             <form class="form-horizontal form-group-custom" method="post" action="addThread.php">
