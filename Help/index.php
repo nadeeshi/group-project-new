@@ -106,7 +106,7 @@
             <div class="row">
 
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <a href="p2-account.php" class="btn btn-warning pdd" role="button">
+                    <a href="accounts.php" class="btn btn-warning pdd" role="button">
                         <i class="fa fa-briefcase fa-4x" style="margin-top: 40px"></i>
                         <br>
                     </a>
@@ -118,7 +118,7 @@
                 </div>
 
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <a href="p2-man%20accounts.php" class="btn btn-success pdd" role="button">
+                    <a href="managingaccounts.php" class="btn btn-success pdd" role="button">
                         <i class="fa fa-cog fa-4x" style="margin-top: 40px"></i>
                         <br>
                     </a>
@@ -129,7 +129,7 @@
                     </span>
                 </div>
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <a href="p2-%20privacy%20saf.php" class="btn btn-danger pdd" role="button">
+                    <a href="privacy.php" class="btn btn-danger pdd" role="button">
                         <i class="fa fa-user-secret fa-4x" style="margin-top: 40px"></i>
                         <br>
 
