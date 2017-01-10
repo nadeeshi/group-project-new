@@ -111,27 +111,13 @@
                             </div>
                             <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                                 <div class="panel-body">
-                                    You have to go to our home page>> and you can find sign up button>> there u can sign for a new account
+                                   1. You have to go to our home page <br>
+                                   2. And you can find sign up button on the tope of the page <br>
+                                   3. There you can sign for a new account by filling the form 
                                 </div>
                             </div>
                         </div>
-                        <div class="panel panel-default">
-                            <div data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="panel-heading" role="tab" id="headingTwo">
-                                <h4 class="panel-title">
-                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                        How do I verify my account?
-                                    </a>
-                                    <span  class="pull-right">
-                                        <i class="fa fa-caret-square-o-down"></i>
-                                    </span>
-                                </h4>
-                            </div>
-                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                <div class="panel-body">
-                                   u will receive a confirmation msg to ur mail.>> there u can confirm ur account
-                                </div>
-                            </div>
-                        </div>
+                        
                         <div class="panel panel-default">
                             <div data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="panel-heading" role="tab" id="headingThree">
                                 <h4 class="panel-title">
@@ -145,7 +131,8 @@
                             </div>
                             <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                 <div class="panel-body">
-                                     it has already taken by someone . so u have to try with new username.
+                                     1. It might be already taken by another user<br>
+                                     2. You have to try with new username 
                                 </div>
                             </div>
                         </div>
@@ -162,7 +149,8 @@
                             </div>
                             <div id="collapsefour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfour">
                                 <div class="panel-body">
-                                    there can be already same passwords like that.. or otherwise it can include some unusual characters.
+                                    1. It might be already taken by another user <br>
+                                    2. Otherwise it can include some incorrect characters.
                                 </div>
                             </div>
                         </div>
@@ -179,7 +167,8 @@
                             </div>
                             <div id="collapsefive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfive">
                                 <div class="panel-body">
-                                    may be ur mail address wrong or otherwise u can contact admin panel
+                                    1. Your mail address might be wrong <br>
+                                    2. For more you can contact admin panel
                                 </div>
                             </div>
                         </div>
@@ -196,7 +185,9 @@
                             </div>
                             <div id="collapsesix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingsix">
                                 <div class="panel-body">
-                                    its more than as a public user. researche r user accounts are for the user who do reseaches about bats. and there are many advantages in researcher account
+                                    1. It's more than as a public user <br>
+                                    2. Researcher user accounts are for the users who do researches about bats <br>
+                                    3. There are many more features in researcher account than public user
                                 </div>
                             </div>
                         </div>
@@ -213,7 +204,9 @@
                             </div>
                             <div id="collapseseven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingseven">
                                 <div class="panel-body">
-                                    u must be registered as an researcher to admin panel by showing ur qualifications and according certificates.
+                                    1. Your qualifications <br>
+                                    2. Your relevent degree information <br>
+                                    3. Show these to admin panel
                                 </div>
                             </div>
                         </div>
@@ -230,8 +223,8 @@
                                 </div>
                                 <div id="collapseeight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingeight">
                                     <div class="panel-body">
-                                        its a common account to view post as an common user. u can be restricted to some activities
-                                    </div>
+                                        1. Its a common account to view post as an common user <br>
+                                        2. There can be some restrictions
                                 </div>
                             </div>
                         </div>
