@@ -22,9 +22,6 @@ require_once ("connection.php");
 	</style>
 </head>
 <body>
-	<div>
-		<?php include '../IncludedFiles/navbarTemplate.php' ?>
-	</div>
 		<div class="col-sm-10 col-sm-push-2 col-xs-12 insert-form">
 			<div class="row">
 				<div class="col-xs-12">
@@ -40,9 +37,10 @@ require_once ("connection.php");
 
 					echo "<table>";
 			   		echo "<tr height='50'>";
-			        echo "<th class='col-sm-8'> Topic </th>";
+			        echo "<th class='col-sm-6'> Topic </th>";
 			        echo "<th class='col-sm-2'> Posted Date </th>";
 			        echo "<th class='col-sm-2'> Posted by </th>";
+			        echo "<th class='col-sm-2'> </th>";
 			    	echo "</tr>";
 
 			    	echo "<tr>";
@@ -53,6 +51,8 @@ require_once ("connection.php");
 			            echo $user['topic_date']." "."</td>";
 			            echo "<td class='col-sm-2 col-xs-2'>";
 			            echo "<a href=#>siguisgiwugiu</a>"." "."</td>";
+			            echo "<td class='col-sm-2 col-xs-2'>";
+			            echo "<a href=#>Delete</a>"." "."</td>";
 			        echo "</tr>";   
 					}	
 					echo "</table>";
@@ -63,12 +63,6 @@ require_once ("connection.php");
 
 
 	<!-- start footer -->
-
-	<div>
-	    <div class="col-sm-10 col-sm-push-2 col-xs-12 ">
-	      <?php include "../IncludedFiles/footer.php" ?>
-	    </div>  
-  	</div>
 
 
 	<!-- end of footer -->

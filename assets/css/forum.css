@@ -45,6 +45,10 @@
     margin-bottom: 10px;
 }
 
+.topic-container {
+    padding: 1%!important;
+}
+
 
 
 /*addThread*/
@@ -62,8 +66,8 @@
     font-size: 14px;
 }
 .button-custom{
-    background-color: #c1c1c1!important;
-    border-color: #807d7d!important;
+    background-color: #eeeeee!important;
+    border-color: #9e9e9e!important;
 }
 .content{
     border-style: ridge;

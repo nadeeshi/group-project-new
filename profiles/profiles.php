@@ -560,7 +560,11 @@ error_reporting(E_ALL ^ E_DEPRECATED);
 				
 			</div>
 		</div>
+<<<<<<< HEAD
+	
+=======
 
+>>>>>>> origin/master
 
 
 	<!-- start footer -->

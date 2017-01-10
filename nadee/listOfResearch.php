@@ -85,7 +85,7 @@
 
 <!-- start footer -->
 
-<div class="row">
+<div >
     <div class="col-xs-10 col-xs-push-2">
         <?php include "../IncludedFiles/footer.php" ?>
     </div>
