@@ -69,17 +69,17 @@ session_start(); // Session starts here.
  </div>
  <div class="form-group">
  <label>First Name </label>
- <input name="fname" type="text"  required required class="form-control" />
+ <input name="fname" type="text"  required placeholder="First Name" class="form-control" />
  <!--<span class="text-danger"><?php if (isset($name_error)) echo $name_error; ?></span>-->
  </div>
 <div class="form-group">
  <label>Middle Name </label>
- <input name="mname" type="text" required required class="form-control" />
+ <input name="mname" type="text" required placeholder="Middle Name" class="form-control" />
  <!--<span class="text-danger"><?php if (isset($name_error)) echo $name_error; ?></span>-->
  </div>
  <div class="form-group">
  <label>Last Name </label>
- <input name="lname" type="text" required required class="form-control" / >
+ <input name="lname" type="text" required placeholder="Last Name" class="form-control" / >
  <!--<span class="text-danger"><?php if (isset($name_error)) echo $name_error; ?></span>-->
  </div>
  <div class="form-group">
@@ -89,26 +89,26 @@ session_start(); // Session starts here.
  </div>
  <div class="form-group">
  <label>NIC </label>
- <input name="nic" type="text" required required class="form-control" / >
+ <input name="nic" type="text" required placeholder="NIC" class="form-control" / >
  <!--<span class="text-danger"><?php if (isset($name_error)) echo $name_error; ?></span>-->
  </div>
  <div class="form-group">
  <label>Address </label>
- <input name="add1" type="text"  required class="form-control" />
- <input name="add2" type="text" class="form-control" / >
- <input name="city" type="text"  required class="form-control" />
+ <input name="add1" type="text"  required placeholder="Street 1" class="form-control" />
+ <input name="add2" type="text" placeholder="Street 2" class="form-control" / >
+ <input name="city" type="text"  required placeholder="City" class="form-control" />
  </div>
  <div class="form-group">
  <label>Country</label>
- <input name="country" type="text" required class="form-control" />
+ <input name="country" type="text" required  placeholder="Country" class="form-control" />
  </div>
  <div class="form-group">
  <label>Major In </label>
- <input name="major" type="text"  required class="form-control" />
+ <input name="major" type="text"  required placeholder="Majoring In" class="form-control" />
  </div>
  <div class="form-group">
  <label>Email </label>
- <input name="email" type="email"  required required class="form-control" />
+ <input name="email" type="email"  required placeholder="xxx@abc.com" class="form-control" />
  <!--<span class="text-danger"><?php if (isset($name_error)) echo $name_error; ?></span>-->
  </div>
 
