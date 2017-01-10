@@ -43,6 +43,27 @@
                 box-shadow: inset 2px 2px 2px rgba(0,0,0,.075), 0 0 8px rgba(71, 76, 67, .6) !important;
                 
             }
+            #alredy_bats{
+                font-style: italic;
+                font-size: 13px;
+            
+        
+            }
+           
+            #selected{
+                font-family: 'Copse', serif !important;
+                width: 25%  !important;
+            }
+            .height_default{
+
+                height: 400px;
+
+            }
+            .height_default_edit{
+                height:  400px !important;
+                
+            }
+                  
             
 
            
