@@ -77,15 +77,16 @@ if (isset($_POST['login'])) {
     </div>
     <div class="row">
         <div class="col-md-4 col-md-offset-4 text-center">    
-        New User? <a href="register.php">Sign Up Here</a>
+        New User? <a href="page1_form.php">Sign Up Here</a>
         </div>
     </div>
     <div class="push"></div>
+</div>
     <!--get footer -->
     <div id="footer" class="container=fluid">
-        <a name="contact"> <?php include ("../mainhome/footer3.php")?> </a>
+        <a name="contact"> <?php include ("../mainhome/footer3.php") ?> </a>
     </div>
-</div>
+
 
 <script src="js/jquery-1.10.2.js"></script>
 <script src="js/bootstrap.min.js"></script>

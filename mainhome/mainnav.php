@@ -43,8 +43,8 @@
             </form>
             <ul class="nav navbar-nav navbar-right" style="font-size: 18px; padding-top: 1px; padding-bottom: 8px;">
            
-        			<li><a href="../loginsystem/register.php" id="myBtn" style="font-size: 18px;"><span class="glyphicon glyphicon-user"></span> Register</a></li> 
-              <li><a href="login.php" style="font-size: 18px;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        			<li><a href="../loginsystem/page1_form.php" id="myBtn" style="font-size: 18px;"><span class="glyphicon glyphicon-user"></span> Register</a></li> 
+              <li><a href="../loginsystem/login.php" style="font-size: 18px;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
               <!--<li><a href="signup/login.php"><span class="glyphicon glyphicon-user"></span>Members</a></li>-->
       			</ul>
     		</div>
