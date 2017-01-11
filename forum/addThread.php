@@ -5,8 +5,9 @@ if (!empty($_POST)) {
   $topic = $_POST['topic'];
   $message =$_POST['message'];
   $date= date('Y-m-d');
+  $postedby =isset($_SESSION['usr_id']);
 
-  $query= "INSERT INTO topics (topic_subject, topic_content, topic_date) VALUES ('$topic' ,'$message', '$date' )";
+  $query= "INSERT INTO topics (topic_subject, topic_content, topic_date, topic_by) VALUES ('$topic' ,'$message', '$date' , '$postedby' )";
   $result= mysqli_query($db, $query);
 
   if ($result){
@@ -79,7 +80,7 @@ if (!empty($_POST)) {
   
   
     <div class="col-sm-10 col-sm-push-2 col-xs-12">
-      <?php include "../IncludedFiles/footer.php" ?>
+      <?php include "../includedFiles/footer.php" ?>
     </div>  
   
 

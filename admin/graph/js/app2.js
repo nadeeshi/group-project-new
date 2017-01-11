@@ -1,7 +1,8 @@
 
 $(document).ready(function(){
     $.ajax({
-        url: "http://localhost/group-project-new/admin/graph/data2.php",
+		
+        url: "http://localhost:8080/group-project-new/admin/graph/data2.php",
         method: "GET",
         success: function(data) {
             console.log(data);

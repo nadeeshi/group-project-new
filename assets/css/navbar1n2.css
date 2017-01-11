@@ -2,6 +2,7 @@
 @import 'https://fonts.googleapis.com/css?family=Source+Code+Pro';
 @import 'https://fonts.googleapis.com/css?family=Shadows+Into+Light';
 @import 'https://fonts.googleapis.com/css?family=Varela+Round';
+@import 'https://fonts.googleapis.com/css?family=Varela+Round';
 
 .body {
 	font-family:  'Oxygen', sans-serif;
@@ -168,8 +169,9 @@ div.profile-picture {
 
 .insert-form{
 	margin-top: 140px;
-	/padding-top: 1.5%;
+	padding-top: 1.5%;
 	z-index: -1;
+	min-height: 100%;
 }
 
 @media(max-width:768px){
@@ -195,3 +197,20 @@ div.profile-picture {
 }
 
 
+/*footer*/
+
+.footer-container {
+    color: #ffffff;
+    background-color: #4c4743;
+    font-family: 'Varela Round', sans-serif;
+    margin-top: 50px;
+    position: fixed;
+    bottom: 0;
+}
+.footcon-col-1 {
+    margin-top: 1.5%;
+}
+
+.body{
+	min-height: 100%;
+}
